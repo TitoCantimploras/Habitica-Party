@@ -1,8 +1,3 @@
-## 一言 · Daily Saying 🥟
-
-> Can anything be sadder than work left unfinished? Yes, work never begun.
-
-
 ## 目标 · Goal :dart:
 
 Stay active for 12 months.
