@@ -3,7 +3,7 @@
 Stay active for 12 months.
 
 ┏━━━━━━━━━━━━┓
-┃■□□□□□□□□□□□┃》8.3%
+┃■□□□□□□□□□□□┃》16.6%
 ┗━━━━━━━━━━━━┛
 
 ## 队伍宗旨 · Team Purpose :star2:
@@ -13,8 +13,6 @@ The meaning of life is to live, and we should dare to fight against the crisis o
 Let’s use Habitica together, enjoy every minute of the present, and cherish the irreplaceable moments of life!
 
 Feel free to share experiences or ask questions in the chat, help each other, and grow together!
-
-Please actively join the quests to earn rich special rewards and valuable items!
 
 ## 规则 · Rules :traffic_light:
 
