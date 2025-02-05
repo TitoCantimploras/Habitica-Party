@@ -30,4 +30,6 @@ jobs:
           -H "x-api-user: ${{ secrets.HABITICA_USER_ID }}" \
           -H "x-api-key: ${{ secrets.HABITICA_API_KEY }}" \
           -H "Content-Type: application/json" \
-          -d '{"description": "${{ env.content }}"}'
+          -d '{"description": "
+
+${{ env.content }}"}'
