@@ -62,9 +62,9 @@ def format_duration(duration):
     # 将所有非零的时间单位连接成一个字符串
     return ' '.join(time_parts)
 
-def update_habitica_description(content, translation, members_str):
+def update_habitica_description(title, content, translation, members_str):
     url = "https://habitica.com/api/v3/groups/party"
-    description = f"### 每日一言 · Daily Sentence 🌹\n\n{content}\n\n{translation}\n\n### 最后上线时间 · Last Login Time\n\n{members_str}\n\n#### Want to learn more about the party's purpose, rules, and other information? [Click here!](https://github.com/Delta-Water/Habitica-Party/blob/main/party_description.md)"
+    description = f"### 每日一言 · Daily Sentence 🌹\n\n###### {title}\n\n{content}\n\n{translation}\n\n### 最后签到时间 · Last Check-In Time\n\n{members_str}\n\n#### Want to learn more about the party's purpose, rules, and other information? [Click here!](https://github.com/Delta-Water/Habitica-Party/blob/main/party_description.md)"
     data = {"description": description}
 
     response = requests.put(url, headers=headers, data=json.dumps(data))
@@ -78,6 +78,7 @@ if __name__ == "__main__":
         "Content-Type": "application/json"
     }
     daily_sentence = get_daily_sentence()
+    title = daily_sentence['title']
     content = daily_sentence['content']
     translation = daily_sentence['note']
 
@@ -86,5 +87,5 @@ if __name__ == "__main__":
         f"{index + 1}. {item['name']}:  {item['since_last_login']} ago" for index, item in enumerate(members_list)
     )
 
-    update_habitica_description(content, translation, members_str)
+    update_habitica_description(title, content, translation, members_str)
     print("Habitica 描述更新成功")
