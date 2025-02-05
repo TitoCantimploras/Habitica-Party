@@ -31,6 +31,5 @@ jobs:
           -H "x-api-key: ${{ secrets.HABITICA_API_KEY }}" \
           -H "Content-Type: application/json" \
           -d '{
-            "description": '"$(echo "${{ env.content }}" | jq -R @json)"' - '"$(echo "${{ env.translation }}" | jq -R @json)"'
-          }'
-          echo '{"description": '"$(echo "${{ env.content }}" | jq -R @json)"' - '"$(echo "${{ env.translation }}" | jq -R @json)"'}'
+            "description": "${{ env.content }}"
+}'
