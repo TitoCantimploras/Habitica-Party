@@ -49,16 +49,18 @@ def calculate_duration(last_login_time_str):
     return duration
 
 def format_duration(duration):
-    # 计算小时数
+    # 计算天数、小时数、分钟数和秒数
+    days = duration.days
     hours = duration.seconds // 3600
-    # 计算剩余的秒数
-    remaining_seconds = duration.seconds % 3600
-    # 计算分钟数
-    minutes = remaining_seconds // 60
-    # 计算剩余的秒数
-    seconds = remaining_seconds % 60
+    minutes = (duration.seconds % 3600) // 60
+    seconds = duration.seconds % 60
     
-    return f"{hours}h {minutes}m {seconds}s"
+    # 使用列表推导式构建非零时间单位的字符串
+    time_parts = [f"{value}{unit}" for value, unit in 
+                  zip([days, hours, minutes, seconds], ['d', 'h', 'm', 's']) if value > 0]
+    
+    # 将所有非零的时间单位连接成一个字符串
+    return ' '.join(time_parts)
 
 def update_habitica_description(content, translation, members_str):
     url = "https://habitica.com/api/v3/groups/party"
@@ -81,7 +83,7 @@ if __name__ == "__main__":
 
     members_list = sorted(get_habitica_party_data(), key=lambda x: x['duration'])
     members_str = '\n\n'.join(
-        f"{index + 1}. {item['name']}: \n\n- {item['last_login']}\n\n- {item['since_last_login']} ago" for index, item in enumerate(members_list)
+        f"{index + 1}. {item['name']}: {item['last_login']}\n\n- {item['since_last_login']} ago" for index, item in enumerate(members_list)
     )
 
     update_habitica_description(content, translation, members_str)
