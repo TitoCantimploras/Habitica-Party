@@ -1,4 +1,4 @@
-name: 每日句子更新
+name: 每日描述更新
 
 on:
   push:
@@ -29,4 +29,4 @@ jobs:
         env:
           HABITICA_USER_ID: ${{ secrets.HABITICA_USER_ID }}
           HABITICA_API_KEY: ${{ secrets.HABITICA_API_KEY }}
-        run: python update_daily_sentence.py
+        run: python scripts/update_daily_description.py
