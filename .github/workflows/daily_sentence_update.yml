@@ -10,32 +10,40 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 获取每日句子
-        id: get_sentence
+      - name: 设置 Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # 或者你需要的版本
+
+      - name: 安装依赖
         run: |
-          # 从 API 获取每日句子
-          response=$(curl -s "https://sentence.iciba.com/?c=dailysentence&m=getTodaySentence")
-          echo "响应: $response"
-          # 提取句子内容和翻译
-          content=$(echo $response | jq -r '.content')
-          translation=$(echo $response | jq -r '.note')
-          # 将内容和翻译存储到环境变量中
-          echo "content=$content" >> $GITHUB_ENV
-          echo "translation=$translation" >> $GITHUB_ENV
+          npm install axios
 
-      - name: 更新 Habitica 队伍描述
+      - name: 获取每日句子并更新 Habitica
         run: |
-          # 发送 PUT 请求更新 Habitica 小组的描述
-          response=$(curl -s -X PUT "https://habitica.com/api/v3/groups/party" \
-          -H "x-api-user: ${{ secrets.HABITICA_USER_ID }}" \
-          -H "x-api-key: ${{ secrets.HABITICA_API_KEY }}" \
-          -H "Content-Type: application/json" \
-          -d "{\"description\": \"### 一言 · A sentence of the day 🌹\\n\\n${{ env.content }}\\n\\n${{ env.translation }}\\n\\n#### Want to learn more about the party's purpose, rules, and other information? [Click here!](https://github.com/Delta-Water/Habitica-Party/blob/main/README.md)\"}")
+          const axios = require('axios');
 
-          # 检查更新是否成功
-          if [[ $(echo "$response" | jq -r '.success') != true ]]; then
-            echo "更新 Habitica 描述失败: $(echo "$response" | jq -r '.message')"
-            exit 1
-          fi
+          async function getDailySentence() {
+              const response = await axios.get("https://sentence.iciba.com/?c=dailysentence&m=getTodaySentence");
+              return { content: response.data.content, translation: response.data.note };
+          }
 
-          echo "Habitica 描述更新成功"
+          async function updateHabiticaGroup(content, translation) {
+              const url = "https://habitica.com/api/v3/groups/party";
+              const headers = {
+                  "x-api-user": process.env.HABITICA_USER_ID,
+                  "x-api-key": process.env.HABITICA_API_KEY,
+                  "Content-Type": "application/json"
+              };
+              const description = `### 一言 · A sentence of the day 🌹\n\n${content}\n\n${translation}\n\n#### Want to learn more about the party's purpose, rules, and other information? [Click here!](https://github.com/Delta-Water/Habitica-Party/blob/main/README.md)`;
+              const data = { description };
+
+              const response = await axios.put(url, data, { headers });
+              return response.data;
+          }
+
+          (async () => {
+              const { content, translation } = await getDailySentence();
+              const result = await updateHabiticaGroup(content, translation);
+              console.log(result);
+          })();
