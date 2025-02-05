@@ -28,7 +28,6 @@ jobs:
           echo '{
   "description": '"$(echo "${{ env.content }}" | jq -R @json)"' - '"$(echo "${{ env.translation }}" | jq -R @json)"'
 }'
- 
           # 发送 PUT 请求更新 Habitica 小组的描述
           curl -X PUT "https://habitica.com/api/v3/groups/party" \
           -H "x-api-user: ${{ secrets.HABITICA_USER_ID }}" \
