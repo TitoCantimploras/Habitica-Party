@@ -64,13 +64,13 @@ def format_duration(duration):
 
 def format_current_time():
     current_time = datetime.now(timezone.utc)
-    time_str = current_time.strftime('%M-%d &H:&M:&S')
+    time_str = current_time.strftime('%m-%d &H:&M:&S')
 
     return time_str
 
 def update_habitica_description(time, content, translation, members_str):
     url = "https://habitica.com/api/v3/groups/party"
-    description = f"### 每日一言 · Daily Sentence 🌹\n\n###### {time}\n\n{content}\n\n{translation}\n\n### 最后签到时间 · Last Check-In Time\n\n{members_str}\n\n#### Want to learn more about the party's purpose, rules, and other information? [Click here!](https://github.com/Delta-Water/Habitica-Party/blob/main/party_description.md)"
+    description = f"### 每日一言 · Daily Sentence 🌹\n\n{content}\n\n{translation}\n\n### 最后签到时间 · Last Check-In Time\n\n{members_str}\n\n#### Want to learn more about the party's purpose, rules, and other information? [Click here!](https://github.com/Delta-Water/Habitica-Party/blob/main/party_description.md)\n\n###### Last updated: {time}\n\n`by dᵕ̈w's doppelganger.`"
     data = {"description": description}
 
     response = requests.put(url, headers=headers, data=json.dumps(data))
