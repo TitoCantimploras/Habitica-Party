@@ -16,9 +16,23 @@ jobs:
           # 从 API 获取每日句子
           response=$(curl -s "https://sentence.iciba.com/?c=dailysentence&m=getTodaySentence")
           echo "响应: $response"
+          
+          # 检查响应是否有效
+          if [[ $(echo "$response" | jq -r '.status') != "0" ]]; then
+            echo "获取句子失败: $(echo "$response" | jq -r '.message')"
+            exit 1
+          fi
+
           # 提取句子内容和翻译
-          content=$(echo $response | jq -r '.content')
-          translation=$(echo $response | jq -r '.note')
+          content=$(echo "$response" | jq -r '.content')
+          translation=$(echo "$response" | jq -r '.note')
+
+          # 检查提取的内容是否为空
+          if [[ -z "$content" || -z "$translation" ]]; then
+            echo "提取内容或翻译失败"
+            exit 1
+          fi
+
           # 将内容和翻译存储到环境变量中
           echo "content=$content" >> $GITHUB_ENV
           echo "translation=$translation" >> $GITHUB_ENV
@@ -26,8 +40,16 @@ jobs:
       - name: 更新 Habitica 队伍描述
         run: |
           # 发送 PUT 请求更新 Habitica 小组的描述
-          curl -X PUT "https://habitica.com/api/v3/groups/party" \
+          response=$(curl -s -X PUT "https://habitica.com/api/v3/groups/party" \
           -H "x-api-user: ${{ secrets.HABITICA_USER_ID }}" \
           -H "x-api-key: ${{ secrets.HABITICA_API_KEY }}" \
           -H "Content-Type: application/json" \
-          -d '{"description": "一言 · A sentence of the day 🌹\n\n${{ env.content }}\n\n${{ env.translation }}\n\nWant to learn more about the party\'s purpose, rules, and other information? (Click here!)[https://github.com/Delta-Water/Habitica-Party/blob/main/README.md]"}'
+          -d "{\"description\": \"一言 · A sentence of the day 🌹\\n\\n${{ env.content }}\\n\\n${{ env.translation }}\\n\\nWant to learn more about the party's purpose, rules, and other information? (Click here!)[https://github.com/Delta-Water/Habitica-Party/blob/main/README.md]\"}")
+
+          # 检查更新是否成功
+          if [[ $(echo "$response" | jq -r '.success') != true ]]; then
+            echo "更新 Habitica 描述失败: $(echo "$response" | jq -r '.message')"
+            exit 1
+          fi
+
+          echo "Habitica 描述更新成功"
