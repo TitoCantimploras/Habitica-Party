@@ -1,15 +1,15 @@
-name: 每日描述更新
+name: 队伍描述更新
 
 on:
   push:
     branches:
       - main
   schedule:
-    - cron: '0 * * * *'  # 每天 UTC 时间 9 点触发
+    - cron: '0 * * * *'  # 每小时触发
   workflow_dispatch: # 允许手动触发
 
 jobs:
-  update_daily_description:
+  update_description:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,7 +19,7 @@ jobs:
       - name: 设置 Python 环境
         uses: actions/setup-python@v2
         with:
-          python-version: '3.8'  # 或者你需要的其他版本
+          python-version: '3.8'
 
       - name: 安装依赖
         run: |
@@ -29,4 +29,4 @@ jobs:
         env:
           HABITICA_USER_ID: ${{ secrets.HABITICA_USER_ID }}
           HABITICA_API_KEY: ${{ secrets.HABITICA_API_KEY }}
-        run: python scripts/update_daily_description.py
+        run: python scripts/update_description.py
