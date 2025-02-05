@@ -61,7 +61,7 @@ def format_duration(duration):
 
 def update_habitica_description(content, translation, members_str):
     url = "https://habitica.com/api/v3/groups/party"
-    description = f"### 每日一言 · Daily Sentence 🌹\n\n{content}\n\n{translation}\n\n{members_str}\n\n#### Want to learn more about the party's purpose, rules, and other information? [Click here!](https://github.com/Delta-Water/Habitica-Party/blob/main/party_description.md)"
+    description = f"### 每日一言 · Daily Sentence 🌹\n\n{content}\n\n{translation}\n\n### 最后上线时间 · Last Login Time\n\n{members_str}\n\n#### Want to learn more about the party's purpose, rules, and other information? [Click here!](https://github.com/Delta-Water/Habitica-Party/blob/main/party_description.md)"
     data = {"description": description}
 
     response = requests.put(url, headers=headers, data=json.dumps(data))
@@ -79,8 +79,8 @@ if __name__ == "__main__":
     translation = daily_sentence['note']
 
     members_list = sorted(get_habitica_party_data(), key=lambda x: x['duration'])
-    members_str = '\n'.join(
-        f"{index + 1}. {item['name']}: {item['since_last_login']}" for index, item in enumerate(members_list)
+    members_str = '\n\n'.join(
+        f"{index + 1}. {item['name']}: {item['since_last_login']} ago" for index, item in enumerate(members_list)
     )
 
     update_habitica_description(content, translation, members_str)
