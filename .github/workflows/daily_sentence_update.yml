@@ -1,0 +1,39 @@
+name: Daily Sentence Update
+
+on:
+  schedule:
+    - cron: '0 9 * * *'  # 每天 UTC 时间 9 点触发
+
+jobs:
+  update_daily_sentence:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get Daily Sentence
+        id: get_sentence
+        run: |
+          response=$(curl -s "https://sentence.iciba.com/?c=dailysentence&m=getTodaySentence")
+          echo "Response: $response"
+          content=$(echo $response | jq -r '.content')
+          translation=$(echo $response | jq -r '.note')
+          echo "content=$content" >> $GITHUB_ENV
+          echo "translation=$translation" >> $GITHUB_ENV
+
+      - name: Get Party ID
+        id: get_party_id
+        run: |
+          response=$(curl -s -X GET "https://habitica.com/api/v3/user" \
+          -H "x-api-user: ${{ secrets.HABITICA_USER_ID }}" \
+          -H "x-api-key: ${{ secrets.HABITICA_API_KEY }}")
+          party_id=$(echo $response | jq -r '.data.party.id')
+          echo "party_id=$party_id" >> $GITHUB_ENV
+
+      - name: Update Habitica Party Description
+        run: |
+          curl -X PUT "https://habitica.com/api/v3/groups/${{ env.party_id }}" \
+          -H "x-api-user: ${{ secrets.HABITICA_USER_ID }}" \
+          -H "x-api-key: ${{ secrets.HABITICA_API_KEY }}" \
+          -H "Content-Type: application/json" \
+          -d '{
+            "description": '"$(echo "${{ env.content }}" | jq -R @json)"' - '"$(echo "${{ env.translation }}" | jq -R @json)"'
+          }'
