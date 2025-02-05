@@ -15,13 +15,13 @@ def update_habitica_description(content, translation):
         "Content-Type": "application/json"
     }
     description = f"""
-    ### 每日一言 · Daily Sentence 🌹
+### 每日一言 · Daily Sentence 🌹
     
-    {content}
+{content}
     
-    {translation}
+{translation}
     
-    #### Want to learn more about the party's purpose, rules, and other information? [Click here!](https://github.com/Delta-Water/Habitica-Party/blob/main/party_description.md)
+#### Want to learn more about the party's purpose, rules, and other information? [Click here!](https://github.com/Delta-Water/Habitica-Party/blob/main/party_description.md)
     """
     data = {"description": description}
     
