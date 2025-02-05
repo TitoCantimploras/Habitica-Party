@@ -30,6 +30,12 @@ jobs:
           -H "x-api-user: ${{ secrets.HABITICA_USER_ID }}" \
           -H "x-api-key: ${{ secrets.HABITICA_API_KEY }}" \
           -H "Content-Type: application/json" \
-          -d '{"description": "
+          -d '{"description": 
+`一言 · A sentence of the day 🌹
 
-${{ env.content }}"}'
+${{ env.content }}
+
+${{ env.translation }}
+
+Want to learn more about the party's purpose, rules, and other information? (Click here!)[https://github.com/Delta-Water/Habitica-Party/blob/main/README.md]
+`}'
