@@ -70,7 +70,7 @@ def format_current_time():
 
 def update_habitica_description(time, content, translation, members_str):
     url = "https://habitica.com/api/v3/groups/party"
-    description = f"### 每日一言 · Daily Sentence 🌹\n\n###### {title}\n\n{content}\n\n{translation}\n\n### 最后签到时间 · Last Check-In Time\n\n{members_str}\n\n#### Want to learn more about the party's purpose, rules, and other information? [Click here!](https://github.com/Delta-Water/Habitica-Party/blob/main/party_description.md)"
+    description = f"### 每日一言 · Daily Sentence 🌹\n\n###### {time}\n\n{content}\n\n{translation}\n\n### 最后签到时间 · Last Check-In Time\n\n{members_str}\n\n#### Want to learn more about the party's purpose, rules, and other information? [Click here!](https://github.com/Delta-Water/Habitica-Party/blob/main/party_description.md)"
     data = {"description": description}
 
     response = requests.put(url, headers=headers, data=json.dumps(data))
