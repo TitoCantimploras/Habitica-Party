@@ -83,7 +83,7 @@ if __name__ == "__main__":
 
     members_list = sorted(get_habitica_party_data(), key=lambda x: x['duration'])
     members_str = '\n\n'.join(
-        f"{index + 1}. {item['name']}: {item['last_login']}\n\n- {item['since_last_login']} ago" for index, item in enumerate(members_list)
+        f"{index + 1}. {item['name']}:  {item['since_last_login']} ago" for index, item in enumerate(members_list)
     )
 
     update_habitica_description(content, translation, members_str)
