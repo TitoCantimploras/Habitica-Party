@@ -9,7 +9,7 @@ on:
   workflow_dispatch: # 允许手动触发
 
 jobs:
-  update_daily_sentence:
+  update_daily_description:
     runs-on: ubuntu-latest
 
     steps:
