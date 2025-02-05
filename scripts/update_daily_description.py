@@ -22,7 +22,7 @@ def get_habitica_party_data():
             # 发送GET请求到获取成员详细信息的API端点
             member_response = requests.get(f'https://habitica.com/api/v3/members/{member_id}', headers=headers)
             if member_response.status_code == 200:
-                last_login = member_response.json()['data']['auth']['timestamps']['logged']
+                last_login = member_response.json()['data']['auth']['timestamps']['loggedin']
                 duration = calculate_duration(last_login)
                 since_last_login = format_duration(duration)
                 # 解析成员的最后上线时间
