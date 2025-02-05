@@ -16,22 +16,6 @@ jobs:
           # 从 API 获取每日句子
           response=$(curl -s "https://sentence.iciba.com/?c=dailysentence&m=getTodaySentence")
           echo "响应: $response"
-          
-          # 检查响应是否有效
-          if [[ $(echo "$response" | jq -r '.status') != "0" ]]; then
-            echo "获取句子失败: $(echo "$response" | jq -r '.message')"
-            exit 1
-          fi
-
-          # 提取句子内容和翻译
-          content=$(echo "$response" | jq -r '.content')
-          translation=$(echo "$response" | jq -r '.note')
-
-          # 检查提取的内容是否为空
-          if [[ -z "$content" || -z "$translation" ]]; then
-            echo "提取内容或翻译失败"
-            exit 1
-          fi
 
           # 将内容和翻译存储到环境变量中
           echo "content=$content" >> $GITHUB_ENV
