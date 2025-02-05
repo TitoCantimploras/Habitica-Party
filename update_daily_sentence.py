@@ -14,7 +14,7 @@ def update_habitica_description(content, translation):
         "x-api-key": os.environ["HABITICA_API_KEY"],
         "Content-Type": "application/json"
     }
-    description = f"### 一言 · A sentence of the day 🌹\n\n{content}\n\n{translation}\n\n#### Want to learn more about the party's purpose, rules, and other information? [Click here!](https://github.com/Delta-Water/Habitica-Party/blob/main/README.md)"
+    description = f"### 每日一言 · Daily Sentence 🌹\n\n{content}\n\n{translation}\n\n#### Want to learn more about the party's purpose, rules, and other information? [Click here!](https://github.com/Delta-Water/Habitica-Party/blob/main/README.md)"
     data = {"description": description}
     
     response = requests.put(url, headers=headers, data=json.dumps(data))
