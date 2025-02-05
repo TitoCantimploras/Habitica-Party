@@ -3,6 +3,7 @@ name: Daily Sentence Update
 on:
   schedule:
     - cron: '0 9 * * *'  # 每天 UTC 时间 9 点触发
+  workflow_dispatch: # 允许手动触发
 
 jobs:
   update_daily_sentence:
