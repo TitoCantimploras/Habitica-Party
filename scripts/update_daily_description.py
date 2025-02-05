@@ -22,10 +22,11 @@ def get_habitica_party_data():
             # 发送GET请求到获取成员详细信息的API端点
             member_response = requests.get(f'https://habitica.com/api/v3/members/{member_id}', headers=headers)
             if member_response.status_code == 200:
-                duration = calculate_duration(member_response.json()['data']['auth']['timestamps']['updated'])
+                last_login = member_response.json()['data']['auth']['timestamps']['logged']
+                duration = calculate_duration(last_login)
                 since_last_login = format_duration(duration)
                 # 解析成员的最后上线时间
-                data.append({"name": member['profile']['name'], "duration": duration, "since_last_login": since_last_login})
+                data.append({"name": member['profile']['name'], "last_login": last_login, "duration": duration, "since_last_login": since_last_login})
             else:
                 print(f"Error retrieving member details for {member_id}: {member_response.status_code}")
 
@@ -80,7 +81,7 @@ if __name__ == "__main__":
 
     members_list = sorted(get_habitica_party_data(), key=lambda x: x['duration'])
     members_str = '\n\n'.join(
-        f"{index + 1}. {item['name']}: {item['since_last_login']} ago" for index, item in enumerate(members_list)
+        f"{index + 1}. {item['name']}: \n\n- {item['last_login']}\n\n- {item['since_last_login']} ago" for index, item in enumerate(members_list)
     )
 
     update_habitica_description(content, translation, members_str)
