@@ -10,35 +10,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 设置 Python
-        uses: actions/setup-python@v4
+      - name: 检出代码
+        uses: actions/checkout@v2
+
+      - name: 设置 Python 环境
+        uses: actions/setup-python@v2
         with:
-          python-version: '3.x'
+          python-version: '3.8'  # 或者你需要的其他版本
 
       - name: 安装依赖
         run: |
           pip install requests
 
-      - name: 获取每日句子并更新 Habitica
-        run: |
-          import os
-          import requests
-
-          # 获取每日句子
-          response = requests.get("https://sentence.iciba.com/?c=dailysentence&m=getTodaySentence")
-          response_data = response.json()
-          content = response_data['content']
-          translation = response_data['note']
-
-          # 更新 Habitica 小组描述
-          url = "https://habitica.com/api/v3/groups/party"
-          headers = {
-              "x-api-user": os.getenv("HABITICA_USER_ID"),
-              "x-api-key": os.getenv("HABITICA_API_KEY"),
-              "Content-Type": "application/json"
-          }
-          description = f"### 一言 · A sentence of the day 🌹\n\n{content}\n\n{translation}\n\n#### Want to learn more about the party's purpose, rules, and other information? [Click here!](https://github.com/Delta-Water/Habitica-Party/blob/main/README.md)"
-          data = {"description": description}
-
-          response = requests.put(url, headers=headers, json=data)
-          print(response.json())
+      - name: 执行更新脚本
+        env:
+          HABITICA_USER_ID: ${{ secrets.HABITICA_USER_ID }}
+          HABITICA_API_KEY: ${{ secrets.HABITICA_API_KEY }}
+        run: python update_daily_sentence.py
