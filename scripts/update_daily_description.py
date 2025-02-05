@@ -21,7 +21,7 @@ def update_habitica_description(content, translation):
     
     {translation}
     
-    #### Want to learn more about the party's purpose, rules, and other information? [Click here!](https://github.com/Delta-Water/Habitica-Party/blob/main/README.md)
+    #### Want to learn more about the party's purpose, rules, and other information? [Click here!](https://github.com/Delta-Water/Habitica-Party/blob/main/team_introduction.md)
     """
     data = {"description": description}
     
