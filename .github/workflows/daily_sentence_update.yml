@@ -24,13 +24,10 @@ jobs:
           echo "translation=$translation" >> $GITHUB_ENV
 
       - name: 更新 Habitica 队伍描述
-        env: 
-          HU_ID: ${{ secrets.HABITICA_USER_ID }}
-          HA_KEY: ${{ secrets.HABITICA_API_KEY }}
         run: |
           # 发送 PUT 请求更新 Habitica 小组的描述
           curl -X PUT "https://habitica.com/api/v3/groups/party" \
-          -H "x-api-user: '${{ env.HU_ID }}'" \
-          -H "x-api-key: '${{ env.HA_KEY }}'" \
+          -H "x-api-user: ${{ secrets.HABITICA_USER_ID }}" \
+          -H "x-api-key: ${{ secrets.HABITICA_API_KEY }}" \
           -H "Content-Type: application/json" \
           -d '{"description": "${{ env.content }}"}'
