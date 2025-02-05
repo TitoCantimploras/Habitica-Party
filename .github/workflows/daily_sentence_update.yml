@@ -1,4 +1,4 @@
-name: Daily Sentence Update
+name: 每日句子更新
 
 on:
   schedule:
@@ -10,18 +10,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Get Daily Sentence
+      - name: 获取每日句子
         id: get_sentence
         run: |
+          # 从 API 获取每日句子
           response=$(curl -s "https://sentence.iciba.com/?c=dailysentence&m=getTodaySentence")
-          echo "Response: $response"
+          echo "响应: $response"
+          # 提取句子内容和翻译
           content=$(echo $response | jq -r '.content')
           translation=$(echo $response | jq -r '.note')
+          # 将内容和翻译存储到环境变量中
           echo "content=$content" >> $GITHUB_ENV
           echo "translation=$translation" >> $GITHUB_ENV
 
-      - name: Update Habitica Party Description
+      - name: 更新 Habitica 小组描述
         run: |
+          # 发送 PUT 请求更新 Habitica 小组的描述
           curl -X PUT "https://habitica.com/api/v3/groups/party" \
           -H "x-api-user: ${{ secrets.HABITICA_USER_ID }}" \
           -H "x-api-key: ${{ secrets.HABITICA_API_KEY }}" \
