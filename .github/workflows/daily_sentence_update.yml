@@ -26,11 +26,11 @@ jobs:
       - name: 更新 Habitica 小组描述
         run: |
           # 发送 PUT 请求更新 Habitica 小组的描述
-          curl -X GET "https://habitica.com/api/v3/groups/party" \
-          -H "x-api-user: ${{ secrets.HABITICA_USER_ID }}" \
-          -H "x-api-key: ${{ secrets.HABITICA_API_KEY }}" \
+          curl -X PUT "https://habitica.com/api/v3/groups/party" \
+          -H "x-api-user: ${{ env.HU_ID }}" \
+          -H "x-api-key: ${{ env.HA_KEY }}" \
           -H "Content-Type: application/json" \
-      - name: Debugging
-        run: |
-          echo "User ID: ${{ secrets.HABITICA_USER_ID != '' }}"
-          echo "API Key: ${{ secrets.HABITICA_API_KEY != '' }}"
+          -d '{"description": "${{ env.content }}"}'
+        env: 
+          HU_ID: ${{secrets.HABITICA_USER_ID}}
+          HA_KEY: ${{secrets.HABITICA_API_KEY}}
