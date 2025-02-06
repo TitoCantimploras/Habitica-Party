@@ -9,7 +9,7 @@ logging.basicConfig(filename='log/output.log', level=logging.INFO, format='%(asc
 
 last_request_time = 0
 request_interval = 1
-    
+
 time_limit = timedelta(days=5)
 message = "I'm sorry, but we've decided to remove you from the party because you haven't been online for 5 days."
 
@@ -74,9 +74,12 @@ def remove_users_from_party(user_ids_to_remove):
             log_response_error(response, f"Removing user {user_id} from the party")
 
 def send_message_to_user(user_id):
-    message_url = f"https://habitica.com/api/v3/user/{user_id}/messages"
-    message_data = {"message": message}
-    response = rate_limited_request(requests.post, message_url, headers=headers, json=message_data)
+    url = "https://habitica.com/api/v3/members/send-private-message"
+    message_data = {
+        "message": message,
+        "toUserId": user_id
+    }
+    response = rate_limited_request(requests.post, url, headers=headers, json=message_data)
     if response.status_code == 200:
         logging.info(f"Message sent to user {user_id}.")
     else:
