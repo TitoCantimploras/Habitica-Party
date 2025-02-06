@@ -2,6 +2,10 @@ import os
 import requests
 import json
 from datetime import datetime, timezone
+import logging
+
+# 设置日志配置
+logging.basicConfig(filename='log/output.log', level=logging.INFO)
 
 def get_daily_sentence():
     response = requests.get("https://sentence.iciba.com/?c=dailysentence&m=getTodaySentence")
@@ -77,6 +81,7 @@ def update_habitica_description(content, translation, members_str, time_str):
     # return response.json()
 
 if __name__ == "__main__":
+    logger.info("# " + os.environ["RUN_NUMBER"])
     current_time = datetime.now(timezone.utc)
 
     headers = {
@@ -96,6 +101,4 @@ if __name__ == "__main__":
     time_str = format_current_time()
 
     update_habitica_description(content, translation, members_str, time_str)
-    with open("log/Actions_timestamp.txt", "a") as f:
-        f.write(f"{current_time.timestamp()}\n")
-    print("Habitica 描述更新成功")
+    logger.info("Habitica 描述更新成功")
