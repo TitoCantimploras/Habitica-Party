@@ -61,6 +61,39 @@ def get_json_response(response):
 def log_response_error(response, action):
     logger.error(f"{action} failed: Status code {response.status_code}, Response: {response.text}")
 
+def send_message_to_user(user_id):
+    url = "https://habitica.com/api/v3/members/send-private-message"
+    message_data = {
+        "message": message,
+        "toUserId": user_id
+    }
+    response = rate_limited_request(requests.post, url, headers=headers, json=message_data)
+    if response.status_code == 200:
+        logger.info(f"Message sent to user {user_id}.")
+    else:
+        log_response_error(response, f"Sending message to user {user_id}")
+
+def send_invite(id_list, name_list):
+    url = "https://habitica.com/api/v3/groups/party/invite"
+    data = {"uuids": id_list}
+    response = rate_limited_request(requests.post, url, json=data, headers=headers)
+    if response.status_code == 200:
+        id_str = '\n\n'.join([f"- [{name}](https://habitica.com/profile/{id})" for name, id in zip(name_list, id_list)])
+        message = template_new.format(list_str=id_str)
+        send_party_chat(message)
+        logger.info(f"Invitations sent to {name_list}.")
+    else:
+        log_response_error(response, "Sending invitations")
+
+def send_party_chat(message):
+    url = "https://habitica.com/api/v3/groups/party/chat"
+    data = {"message": message}
+    response = rate_limited_request(requests.post, url, json=data, headers=headers)
+    if response.status_code == 200:
+        logger.info(f"Party chat message sent: {message}.")
+    else:
+        log_response_error(response, "Sending party chat message")
+
 def get_inactive_party_members(time_limit):
     url = "https://habitica.com/api/v3/groups/party/members"
     response = rate_limited_request(requests.get, url, headers=headers)
@@ -95,39 +128,6 @@ def remove_users_from_party(user_to_remove):
             logger.info(f"User {user} has been removed from the party.")
         else:
             log_response_error(response, f"Removing user {user} from the party")
-
-def send_message_to_user(user_id):
-    url = "https://habitica.com/api/v3/members/send-private-message"
-    message_data = {
-        "message": message,
-        "toUserId": user_id
-    }
-    response = rate_limited_request(requests.post, url, headers=headers, json=message_data)
-    if response.status_code == 200:
-        logger.info(f"Message sent to user {user_id}.")
-    else:
-        log_response_error(response, f"Sending message to user {user_id}")
-
-def send_invite(id_list, name_list):
-    url = "https://habitica.com/api/v3/groups/party/invite"
-    data = {"uuids": id_list}
-    response = rate_limited_request(requests.post, url, json=data, headers=headers)
-    if response.status_code == 200:
-        id_str = '\n\n'.join([f"- [{name}](https://habitica.com/profile/{id})" for name, id in zip(name_list, id_list)])
-        message = template_new.format(list_str=id_str)
-        send_party_chat(message)
-        logger.info(f"Invitations sent to {name_list}.")
-    else:
-        log_response_error(response, "Sending invitations")
-
-def send_party_chat(message):
-    url = "https://habitica.com/api/v3/groups/party/chat"
-    data = {"message": message}
-    response = rate_limited_request(requests.post, url, json=data, headers=headers)
-    if response.status_code == 200:
-        logger.info(f"Party chat message sent: {message}.")
-    else:
-        log_response_error(response, "Sending party chat message")
 
 def search_and_invite_users():
     url = "https://habitica.com/api/v3/looking-for-party"
