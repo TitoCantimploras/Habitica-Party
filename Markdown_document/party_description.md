@@ -1,4 +1,4 @@
-## 队伍宗旨 · Team Purpose :star2:
+## 队伍宗旨 · Party Purpose :star2:
 
 The meaning of life is to live, and we should dare to fight against the crisis of nihilism with existentialism.
 
