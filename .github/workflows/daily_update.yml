@@ -30,3 +30,13 @@ jobs:
           HABITICA_USER_ID: ${{ secrets.HABITICA_USER_ID }}
           HABITICA_API_KEY: ${{ secrets.HABITICA_API_KEY }}
         run: python scripts/update_description.py
+      - name: 确认更改
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add log/Actions_timestamp.txt
+          git commit -m "Update log/Actions_timestamp.txt from GitHub Actions" || echo "No changes to commit"
+
+      - name: Push changes
+        run: |
+          git push
