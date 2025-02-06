@@ -87,7 +87,7 @@ def remove_users_from_party(user_ids_to_remove):
     for user_id in user_ids_to_remove:
         # send_message_to_user(user_id)
         response = rate_limited_request(requests.post, url.format(id=user_id, message=message), headers=headers)
-        send_party_chat(template_remove.format(str))
+        send_party_chat(template_remove.format(str=user_id))
         if response.status_code == 200:
             logger.info(f"User {user_id} has been removed from the party.")
         else:
