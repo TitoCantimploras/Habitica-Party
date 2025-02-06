@@ -74,7 +74,10 @@ def get_inactive_party_members(time_limit):
                 member_data = get_json_response(member_response).get('data', {})
                 last_login = member_data['auth']['timestamps']['updated']
                 if calculate_duration(last_login) >= time_limit:
-                    data.append(member_id)
+                    data.append({
+                        "id" = member_id,
+                        "name" = member_data['profile']['name']
+                    })
             else:
                 log_response_error(member_response, f"Fetching details for member {member_id}")
         return data
@@ -82,16 +85,16 @@ def get_inactive_party_members(time_limit):
         log_response_error(response, "Fetching party members")
         return []
 
-def remove_users_from_party(user_ids_to_remove):
+def remove_users_from_party(user_to_remove):
     url = "https://habitica.com/api/v3/groups/party/removeMember/{id}?message={message}"
-    for user_id in user_ids_to_remove:
+    for user in user_to_remove:
         # send_message_to_user(user_id)
-        response = rate_limited_request(requests.post, url.format(id=user_id, message=message), headers=headers)
-        send_party_chat(template_remove.format(str=user_id))
+        response = rate_limited_request(requests.post, url.format(id=user.id, message=message), headers=headers)
+        send_party_chat(template_remove.format(name=user.name, id=user.id))
         if response.status_code == 200:
-            logger.info(f"User {user_id} has been removed from the party.")
+            logger.info(f"User {user} has been removed from the party.")
         else:
-            log_response_error(response, f"Removing user {user_id} from the party")
+            log_response_error(response, f"Removing user {user} from the party")
 
 def send_message_to_user(user_id):
     url = "https://habitica.com/api/v3/members/send-private-message"
