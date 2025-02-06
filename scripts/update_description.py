@@ -95,7 +95,7 @@ def update_habitica_description(content, translation, members_str, time_str):
     response.raise_for_status()  # 检查请求是否成功
 
 if __name__ == "__main__":
-    logging.basicConfig(filename='log/output.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+    logging.basicConfig(filename='log/output.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
     logging.info("# " + os.environ["RUN_NUMBER"])
     current_time = datetime.now(timezone.utc)
