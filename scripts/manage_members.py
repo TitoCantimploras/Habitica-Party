@@ -28,7 +28,6 @@ def get_inactive_party_members(time_limit):
 
             time.sleep(1)  # 在每次请求之间添加延迟
 
-
         return data
     else:
         # 请求失败，打印错误信息
