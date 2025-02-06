@@ -1,4 +1,5 @@
-#### Here is a list of the removed members:
+#### Here is a list of the removed members: 
 
 {list_str}
 
+###### by scheduled `Actions`
