@@ -9,6 +9,18 @@ logging.basicConfig(filename='log/output.log', level=logging.INFO, format='%(asc
 
 last_request_time = 0
 request_interval = 1
+    
+time_limit = timedelta(days=5)
+message = "I'm sorry, but we've decided to remove you from the party because you haven't been online for 5 days."
+
+headers = {
+    "x-api-user": os.environ["HABITICA_USER_ID"],
+    "x-api-key": os.environ["HABITICA_API_KEY"],
+    "Content-Type": "application/json"
+}
+    
+with open("Markdown_document/new_members.md", "r") as f:
+    template = f.read()
 
 def rate_limited_request(method, url, **kwargs):
     global last_request_time
@@ -51,17 +63,17 @@ def get_inactive_party_members(time_limit):
         log_response_error(response, "Fetching party members")
         return []
 
-def remove_users_from_party(user_ids_to_remove, message):
+def remove_users_from_party(user_ids_to_remove):
     url = "https://habitica.com/api/v3/groups/party/members"
     for user_id in user_ids_to_remove:
-        send_message_to_user(user_id, message)
+        send_message_to_user(user_id)
         response = rate_limited_request(requests.delete, f"{url}/{user_id}", headers=headers)
         if response.status_code == 200:
             logging.info(f"User {user_id} has been removed from the party.")
         else:
             log_response_error(response, f"Removing user {user_id} from the party")
 
-def send_message_to_user(user_id, message):
+def send_message_to_user(user_id):
     message_url = f"https://habitica.com/api/v3/user/{user_id}/messages"
     message_data = {"message": message}
     response = rate_limited_request(requests.post, message_url, headers=headers, json=message_data)
@@ -109,28 +121,12 @@ def calculate_duration(last_login_time_str):
     current_time = datetime.now(timezone.utc)
     return current_time - last_login_time
 
-def manage_habitica_party_members(message):
-    remove_id_list = get_inactive_party_members(time_limit)
-    if remove_id_list:
-        remove_users_from_party(remove_id_list, message)
-    search_and_invite_users()
-
 def main():
     logging.info(f"# {os.environ['RUN_NUMBER']}")
-    
-    time_limit = timedelta(days=5)
-    message = "I'm sorry, but we've decided to remove you from the party because you haven't been online for 5 days."
-
-    headers = {
-        "x-api-user": os.environ["HABITICA_USER_ID"],
-        "x-api-key": os.environ["HABITICA_API_KEY"],
-        "Content-Type": "application/json"
-    }
-    
-    with open("Markdown_document/new_members.md", "r") as f:
-        template = f.read()
-
-    manage_habitica_party_members(message)
+    remove_id_list = get_inactive_party_members(time_limit)
+    if remove_id_list:
+        remove_users_from_party(remove_id_list)
+    search_and_invite_users()
     logging.info("Habitica party management script completed successfully.")
 
 if __name__ == "__main__":
