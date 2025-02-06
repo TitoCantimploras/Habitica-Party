@@ -12,4 +12,4 @@
 
 ###### Hourly Automatic Update. Last updated: {time}
 
-##### Powered by `d🙃w`'s [doppelganger](https://github.com/Delta-Water/Habitica-Party/blob/main/)
+##### Powered by `d🙃w`'s [doppelganger](https://github.com/Delta-Water/Habitica-Party)
