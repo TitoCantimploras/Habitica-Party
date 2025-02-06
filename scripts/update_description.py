@@ -7,7 +7,7 @@ from logging.handlers import RotatingFileHandler
 import time
 
 # 设置日志
-logger = logging.getLogger('logger_3_max')
+logger = logging.getLogger('habitica_update_description')
 logger.setLevel(logging.DEBUG)
 
 handler = RotatingFileHandler('log/update_description.log', maxBytes=5*1024, backupCount=3)
