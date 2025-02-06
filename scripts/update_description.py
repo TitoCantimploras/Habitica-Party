@@ -101,4 +101,4 @@ if __name__ == "__main__":
     time_str = format_current_time()
 
     update_habitica_description(content, translation, members_str, time_str)
-    logging.info("Habitica 描述更新成功")
+    logging.info("队伍描述更新成功")
