@@ -4,9 +4,6 @@ import json
 from datetime import datetime, timezone
 import logging
 
-# 设置日志配置
-logging.basicConfig(filename='log/output.log', level=logging.INFO)
-
 def get_daily_sentence():
     response = requests.get("https://sentence.iciba.com/?c=dailysentence&m=getTodaySentence")
     response.raise_for_status()  # 检查请求是否成功
@@ -81,7 +78,10 @@ def update_habitica_description(content, translation, members_str, time_str):
     # return response.json()
 
 if __name__ == "__main__":
-    logger.info("# " + os.environ["RUN_NUMBER"])
+    # 设置日志配置
+    logging.basicConfig(filename='log/output.log', level=logging.INFO)
+
+    logging.info("# " + os.environ["RUN_NUMBER"])
     current_time = datetime.now(timezone.utc)
 
     headers = {
@@ -101,4 +101,4 @@ if __name__ == "__main__":
     time_str = format_current_time()
 
     update_habitica_description(content, translation, members_str, time_str)
-    logger.info("Habitica 描述更新成功")
+    logging.info("Habitica 描述更新成功")
