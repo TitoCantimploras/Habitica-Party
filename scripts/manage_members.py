@@ -92,7 +92,8 @@ def search_and_invite_users():
     if response.status_code == 200:
         groups = response.json().get('data', [])
         id_list = [group['_id'] for group in groups]
-        send_invite(id_list)
+        if id_lisr != []:
+            send_invite(id_list)
     else:
         logging.error(f"获取队伍时出错: {response.status_code}, {response.text}")
 
@@ -109,7 +110,7 @@ def manage_habitica_party_members(message):
     search_and_invite_users()
 
 if __name__ == "__main__":
-    logging.basicConfig(filename='log/output.log', level=logging.INFO)
+    logging.basicConfig(filename='log/output.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
     logging.info("# " + os.environ["RUN_NUMBER"])
     time_limit = timedelta(days=5)
