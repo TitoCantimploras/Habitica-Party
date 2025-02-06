@@ -138,7 +138,7 @@ def main():
 
     time_str = format_current_time()
 
-    update_paety_description(content, translation, members_str, time_str, headers)
+    update_party_description(content, translation, members_str, time_str, headers)
 
 if __name__ == "__main__":
     main()
