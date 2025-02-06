@@ -125,7 +125,6 @@ def calculate_duration(last_login_time_str):
     return current_time - last_login_time
 
 def main():
-    logging.info(f"# {os.environ['RUN_NUMBER']}")
     remove_id_list = get_inactive_party_members(time_limit)
     if remove_id_list:
         remove_users_from_party(remove_id_list)
