@@ -58,8 +58,6 @@ def remove_users_from_party(user_ids_to_remove, message):
     url = "https://habitica.com/api/v3/groups/party/members"
 
     for user_id in user_ids_to_remove:
-        time.sleep(1)
-
         message_url = f"https://habitica.com/api/v3/user/{user_id}/messages"
         message_data = {
             "message": message
@@ -81,9 +79,7 @@ def remove_users_from_party(user_ids_to_remove, message):
 
 def send_invite(id_list):
     url = "https://habitica.com/api/v3/groups/party/invite"
-    data = {"uuid": id_list}
-    time.sleep(1)
-
+    data = {"uuids": id_list}
     response = rate_limited_request(requests.post, url, json=data, headers=headers)
     if response.status_code == 200:
         logging.info(f"已向 {id_list} 发送邀请。")
