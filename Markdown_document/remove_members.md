@@ -1,4 +1,4 @@
-#### Here is a list of the removed members: 
+#### Here is a list of removed members: 
 
 {list_str}
 
