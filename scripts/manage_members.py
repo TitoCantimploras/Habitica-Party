@@ -23,11 +23,11 @@ def get_inactive_party_members(time_limit):
                 # 如果用户不活跃超过设定的时间限制，则添加到待移除列表
                 if duration >= time_limit:
                     data.append(member_id)
+            else:
+                logging.error(f"获取成员 {member_id} 的详细信息时出错: {member_response.status_code}")
 
             time.sleep(1)  # 在每次请求之间添加延迟
 
-            else:
-                logging.error(f"获取成员 {member_id} 的详细信息时出错: {member_response.status_code}")
 
         return data
     else:
