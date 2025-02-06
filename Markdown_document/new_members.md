@@ -2,4 +2,4 @@
 
 {list_str}
 
-###### Automatically send by `bot`
+###### Automatically send.
