@@ -67,3 +67,7 @@
 2025-02-06 13:42:08,465 - INFO - Party description updated successfully.
 2025-02-06 13:42:38,624 - INFO - # 41
 2025-02-06 13:43:08,349 - INFO - Habitica party management script completed successfully.
+2025-02-06 13:51:07,759 - INFO - # 42
+2025-02-06 13:51:31,188 - INFO - Party description updated successfully.
+2025-02-06 13:52:29,154 - ERROR - Sending invitations failed: Status code 400, Response: {"success":false,"error":"BadRequest","message":"一支队伍最多只能有10个待定邀请。"}
+2025-02-06 13:52:29,154 - INFO - Habitica party management script completed successfully.
