@@ -1,6 +1,6 @@
 #### Here is a removed member: 
 
-[profile](https://habitica.com/profile/{str})
+[{name}](https://habitica.com/profile/{id})
 
 #### Reason: Not logged in for 5 days.
 
