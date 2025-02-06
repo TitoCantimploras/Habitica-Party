@@ -1,54 +1,24 @@
-2025-02-06 14:52:15,495 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:52:16,708 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:52:17,915 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:52:19,140 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:52:20,265 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:52:21,495 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:52:22,606 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:52:23,728 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:52:24,865 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:52:26,038 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:52:27,247 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:52:28,357 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:52:29,600 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:52:30,723 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:52:31,859 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:52:38,206 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:52:39,590 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:52:40,920 - habitica_manage_members - INFO - Party chat message sent: #### Here is a list of new members who have been invited: 
-
-- [hb-1wic0ntvqbtp10d7t](https://habitica.com/profile/2ebf202b-4d54-4a1b-92b0-056827f0b5b4)
-
-- [jvnte](https://habitica.com/profile/e056aaa7-8ffe-45d0-8d83-5321df1704a7)
-
-- [hb-059hh2hdkm9xo4jvo](https://habitica.com/profile/9844bbfe-7242-4f51-a374-f35ef513de58)
-
-- [aawesomesauce](https://habitica.com/profile/62e9873a-b65c-48f5-a700-a9a329dac199)
-
-- [Nellyaintjelly](https://habitica.com/profile/e0a6d76a-4116-43bb-b4e5-cb43e6de741b)
-
-###### Automatically send by `bot`
-.
-2025-02-06 14:52:40,920 - habitica_manage_members - INFO - Invitations sent to ['hb-1wic0ntvqbtp10d7t', 'jvnte', 'hb-059hh2hdkm9xo4jvo', 'aawesomesauce', 'Nellyaintjelly'].
-2025-02-06 14:52:40,921 - habitica_manage_members - INFO - Habitica party management script completed successfully.
-2025-02-06 14:57:48,748 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:57:50,003 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:57:51,062 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:57:52,120 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:57:53,200 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:57:54,259 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:57:55,366 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:57:56,422 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:57:57,484 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:57:58,549 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:57:59,787 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:58:00,849 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:58:01,920 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:58:02,983 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:58:04,046 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:58:05,107 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:58:06,167 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:58:07,231 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:58:08,292 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:58:09,427 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:58:14,564 - habitica_manage_members - INFO - Habitica party management script completed successfully.
+2025-02-06 15:05:48,574 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 15:05:49,780 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 15:05:51,008 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 15:05:52,155 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 15:05:53,267 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 15:05:54,390 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 15:05:55,580 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 15:05:57,099 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 15:05:58,217 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 15:05:59,488 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 15:06:00,666 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 15:06:01,785 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 15:06:02,913 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 15:06:04,038 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 15:06:05,151 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 15:06:06,321 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 15:06:07,440 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 15:06:08,628 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 15:06:09,819 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 15:06:10,993 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 15:06:12,127 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 15:06:17,324 - habitica_manage_members - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 15:06:18,451 - habitica_manage_members - ERROR - Sending invitations failed: Status code 400, Response: {"success":false,"error":"BadRequest","message":"一支队伍最多只能有10个待定邀请。"}
+2025-02-06 15:06:18,452 - habitica_manage_members - INFO - Habitica party management script completed successfully.
