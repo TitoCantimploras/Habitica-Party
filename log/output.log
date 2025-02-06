@@ -62,3 +62,8 @@ INFO:root:队伍自动管理任务执行成功
 INFO:root:# 12
 ERROR:root:邀请用户时出错: 400, {"success":false,"error":"BadRequest","message":"只能通过用户ID，电子邮件或用户名进行邀请。"}
 INFO:root:队伍自动管理任务执行成功
+2025-02-06 08:51:46,185 - INFO - # 13
+2025-02-06 08:52:08,586 - INFO - 队伍描述更新成功
+INFO:root:# 13
+ERROR:root:邀请用户时出错: 400, {"success":false,"error":"BadRequest","message":"只能通过用户ID，电子邮件或用户名进行邀请。"}
+INFO:root:队伍自动管理任务执行成功
