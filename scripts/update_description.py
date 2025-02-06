@@ -38,6 +38,7 @@ def get_daily_sentence():
     if response:
         return get_json_response(response)
     else:
+        log_response_error(response, "Getting party data")
         return {}
 
 def get_habitica_party_data(headers):
@@ -53,7 +54,7 @@ def get_habitica_party_data(headers):
                 data.append(member_data)
         return data
     else:
-        logging.error(f"Failed to get party data: {response.status_code if response else 'No response'}")
+        log_response_error(response, "Getting party data")
         return []
 
 def get_member_details(member, headers):
@@ -67,7 +68,7 @@ def get_member_details(member, headers):
         since_last_login = format_duration(duration)
         return {"name": member['profile']['name'], "last_login": last_login, "duration": duration, "since_last_login": since_last_login}
     else:
-        logging.error(f"Failed to get details for member {member_id}: {member_response.status_code if member_response else 'No response'}")
+        log_response_error(member_response, "Getting details for member")
         return None
 
 def calculate_duration(last_login_time_str):
@@ -106,7 +107,7 @@ def update_party_description(content, translation, members_str, time_str, header
         if response:
             logging.info("Party description updated successfully.")
         else:
-            logging.error("Failed to update party description.")
+            log_response_error(response, "Getting party data")
     except Exception as e:
         logging.error(f"An error occurred while updating the party description: {e}")
 
