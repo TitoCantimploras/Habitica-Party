@@ -35,7 +35,7 @@ with open("Markdown_document/new_members.md", "r") as f:
     template_new = f.read()
 
 with open("Markdown_document/remove_PM.md", "r") as f:
-    message = f.read()
+    template_message = f.read()
 
 with open("Markdown_document/remove_members.md", "r") as f:
     template_remove = f.read()
@@ -88,8 +88,8 @@ def get_inactive_party_members(time_limit):
 def remove_users_from_party(user_to_remove):
     url = "https://habitica.com/api/v3/groups/party/removeMember/{id}?message={message}"
     for user in user_to_remove:
-        # send_message_to_user(user_id)
-        response = rate_limited_request(requests.post, url.format(id=user.id, message=message), headers=headers)
+        # send_message_to_user(user.id)
+        response = rate_limited_request(requests.post, url.format(id=user.id, message=template_message.format(name=name), headers=headers)
         send_party_chat(template_remove.format(name=user.name, id=user.id))
         if response.status_code == 200:
             logger.info(f"User {user} has been removed from the party.")
