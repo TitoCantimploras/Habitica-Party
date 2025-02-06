@@ -45,6 +45,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          git push
           git add log/update_description.log
           git add log/manage_members.log
           git commit -m "Update log/update_description.log from GitHub Actions"
