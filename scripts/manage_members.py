@@ -75,14 +75,27 @@ def remove_users_from_party(user_ids_to_remove, message):
         else:
             logging.error(f"移除用户 {user_id} 失败: {response.json()}")
 
-def send_invite(id_list):
+def send_invite(id_list, name_list):
     url = "https://habitica.com/api/v3/groups/party/invite"
     data = {"uuids": id_list}
     response = rate_limited_request(requests.post, url, json=data, headers=headers)
     if response.status_code == 200:
+        id_parts = [f"- [{name}](https://habitica.com/profile/{id})" for name, id in zip(id_list, name_list)]
+        id_str = '\n\n'.join(id_parts)
+        send_party_chat(id_str)
         logging.info(f"已向 {id_list} 发送邀请。")
     else:
         logging.error(f"邀请用户时出错: {response.status_code}, {response.text}")
+
+def send_party_chat(message):
+    url = "https://habitica.com/api/v3/groups/party/chat"
+    data = {"message": message}
+    response = rate_limited_request(requests.post, url, json=data, headers=headers)
+    if response.status_code == 200:
+        logging.info(f"已向队伍发送信息： {message} 。")
+    else:
+        logging.error(f"发送信息时出错: {response.status_code}, {response.text}")
+
 
 def search_and_invite_users():
     url = "https://habitica.com/api/v3/looking-for-party"
@@ -90,8 +103,9 @@ def search_and_invite_users():
     if response.status_code == 200:
         groups = response.json().get('data', [])
         id_list = [group['_id'] for group in groups]
+        name_list = [group['auth']['local']['username'] for group in groups]
         if id_list != []:
-            send_invite(id_list)
+            send_invite(id_list, name_list)
     else:
         logging.error(f"获取队伍时出错: {response.status_code}, {response.text}")
 
