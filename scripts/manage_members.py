@@ -9,7 +9,7 @@ import time
 logger = logging.getLogger('logger_3_max')
 logger.setLevel(logging.DEBUG)
 
-handler = RotatingFileHandler('log/output.log', maxBytes=5*1024*1024, backupCount=3)
+handler = RotatingFileHandler('log/manage_members.log', maxBytes=5*1024*1024, backupCount=3)
 handler.setLevel(logging.DEBUG)
 handler.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
 
