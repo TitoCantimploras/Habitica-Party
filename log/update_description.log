@@ -1,44 +1,19 @@
-2025-02-06 14:39:32,565 - habitica_update_description - INFO - # 53
-2025-02-06 14:39:33,437 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:39:34,609 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:39:35,995 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:39:37,168 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:39:38,399 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:39:39,622 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:39:40,789 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:39:42,106 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:39:43,323 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:39:44,497 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:39:45,755 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:39:46,935 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:39:48,113 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:39:49,282 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:39:50,434 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:39:51,681 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:39:52,886 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:39:54,127 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:39:55,593 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:39:56,965 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:39:58,450 - habitica_update_description - INFO - Party description updated successfully.
-2025-02-06 14:42:32,697 - habitica_update_description - INFO - # 54
-2025-02-06 14:42:33,832 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:42:34,980 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:42:36,100 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:42:37,152 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:42:38,294 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:42:39,358 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:42:40,473 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:42:41,604 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:42:42,785 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:42:43,877 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:42:44,945 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:42:46,155 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:42:47,219 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:42:48,303 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:42:49,451 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:42:50,662 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:42:51,761 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:42:52,822 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:42:53,887 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:42:54,949 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
-2025-02-06 14:42:56,219 - habitica_update_description - INFO - Party description updated successfully.
+2025-02-06 14:51:19,416 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 14:51:20,596 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 14:51:21,797 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 14:51:22,959 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 14:51:24,076 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 14:51:25,314 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 14:51:26,499 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 14:51:27,721 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 14:51:28,882 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 14:51:29,998 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 14:51:31,205 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 14:51:32,419 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 14:51:33,535 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 14:51:34,693 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 14:51:35,839 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 14:51:36,954 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 14:51:38,074 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 14:51:39,187 - habitica_update_description - DEBUG - Rate limit enforced, waiting for 1.00 seconds.
+2025-02-06 14:51:40,656 - habitica_update_description - INFO - Party description updated successfully.
