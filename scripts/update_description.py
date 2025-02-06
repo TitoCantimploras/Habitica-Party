@@ -6,7 +6,19 @@ import logging
 import time
 
 # 设置日志
-logging.basicConfig(filename='log/output.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger('logger_3_max')
+logger.setLevel(logging.DEBUG)
+
+handler = RotatingFileHandler('log/output.log', maxBytes=5*1024*1024, backupCount=3)
+handler.setLevel(logging.DEBUG)
+handler.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
+
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.INFO)
+console_handler.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
+
+logger.addHandler(handler)
+logger.addHandler(console_handler)
 
 # 全局变量
 last_request_time = 0
@@ -16,7 +28,7 @@ def rate_limited_request(method, url, **kwargs):
     global last_request_time
     wait_time = max(0, request_interval - (time.time() - last_request_time))
     if wait_time > 0:
-        logging.debug(f"Rate limit enforced, waiting for {wait_time:.2f} seconds.")
+        logger.debug(f"Rate limit enforced, waiting for {wait_time:.2f} seconds.")
         time.sleep(wait_time)
     response = method(url, **kwargs)
     last_request_time = time.time()
@@ -26,11 +38,11 @@ def get_json_response(response):
     try:
         return response.json()
     except json.JSONDecodeError:
-        logging.error("Invalid JSON response received.")
+        logger.error("Invalid JSON response received.")
         return None
 
 def log_response_error(response, action):
-    logging.error(f"{action} failed: Status code {response.status_code}, Response: {response.text}")
+    logger.error(f"{action} failed: Status code {response.status_code}, Response: {response.text}")
 
 def get_daily_sentence():
     url = "https://sentence.iciba.com/?c=dailysentence&m=getTodaySentence"
@@ -105,14 +117,14 @@ def update_party_description(content, translation, members_str, time_str, header
 
         response = rate_limited_request(requests.put, url, headers=headers, json=data)
         if response:
-            logging.info("Party description updated successfully.")
+            logger.info("Party description updated successfully.")
         else:
             log_response_error(response, "Getting party data")
     except Exception as e:
-        logging.error(f"An error occurred while updating the party description: {e}")
+        logger.error(f"An error occurred while updating the party description: {e}")
 
 def main():
-    logging.info(f"# {os.environ['RUN_NUMBER']}")
+    logger.info(f"# {os.environ['RUN_NUMBER']}")
     current_time = datetime.now(timezone.utc)
 
     headers = {
