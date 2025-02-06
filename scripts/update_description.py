@@ -47,15 +47,15 @@ def calculate_duration(last_login_time_str):
     return duration
 
 def format_duration(duration):
-    # 计算天数、小时数、分钟数和秒数
+    # 计算天数、小时数、分钟数
     days = duration.days
     hours = duration.seconds // 3600
     minutes = (duration.seconds % 3600) // 60
-    seconds = duration.seconds % 60
+    # seconds = duration.seconds % 60
     
     # 使用列表推导式构建非零时间单位的字符串
     time_parts = [f"{value}{unit}" for value, unit in 
-                  zip([days, hours, minutes, seconds], ['d', 'h', 'm', 's']) if value > 0]
+                  zip([days, hours, minutes], ['d', 'h', 'm']) if value > 0]
     
     # 将所有非零的时间单位连接成一个字符串
     return ' '.join(time_parts)
