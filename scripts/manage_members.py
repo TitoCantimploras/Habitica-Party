@@ -92,7 +92,7 @@ def search_and_invite_users():
     if response.status_code == 200:
         groups = response.json().get('data', [])
         id_list = [group['_id'] for group in groups]
-        if id_lisr != []:
+        if id_list != []:
             send_invite(id_list)
     else:
         logging.error(f"获取队伍时出错: {response.status_code}, {response.text}")
