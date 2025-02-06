@@ -122,7 +122,7 @@ def remove_users_from_party(user_to_remove):
     url = "https://habitica.com/api/v3/groups/party/removeMember/{id}?message={message}"
     for user in user_to_remove:
         # send_message_to_user(user.id)
-        response = rate_limited_request(requests.post, url.format(id=user.id, message=template_message.format(name=user.name), headers=headers)
+        response = rate_limited_request(requests.post, url.format(id=user.id, message=template_message.format(name=user.name)), headers=headers)
         send_party_chat(template_remove.format(name=user.name, id=user.id))
         if response.status_code == 200:
             logger.info(f"User {user} has been removed from the party.")
