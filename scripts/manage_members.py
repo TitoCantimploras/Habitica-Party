@@ -110,7 +110,7 @@ def manage_habitica_party_members(message):
     search_and_invite_users()
 
 if __name__ == "__main__":
-    logging.basicConfig(filename='log/output.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+    logging.basicConfig(filename='log/output.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
     logging.info("# " + os.environ["RUN_NUMBER"])
     time_limit = timedelta(days=5)
