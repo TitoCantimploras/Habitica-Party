@@ -1,11 +1,11 @@
-name: 队伍描述更新
+name: 队伍自动化管理
 
 on:
   # push:
   #   branches:
   #     - main
   schedule:
-    - cron: '0/6 * * * *'  # 每6分钟触发
+    - cron: '0/10 * * * *'  # 每10分钟触发一次
   workflow_dispatch: # 允许手动触发
 
 jobs:
@@ -32,7 +32,7 @@ jobs:
           RUN_NUMBER: ${{ github.run_number }}  # 将运行编号设置为环境变量
         run: python scripts/update_description.py
 
-      - name: 执行更新脚本
+      - name: 执行管理脚本
         env:
           HABITICA_USER_ID: ${{ secrets.HABITICA_USER_ID }}
           HABITICA_API_KEY: ${{ secrets.HABITICA_API_KEY }}
