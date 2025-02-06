@@ -1,10 +1,10 @@
-### 每日一言 · Daily Sentence 🌹
+### Daily Sentence 🌹
 
 {content}
 
 {translation}
 
-### 最后签到时间 · Last Check-In Time 🌻
+### Last Check-In Time 🌻
 
 {members_str}
 
