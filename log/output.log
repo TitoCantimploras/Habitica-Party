@@ -223,3 +223,77 @@ INFO:root:队伍自动管理任务执行成功
 2025-02-06 09:22:51,883 - DEBUG - https://habitica.com:443 "POST /api/v3/groups/party/invite HTTP/11" 200 360
 2025-02-06 09:22:51,883 - INFO - 已向 ['1c171be5-5ec4-4925-b18d-8fffd6203226'] 发送邀请。
 2025-02-06 09:22:51,884 - INFO - 队伍自动管理任务执行成功
+2025-02-06 09:26:18,768 - INFO - # 21
+2025-02-06 09:26:18,770 - DEBUG - Starting new HTTPS connection (1): sentence.iciba.com:443
+2025-02-06 09:26:19,640 - DEBUG - https://sentence.iciba.com:443 "GET /?c=dailysentence&m=getTodaySentence HTTP/11" 200 None
+2025-02-06 09:26:20,644 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:26:20,824 - DEBUG - https://habitica.com:443 "GET /api/v3/groups/party/members HTTP/11" 200 None
+2025-02-06 09:26:21,834 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:26:21,979 - DEBUG - https://habitica.com:443 "GET /api/v3/members/09d5fabe-2754-4785-8e41-6304fab53246 HTTP/11" 200 None
+2025-02-06 09:26:22,992 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:26:23,180 - DEBUG - https://habitica.com:443 "GET /api/v3/members/0c0f7c85-363c-48ca-a502-cc7fc154a177 HTTP/11" 200 None
+2025-02-06 09:26:24,185 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:26:24,378 - DEBUG - https://habitica.com:443 "GET /api/v3/members/1347f170-5bff-4012-920a-afc7a40a86d1 HTTP/11" 200 None
+2025-02-06 09:26:25,383 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:26:25,581 - DEBUG - https://habitica.com:443 "GET /api/v3/members/1e8f9f06-e087-4ec9-8f84-2eec9f44953e HTTP/11" 200 None
+2025-02-06 09:26:26,585 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:26:26,732 - DEBUG - https://habitica.com:443 "GET /api/v3/members/2228f1cf-0f01-44f5-8288-1948b57f24c8 HTTP/11" 200 None
+2025-02-06 09:26:27,737 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:26:27,951 - DEBUG - https://habitica.com:443 "GET /api/v3/members/61fb3fd2-7588-4c00-be14-80925db41f3e HTTP/11" 200 None
+2025-02-06 09:26:28,956 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:26:29,087 - DEBUG - https://habitica.com:443 "GET /api/v3/members/65f2c0bf-9ca5-461c-af41-a39c9c921878 HTTP/11" 200 None
+2025-02-06 09:26:30,091 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:26:30,297 - DEBUG - https://habitica.com:443 "GET /api/v3/members/6ec29d00-a648-410d-9faf-09800d3eda25 HTTP/11" 200 None
+2025-02-06 09:26:31,301 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:26:31,418 - DEBUG - https://habitica.com:443 "GET /api/v3/members/744f8c1d-9255-4c96-b718-f10900aaaae0 HTTP/11" 200 None
+2025-02-06 09:26:32,423 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:26:32,660 - DEBUG - https://habitica.com:443 "GET /api/v3/members/81f65303-a333-4f77-bb67-df60a7797c41 HTTP/11" 200 None
+2025-02-06 09:26:33,665 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:26:33,798 - DEBUG - https://habitica.com:443 "GET /api/v3/members/abc52830-5322-441f-aa49-907791cfc177 HTTP/11" 200 None
+2025-02-06 09:26:34,803 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:26:35,073 - DEBUG - https://habitica.com:443 "GET /api/v3/members/b4c136e9-c93c-4195-8433-7faa5f0414a9 HTTP/11" 200 None
+2025-02-06 09:26:36,077 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:26:36,285 - DEBUG - https://habitica.com:443 "GET /api/v3/members/d7a489cf-0c42-4f67-bd34-44c7dcc66425 HTTP/11" 200 None
+2025-02-06 09:26:37,289 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:26:37,419 - DEBUG - https://habitica.com:443 "GET /api/v3/members/f52990be-42cf-4504-8bb5-4cb24db403c5 HTTP/11" 200 None
+2025-02-06 09:26:38,424 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:26:38,620 - DEBUG - https://habitica.com:443 "GET /api/v3/members/fa8792fd-a71d-41a5-8c6d-3126a6ed7cec HTTP/11" 200 None
+2025-02-06 09:26:39,625 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:26:39,959 - DEBUG - https://habitica.com:443 "PUT /api/v3/groups/party HTTP/11" 200 None
+2025-02-06 09:26:40,020 - INFO - 队伍描述更新成功
+2025-02-06 09:27:10,207 - INFO - # 21
+2025-02-06 09:27:10,209 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:27:10,369 - DEBUG - https://habitica.com:443 "GET /api/v3/groups/party/members HTTP/11" 200 None
+2025-02-06 09:27:11,374 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:27:11,502 - DEBUG - https://habitica.com:443 "GET /api/v3/members/09d5fabe-2754-4785-8e41-6304fab53246 HTTP/11" 200 None
+2025-02-06 09:27:12,509 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:27:12,698 - DEBUG - https://habitica.com:443 "GET /api/v3/members/0c0f7c85-363c-48ca-a502-cc7fc154a177 HTTP/11" 200 None
+2025-02-06 09:27:13,703 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:27:13,810 - DEBUG - https://habitica.com:443 "GET /api/v3/members/1347f170-5bff-4012-920a-afc7a40a86d1 HTTP/11" 200 None
+2025-02-06 09:27:14,814 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:27:14,992 - DEBUG - https://habitica.com:443 "GET /api/v3/members/1e8f9f06-e087-4ec9-8f84-2eec9f44953e HTTP/11" 200 None
+2025-02-06 09:27:15,996 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:27:16,149 - DEBUG - https://habitica.com:443 "GET /api/v3/members/2228f1cf-0f01-44f5-8288-1948b57f24c8 HTTP/11" 200 None
+2025-02-06 09:27:17,154 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:27:17,266 - DEBUG - https://habitica.com:443 "GET /api/v3/members/61fb3fd2-7588-4c00-be14-80925db41f3e HTTP/11" 200 None
+2025-02-06 09:27:18,272 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:27:18,515 - DEBUG - https://habitica.com:443 "GET /api/v3/members/65f2c0bf-9ca5-461c-af41-a39c9c921878 HTTP/11" 200 None
+2025-02-06 09:27:19,519 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:27:19,652 - DEBUG - https://habitica.com:443 "GET /api/v3/members/6ec29d00-a648-410d-9faf-09800d3eda25 HTTP/11" 200 None
+2025-02-06 09:27:20,657 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:27:20,782 - DEBUG - https://habitica.com:443 "GET /api/v3/members/744f8c1d-9255-4c96-b718-f10900aaaae0 HTTP/11" 200 None
+2025-02-06 09:27:21,787 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:27:22,006 - DEBUG - https://habitica.com:443 "GET /api/v3/members/81f65303-a333-4f77-bb67-df60a7797c41 HTTP/11" 200 None
+2025-02-06 09:27:23,011 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:27:23,254 - DEBUG - https://habitica.com:443 "GET /api/v3/members/abc52830-5322-441f-aa49-907791cfc177 HTTP/11" 200 None
+2025-02-06 09:27:24,264 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:27:24,425 - DEBUG - https://habitica.com:443 "GET /api/v3/members/b4c136e9-c93c-4195-8433-7faa5f0414a9 HTTP/11" 200 None
+2025-02-06 09:27:25,429 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:27:25,591 - DEBUG - https://habitica.com:443 "GET /api/v3/members/d7a489cf-0c42-4f67-bd34-44c7dcc66425 HTTP/11" 200 None
+2025-02-06 09:27:26,596 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:27:26,786 - DEBUG - https://habitica.com:443 "GET /api/v3/members/f52990be-42cf-4504-8bb5-4cb24db403c5 HTTP/11" 200 None
+2025-02-06 09:27:27,791 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:27:27,905 - DEBUG - https://habitica.com:443 "GET /api/v3/members/fa8792fd-a71d-41a5-8c6d-3126a6ed7cec HTTP/11" 200 None
+2025-02-06 09:27:28,909 - DEBUG - Starting new HTTPS connection (1): habitica.com:443
+2025-02-06 09:27:37,277 - DEBUG - https://habitica.com:443 "GET /api/v3/looking-for-party HTTP/11" 200 193
+2025-02-06 09:27:37,278 - INFO - 队伍自动管理任务执行成功
