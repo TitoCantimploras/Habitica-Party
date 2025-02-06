@@ -41,8 +41,6 @@ def calculate_duration(last_login_time_str):
     last_login_time = datetime.strptime(last_login_time_str, "%Y-%m-%dT%H:%M:%S.%fZ")
     # 将datetime对象设置为UTC时区
     last_login_time = last_login_time.replace(tzinfo=timezone.utc)
-    # 获取当前UTC时间
-    current_time = datetime.now(timezone.utc)
     # 计算时间差
     duration = current_time - last_login_time
 
@@ -63,7 +61,6 @@ def format_duration(duration):
     return ' '.join(time_parts)
 
 def format_current_time():
-    current_time = datetime.now(timezone.utc)
     time_str = current_time.strftime('%m-%d %I:%M %p, %Z')
 
     return time_str
@@ -77,16 +74,17 @@ def update_habitica_description(content, translation, members_str, time):
 
     response = requests.put(url, headers=headers, data=json.dumps(data))
     response.raise_for_status()  # 检查请求是否成功
-    return response.json()
+    # return response.json()
 
 if __name__ == "__main__":
+    current_time = datetime.now(timezone.utc)
+
     headers = {
         "x-api-user": os.environ["HABITICA_USER_ID"],
         "x-api-key": os.environ["HABITICA_API_KEY"],
         "Content-Type": "application/json"
     }
     daily_sentence = get_daily_sentence()
-    time = format_current_time()
     content = daily_sentence['content']
     translation = daily_sentence['note']
 
@@ -95,5 +93,9 @@ if __name__ == "__main__":
         f"{index + 1}. {item['name']}:  {item['since_last_login']} ago" for index, item in enumerate(members_list)
     )
 
+    time_str = format_current_time()
+
     update_habitica_description(content, translation, members_str, time)
+    with open("log/Actions_timestamp.txt", "a") as f:
+        f.write(current_time + '\n')
     print("Habitica 描述更新成功")
