@@ -31,13 +31,13 @@ jobs:
           HABITICA_API_KEY: ${{ secrets.HABITICA_API_KEY }}
         run: python scripts/update_description.py
 
-      - name: 确认更改
+      - name: 确认日志更改
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add log/Actions_timestamp.txt
           git commit -m "Update log/Actions_timestamp.txt from GitHub Actions"
 
-      - name: 推送更改
+      - name: 推送日志更改
         run: |
           git push
