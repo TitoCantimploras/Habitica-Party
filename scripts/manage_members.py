@@ -125,7 +125,7 @@ def search_and_invite_users():
     if response.status_code == 200:
         groups = get_json_response(response).get('data', [])
         id_list = [group['_id'] for group in groups]
-        name_list = [group['auth']['local']['username'] for group in groups]
+        name_list = [group['profile']['name'] for group in groups]
         if id_list:
             send_invite(id_list, name_list)
     else:
