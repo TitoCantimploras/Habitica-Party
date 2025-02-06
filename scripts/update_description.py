@@ -4,7 +4,6 @@ import json
 from datetime import datetime, timezone
 import logging
 import time
-from requests.exceptions import RequestException
 
 # 设置日志
 logging.basicConfig(filename='log/output.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -15,35 +14,29 @@ request_interval = 1  # 默认请求间隔为1秒
 
 def rate_limited_request(method, url, **kwargs):
     global last_request_time
-    global request_interval
-
-    # 计算当前时间与上次请求的时间差
-    current_time = time.time()
-    elapsed_time = current_time - last_request_time
-
-    # 如果时间差小于请求间隔，则等待
-    if elapsed_time < request_interval:
-        wait_time = request_interval - elapsed_time
-        logging.debug(f"Rate limiting active, waiting for {wait_time:.2f} seconds.")
+    wait_time = max(0, request_interval - (time.time() - last_request_time))
+    if wait_time > 0:
+        logging.debug(f"Rate limit enforced, waiting for {wait_time:.2f} seconds.")
         time.sleep(wait_time)
-
-    # 发送请求
-    try:
-        response = method(url, **kwargs)
-        response.raise_for_status()  # 检查请求是否成功
-    except RequestException as e:
-        logging.error(f"Request to {url} failed: {e}")
-        return None
-
-    # 更新最后请求时间
+    response = method(url, **kwargs)
     last_request_time = time.time()
     return response
+
+def get_json_response(response):
+    try:
+        return response.json()
+    except json.JSONDecodeError:
+        logging.error("Invalid JSON response received.")
+        return None
+
+def log_response_error(response, action):
+    logging.error(f"{action} failed: Status code {response.status_code}, Response: {response.text}")
 
 def get_daily_sentence():
     url = "https://sentence.iciba.com/?c=dailysentence&m=getTodaySentence"
     response = rate_limited_request(requests.get, url)
     if response:
-        return response.json()
+        return get_json_response(response)
     else:
         return {}
 
@@ -53,7 +46,7 @@ def get_habitica_party_data(headers):
 
     if response and response.status_code == 200:
         data = []
-        members = response.json().get('data', [])
+        members = get_json_response(response).get('data', [])
         for member in members:
             member_data = get_member_details(member, headers)
             if member_data:
@@ -68,7 +61,7 @@ def get_member_details(member, headers):
     url = f'https://habitica.com/api/v3/members/{member_id}'
     member_response = rate_limited_request(requests.get, url, headers=headers)
     if member_response and member_response.status_code == 200:
-        member_details = member_response.json().get('data', {})
+        member_details = get_json_response(member_response).get('data', {})
         last_login = member_details['auth']['timestamps']['updated']
         duration = calculate_duration(last_login)
         since_last_login = format_duration(duration)
