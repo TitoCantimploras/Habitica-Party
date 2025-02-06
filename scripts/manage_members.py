@@ -77,7 +77,6 @@ def search_and_invite_users():
         send_invite(id_list)
     else:
         logging.error(f"获取队伍时出错: {response.status_code}, {response.text}")
-        return []
 
 def calculate_duration(last_login_time_str):
     # 将字符串转换为datetime对象
