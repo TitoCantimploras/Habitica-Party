@@ -3,6 +3,7 @@ import requests
 import json
 from datetime import datetime, timezone
 import logging
+from logging.handlers import RotatingFileHandler
 import time
 
 # 设置日志
