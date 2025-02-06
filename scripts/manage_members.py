@@ -104,7 +104,7 @@ def send_invite(id_list, name_list):
     response = rate_limited_request(requests.post, url, json=data, headers=headers)
     if response.status_code == 200:
         id_str = '\n\n'.join([f"- [{name}](https://habitica.com/profile/{id})" for name, id in zip(name_list, id_list)])
-        message = template.format(list=id_str)
+        message = template.format(list_str=id_str)
         send_party_chat(message)
         logger.info(f"Invitations sent to {name_list}.")
     else:
