@@ -4,7 +4,7 @@
 
 {translation}
 
-### Last Updated Time 🌻
+### Last Updated Time 👀
 
 {members_str}
 
@@ -12,4 +12,4 @@
 
 ###### Automatic Update. Last updated: {time_str}
 
-##### Powered by `d🙃w`'s [doppelganger](https://github.com/Delta-Water/Habitica-Party)
+##### Powered by `d🙃w`'s [doppelganger](https://github.com/Delta-Water/Habitica-Party)💪
