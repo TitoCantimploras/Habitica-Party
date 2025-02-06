@@ -1,5 +1,7 @@
-#### Here is a list of removed members: 
+#### Here is a removed member: 
 
-{list_str}
+[profile](https://habitica.com/profile/{str})
+
+#### Reason: Not logged in for 5 days
 
 ###### by scheduled `Actions`
