@@ -82,7 +82,8 @@ def send_invite(id_list, name_list):
     if response.status_code == 200:
         id_parts = [f"- [{name}](https://habitica.com/profile/{id})" for name, id in zip(id_list, name_list)]
         id_str = '\n\n'.join(id_parts)
-        send_party_chat(id_str)
+        message = template.format(list=id_str)
+        send_party_chat(message)
         logging.info(f"已向 {id_list} 发送邀请。")
     else:
         logging.error(f"邀请用户时出错: {response.status_code}, {response.text}")
@@ -133,6 +134,9 @@ if __name__ == "__main__":
         "x-api-key": os.environ["HABITICA_API_KEY"],
         "Content-Type": "application/json"
     }
+    
+    with open("Markdown_document/new_members.md", "r") as f:
+        template = f.read()
 
     manage_habitica_party_members(message)
 
