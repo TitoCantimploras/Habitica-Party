@@ -68,9 +68,11 @@ def format_current_time():
 
     return time_str
 
-def update_habitica_description(time, content, translation, members_str):
+def update_habitica_description(content, translation, members_str, time):
     url = "https://habitica.com/api/v3/groups/party"
-    description = f"### 每日一言 · Daily Sentence 🌹\n\n{content}\n\n{translation}\n\n### 最后签到时间 · Last Check-In Time 🌻\n\n{members_str}\n\n#### Want to learn more about the party's purpose, rules, and other information? [Click here!](https://github.com/Delta-Water/Habitica-Party/blob/main/party_description.md)\n\n###### Hourly Automatic Update. Last updated: {time}\n\n##### Powered by `d🙃w`'s doppelganger"
+    with open("Markdown_document/brief_description.md", "r") as f:
+        template = f.read()
+    description = template.format(content=content, translation=translation, members_str=members_str, time=time)
     data = {"description": description}
 
     response = requests.put(url, headers=headers, data=json.dumps(data))
@@ -93,5 +95,5 @@ if __name__ == "__main__":
         f"{index + 1}. {item['name']}:  {item['since_last_login']} ago" for index, item in enumerate(members_list)
     )
 
-    update_habitica_description(time, content, translation, members_str)
+    update_habitica_description(content, translation, members_str, time)
     print("Habitica 描述更新成功")
