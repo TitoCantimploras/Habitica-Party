@@ -2,4 +2,4 @@
 
 {list_str}
 
-###### Automatic send.
+###### Automatic Send.
