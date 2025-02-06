@@ -1,4 +1,4 @@
-### this is the invited members' list: 
+#### Here is a list of new members who have been invited: 
 
 {list}
 
