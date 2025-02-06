@@ -33,7 +33,7 @@ def rate_limited_request(method, url, **kwargs):
         time.sleep(wait_time)
     response = method(url, **kwargs)
     last_request_time = time.time()
-    logger.debug(f"Request: {method} {url} {**kwargs}")
+    logger.debug(f"Request: {method} {url} {response}")
     return response
 
 def get_json_response(response):
