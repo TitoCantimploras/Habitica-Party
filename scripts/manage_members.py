@@ -24,7 +24,6 @@ last_request_time = 0
 request_interval = 1
 
 time_limit = timedelta(days=5)
-message = "I'm sorry, but we've decided to remove you from the party because you haven't been online for 5 days."
 
 headers = {
     "x-api-user": os.environ["HABITICA_USER_ID"],
@@ -33,7 +32,13 @@ headers = {
 }
 
 with open("Markdown_document/new_members.md", "r") as f:
-    template = f.read()
+    template_new = f.read()
+
+with open("Markdown_document/remove_PM.md", "r") as f:
+    message = f.read()
+
+with open("Markdown_document/remove_members.md", "r") as f:
+    template_remove = f.read()
 
 def rate_limited_request(method, url, **kwargs):
     global last_request_time
@@ -78,10 +83,11 @@ def get_inactive_party_members(time_limit):
         return []
 
 def remove_users_from_party(user_ids_to_remove):
-    url = "https://habitica.com/api/v3/groups/party/members"
+    url = "https://habitica.com/api/v3/groups/party/removeMember/{id}?message={message}"
     for user_id in user_ids_to_remove:
-        send_message_to_user(user_id)
-        response = rate_limited_request(requests.delete, f"{url}/{user_id}", headers=headers)
+        # send_message_to_user(user_id)
+        response = rate_limited_request(requests.post, url.format(id=user_id, message=message), headers=headers)
+        send_party_chat(template_remove.format(str))
         if response.status_code == 200:
             logger.info(f"User {user_id} has been removed from the party.")
         else:
@@ -105,7 +111,7 @@ def send_invite(id_list, name_list):
     response = rate_limited_request(requests.post, url, json=data, headers=headers)
     if response.status_code == 200:
         id_str = '\n\n'.join([f"- [{name}](https://habitica.com/profile/{id})" for name, id in zip(name_list, id_list)])
-        message = template.format(list_str=id_str)
+        message = template_new.format(list_str=id_str)
         send_party_chat(message)
         logger.info(f"Invitations sent to {name_list}.")
     else:
