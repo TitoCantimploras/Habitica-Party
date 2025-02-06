@@ -65,11 +65,11 @@ def format_current_time():
 
     return time_str
 
-def update_habitica_description(content, translation, members_str, time):
+def update_habitica_description(content, translation, members_str, time_str):
     url = "https://habitica.com/api/v3/groups/party"
     with open("Markdown_document/brief_description.md", "r") as f:
         template = f.read()
-    description = template.format(content=content, translation=translation, members_str=members_str, time=time)
+    description = template.format(content=content, translation=translation, members_str=members_str, time_str=time_str)
     data = {"description": description}
 
     response = requests.put(url, headers=headers, data=json.dumps(data))
