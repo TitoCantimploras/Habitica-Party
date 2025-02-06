@@ -2,6 +2,6 @@
 
 [profile](https://habitica.com/profile/{str})
 
-#### Reason: Not logged in for 5 days
+#### Reason: Not logged in for 5 days.
 
 ###### by scheduled `Actions`
