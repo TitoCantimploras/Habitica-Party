@@ -47,7 +47,8 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add log/output.log
-          git commit -m "Update log/output.log from GitHub Actions"
+          git commit -m "Update log/update_description.log from GitHub Actions"
+          git commit -m "Update log/manage_members.log from GitHub Actions"
 
       - name: 推送日志更改
         run: |
