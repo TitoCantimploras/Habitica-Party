@@ -2,4 +2,4 @@
 
 {list_str}
 
-###### Automatic Send.
+###### by scheduled `Actions`
