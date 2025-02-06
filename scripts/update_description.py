@@ -95,7 +95,7 @@ if __name__ == "__main__":
 
     time_str = format_current_time()
 
-    update_habitica_description(content, translation, members_str, time)
+    update_habitica_description(content, translation, members_str, time_str)
     with open("log/Actions_timestamp.txt", "a") as f:
         f.write(current_time + '\n')
     print("Habitica 描述更新成功")
