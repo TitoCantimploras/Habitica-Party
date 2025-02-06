@@ -38,8 +38,6 @@ def get_inactive_party_members(time_limit):
         members = response.json()['data']
         for member in members:
             member_id = member['id']
-            time.sleep(1)  # 这里可以根据API的限制调整
-
             member_response = rate_limited_request(requests.get, f'https://habitica.com/api/v3/members/{member_id}', headers=headers)
             if member_response.status_code == 200:
                 last_login = member_response.json()['data']['auth']['timestamps']['updated']
