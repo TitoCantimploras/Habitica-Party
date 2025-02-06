@@ -84,7 +84,7 @@ def send_invite(id_list, name_list):
         id_str = '\n\n'.join(id_parts)
         message = template.format(list=id_str)
         send_party_chat(message)
-        logging.info(f"已向 {id_list} 发送邀请。")
+        logging.info(f"已向 {name_list} 发送邀请。")
     else:
         logging.error(f"邀请用户时出错: {response.status_code}, {response.text}")
 
