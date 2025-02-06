@@ -3,6 +3,7 @@ import requests
 import json
 from datetime import datetime, timezone, timedelta
 import logging
+import time  # 导入time模块
 
 def get_inactive_party_members(time_limit):
     url = "https://habitica.com/api/v3/groups/party/members"
