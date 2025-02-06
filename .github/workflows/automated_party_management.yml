@@ -25,22 +25,22 @@ jobs:
         run: |
           pip install requests
 
-      - name: 执行更新脚本
-        env:
-          HABITICA_USER_ID: ${{ secrets.HABITICA_USER_ID }}
-          HABITICA_API_KEY: ${{ secrets.HABITICA_API_KEY }}
-          RUN_NUMBER: ${{ github.run_number }}
-        run: python scripts/update_description.py
-
-      - name: 暂停执行以降低请求速率
-        run: sleep 30
-
       - name: 执行管理脚本
         env:
           HABITICA_USER_ID: ${{ secrets.HABITICA_USER_ID }}
           HABITICA_API_KEY: ${{ secrets.HABITICA_API_KEY }}
           RUN_NUMBER: ${{ github.run_number }}
         run: python scripts/manage_members.py
+
+      - name: 暂停执行以降低请求速率
+        run: sleep 30
+
+      - name: 执行更新脚本
+        env:
+          HABITICA_USER_ID: ${{ secrets.HABITICA_USER_ID }}
+          HABITICA_API_KEY: ${{ secrets.HABITICA_API_KEY }}
+          RUN_NUMBER: ${{ github.run_number }}
+        run: python scripts/update_description.py
 
       - name: 确认日志更改
         run: |
