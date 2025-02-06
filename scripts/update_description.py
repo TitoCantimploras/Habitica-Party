@@ -10,7 +10,7 @@ import time
 logger = logging.getLogger('habitica_update_description')
 logger.setLevel(logging.DEBUG)
 
-handler = RotatingFileHandler('log/update_description.log', maxBytes=10*1024, backupCount=1)
+handler = RotatingFileHandler('log/update_description.log', maxBytes=1024*1024, backupCount=1)
 handler.setLevel(logging.DEBUG)
 handler.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
 
