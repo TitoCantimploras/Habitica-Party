@@ -116,7 +116,7 @@ def manage_habitica_party_members(message):
     search_and_invite_users()
 
 def main():
-    logging.info(f"Starting Habitica party management script. Run number: {os.environ['RUN_NUMBER']}")
+    logging.info(f"# {os.environ['RUN_NUMBER']}")
     
     time_limit = timedelta(days=5)
     message = "I'm sorry, but we've decided to remove you from the party because you haven't been online for 5 days."
