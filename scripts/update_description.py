@@ -74,6 +74,9 @@ def format_duration(duration):
     
     time_parts = [f"{value}{unit}" for value, unit in 
                   zip([days, hours, minutes], ['d', 'h', 'm']) if value > 0]
+
+    if time_parts == []:
+        return "just now"
     
     return ' '.join(time_parts)
 
