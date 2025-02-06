@@ -112,7 +112,7 @@ def update_party_description(content, translation, members_str, time_str, header
         logging.error(f"An error occurred while updating the party description: {e}")
 
 def main():
-    logging.info(f"# Run number: {os.environ['RUN_NUMBER']}")
+    logging.info(f"# {os.environ['RUN_NUMBER']}")
     current_time = datetime.now(timezone.utc)
 
     headers = {
