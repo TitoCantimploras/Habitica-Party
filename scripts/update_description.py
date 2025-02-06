@@ -3,6 +3,7 @@ import requests
 import json
 from datetime import datetime, timezone
 import logging
+import time  # 导入time模块
 
 def get_daily_sentence():
     response = requests.get("https://sentence.iciba.com/?c=dailysentence&m=getTodaySentence")
@@ -29,13 +30,15 @@ def get_habitica_party_data():
                 # 解析成员的最后上线时间
                 data.append({"name": member['profile']['name'], "last_login": last_login, "duration": duration, "since_last_login": since_last_login})
             else:
-                print(f"Error retrieving member details for {member_id}: {member_response.status_code}")
+                logging.error(f"获取成员 {member_id} 的详细信息时出错: {member_response.status_code}")
+
+            time.sleep(1)  # 在每次请求之间添加延迟
 
         return data
     else:
         # 请求失败，打印错误信息
-        print(f"Error: {response.status_code}")
-        print(response.text)
+        logging.error(f"请求失败: {response.status_code}")
+        logging.error(response.text)
 
 def calculate_duration(last_login_time_str):
     # 将字符串转换为datetime对象
@@ -52,7 +55,6 @@ def format_duration(duration):
     days = duration.days
     hours = duration.seconds // 3600
     minutes = (duration.seconds % 3600) // 60
-    # seconds = duration.seconds % 60
     
     # 使用列表推导式构建非零时间单位的字符串
     time_parts = [f"{value}{unit}" for value, unit in 
@@ -63,7 +65,6 @@ def format_duration(duration):
 
 def format_current_time():
     time_str = current_time.strftime('%m-%d %I:%M %p, %Z')
-
     return time_str
 
 def update_habitica_description(content, translation, members_str, time_str):
@@ -75,11 +76,10 @@ def update_habitica_description(content, translation, members_str, time_str):
 
     response = requests.put(url, headers=headers, data=json.dumps(data))
     response.raise_for_status()  # 检查请求是否成功
-    # return response.json()
 
 if __name__ == "__main__":
     # 设置日志配置
-    logging.basicConfig(filename='log/output.log', level=logging.INFO)
+    logging.basicConfig(filename='log/output.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
     logging.info("# " + os.environ["RUN_NUMBER"])
     current_time = datetime.now(timezone.utc)
