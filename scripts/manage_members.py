@@ -75,8 +75,8 @@ def get_inactive_party_members(time_limit):
                 last_login = member_data['auth']['timestamps']['updated']
                 if calculate_duration(last_login) >= time_limit:
                     data.append({
-                        "id" = member_id,
-                        "name" = member_data['profile']['name']
+                        "id": member_id,
+                        "name": member_data['profile']['name']
                     })
             else:
                 log_response_error(member_response, f"Fetching details for member {member_id}")
