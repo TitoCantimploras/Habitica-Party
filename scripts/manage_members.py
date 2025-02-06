@@ -39,7 +39,7 @@ def rate_limited_request(method, url, **kwargs):
     global last_request_time
     wait_time = max(0, request_interval - (time.time() - last_request_time))
     if wait_time > 0:
-        logger.debug(f"Rate limit enforced, waiting for {wait_time:.2f} seconds.")
+        # logger.debug(f"Rate limit enforced, waiting for {wait_time:.2f} seconds.")
         time.sleep(wait_time)
     response = method(url, **kwargs)
     last_request_time = time.time()
