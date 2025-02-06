@@ -1,5 +1,0 @@
-2025-02-06 16:17:05,055 - habitica_manage_members - DEBUG - Request: <function get at 0x7f4f076ed3a0> https://habitica.com/api/v3/members/e0a6d76a-4116-43bb-b4e5-cb43e6de741b <Response [200]>
-2025-02-06 16:17:06,212 - habitica_manage_members - DEBUG - Request: <function get at 0x7f4f076ed3a0> https://habitica.com/api/v3/members/f52990be-42cf-4504-8bb5-4cb24db403c5 <Response [200]>
-2025-02-06 16:17:07,294 - habitica_manage_members - DEBUG - Request: <function get at 0x7f4f076ed3a0> https://habitica.com/api/v3/members/fa8792fd-a71d-41a5-8c6d-3126a6ed7cec <Response [200]>
-2025-02-06 16:17:11,290 - habitica_manage_members - DEBUG - Request: <function get at 0x7f4f076ed3a0> https://habitica.com/api/v3/looking-for-party <Response [200]>
-2025-02-06 16:17:11,290 - habitica_manage_members - INFO - Habitica party management script completed successfully.
