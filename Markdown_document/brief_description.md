@@ -4,7 +4,7 @@
 
 {translation}
 
-### Last Check-In Time 🌻
+### Last Updated Time 🌻
 
 {members_str}
 
