@@ -1,4 +1,4 @@
-# Habitica Party Management Automation
+# Habitica-Party-Management-Automation
 
 [切换到中文版本](README.md)
 
