@@ -1,5 +1,7 @@
 # Habitica Party Management Automation
 
+[Switch to English version](README_en.md)
+
 ## 简介
 
 该仓库包含了用于自动化管理Habitica派对的脚本和配置。Habitica是一款游戏化的任务管理应用，而派对是一群可以协作和支持彼此的玩家。自动化处理包括邀请新成员、移除不活跃成员以及更新派对描述等任务。
