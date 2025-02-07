@@ -1,5 +1,7 @@
 # Habitica Party Management Automation
 
+[切换到中文版本](README.md)
+
 ## Introduction
 
 This repository contains scripts and configurations designed to automate the management of a Habitica party. Habitica is a gamified task management app, and a party is a group of players who can collaborate and support each other. The automation handles tasks such as inviting new members, removing inactive members, and updating party descriptions.
