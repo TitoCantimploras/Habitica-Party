@@ -30,11 +30,11 @@ Here is a table of UTC offsets for major world cities.
 |---------------|-------------------------------|-----------------------|
 | Cairo         | UTC-2                         | EET                   |
 | São Paulo     | UTC-3                         | BRT                   |
-| New York      | UTC-5 (EST), UTC-4 (EDT)     | EST, EDT              |
-| Los Angeles    | UTC-8 (PST), UTC-7 (PDT)     | PST, PDT              |
-| London        | UTC+0 (GMT), UTC+1 (BST)     | GMT, BST              |
-| Paris         | UTC+1 (CET), UTC+2 (CEST)    | CET, CEST             |
-| Berlin        | UTC+1 (CET), UTC+2 (CEST)    | CET, CEST             |
+| New York      | UTC-5, UTC-4     | EST, EDT              |
+| Los Angeles    | UTC-8, UTC-7     | PST, PDT              |
+| London        | UTC+0, UTC+1     | GMT, BST              |
+| Paris         | UTC+1, UTC+2    | CET, CEST             |
+| Berlin        | UTC+1, UTC+2    | CET, CEST             |
 | Moscow        | UTC+3                         | MSK                   |
 | Dubai         | UTC+4                         | GST                   |
 | New Delhi     | UTC+5:30                     | IST                   |
@@ -42,7 +42,7 @@ Here is a table of UTC offsets for major world cities.
 | Beijing       | UTC+8                         | CST                   |
 | Hong Kong     | UTC+8                         | HKT                   |
 | Tokyo         | UTC+9                         | JST                   |
-| Sydney        | UTC+10 (AEST), UTC+11 (AEDT) | AEST, AEDT            |
+| Sydney        | UTC+10, UTC+11 | AEST, AEDT            |
  
 
 To find the time of the other party, add the difference between your time zone offset and the other party's time zone offset to your current local time.
