@@ -9,7 +9,7 @@ import time
 logger = logging.getLogger('habitica_manage_members')
 logger.setLevel(logging.DEBUG)
 
-handler = RotatingFileHandler('log/manage_members.log', maxBytes=1024*1024, backupCount=1)
+handler = RotatingFileHandler('logs/manage_members.log', maxBytes=1024*1024, backupCount=1)
 handler.setLevel(logging.DEBUG)
 handler.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
 
@@ -31,13 +31,13 @@ headers = {
     "Content-Type": "application/json"
 }
 
-with open("Markdown_document/new_members.md", "r") as f:
+with open("documents/new_members.md", "r") as f:
     template_new = f.read()
 
-with open("Markdown_document/remove_PM.md", "r") as f:
+with open("documents/remove_PM.md", "r") as f:
     template_message = f.read()
 
-with open("Markdown_document/remove_members.md", "r") as f:
+with open("documents/remove_members.md", "r") as f:
     template_remove = f.read()
 
 def rate_limited_request(method, url, **kwargs):
@@ -61,7 +61,7 @@ def get_json_response(response):
 def log_response_error(response, action):
     logger.error(f"{action} failed: Status code {response.status_code}, Response: {response.text}")
 
-def send_message_to_user(user_id):
+def send_message_to_user(user_id, message):
     url = "https://habitica.com/api/v3/members/send-private-message"
     message_data = {
         "message": message,

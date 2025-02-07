@@ -10,7 +10,7 @@ import time
 logger = logging.getLogger('habitica_update_description')
 logger.setLevel(logging.DEBUG)
 
-handler = RotatingFileHandler('log/update_description.log', maxBytes=1024*1024, backupCount=1)
+handler = RotatingFileHandler('logs/update_description.log', maxBytes=1024*1024, backupCount=1)
 handler.setLevel(logging.DEBUG)
 handler.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
 
@@ -112,7 +112,7 @@ def format_current_time():
 def update_party_description(content, translation, members_str, time_str, headers):
     url = "https://habitica.com/api/v3/groups/party"
     try:
-        with open("Markdown_document/brief_description.md", "r") as f:
+        with open("documents/brief_description.md", "r") as f:
             template = f.read()
         description = template.format(content=content, translation=translation, members_str=members_str, time_str=time_str)
         data = {"description": description}
