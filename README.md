@@ -1,4 +1,4 @@
-# Habitica Party Management Automation
+# Habitica-Party-Management-Automation
 
 [Switch to English version](README_en.md)
 
