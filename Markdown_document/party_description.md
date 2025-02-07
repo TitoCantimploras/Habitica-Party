@@ -72,7 +72,7 @@ Existentialism counters nihilism with its core tenets. When confronting the cris
 
 ---
 
-You Don't have to join our [TG](https://t.me/+DuXPG1hVC8phYTVl) group. ~~*(It even has only two people now.  ⦁֊⦁꧞)*~~
+You Don't have to join our [TG](https://t.me/+DuXPG1hVC8phYTVl) group. ~~*(It even has few people now.  ⦁֊⦁꧞)*~~
 
 `by D🙂W`
 
