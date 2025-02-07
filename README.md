@@ -18,7 +18,7 @@ This automation is set up to be run using GitHub Actions. The necessary workflow
 
 - `scripts/`: Contains the Python scripts for managing the Habitica party.
 - `documents/`: Contains the template.
-- `logs\`: Contains the scripts' logs.
+- `logs/`: Contains the scripts' logs.
 - `.github/workflows/`: Contains the GitHub Actions workflow files that define the automation tasks.
 
 ## Requirements
