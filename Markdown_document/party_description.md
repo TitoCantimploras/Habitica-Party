@@ -57,6 +57,8 @@ Thinkers like Jean-Paul Sartre and Albert Camus explored the absurdity of life a
 
 **Nihilism** is a philosophical viewpoint that posits that life lacks inherent meaning or value. Nihilists question the existence of morals, knowledge, and purpose, arguing that everything is ultimately meaningless. The crisis of nihilism can lead to profound despair and a sense of helplessness, as individuals may feel that all efforts are futile.
 
+![Illustration_3](https://image.pollinations.ai/prompt/a%20huge%20scale%20in%20the%20center%20of%20the%20canvas%2C%20one%20side%20depicting%20a%20sunny%20natural%20landscape%20symbolizing%20realism%2C%20the%20other%20side%20showing%20a%20dark%20and%20desolate%20scene%20representing%20nihilism%2C%20with%20two%20figures%20arguing%20on%20each%20side%2C%20surrounded%20by%20an%20audience%20expressing%20various%20emotions%2C%20some%20filled%20with%20hope%2C%20others%20in%20despair%2C%20the%20whole%20scene%20full%20of%20tension%20and%20vivid%20color%20contrast%20showing%20the%20intense%20collision%20of%20two%20philosophical%20ideas%20in%20a%20dramatic%20style?width=1000&height=1000&seed=789012)
+
 Existentialism counters nihilism with its core tenets. When confronting the crisis of nihilism, existentialism offers several key strategies:
 
 1. **Accepting the Absurd**: Existentialism acknowledges the absurdity of life. By accepting this absurdity, individuals can liberate themselves from the pressure to find meaning, allowing them to create their own way of living more freely.
