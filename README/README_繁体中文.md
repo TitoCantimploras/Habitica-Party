@@ -1,65 +1,80 @@
 [Back to main language README](README.md)
 
-```markdown
-# 項目名稱：派對管理系統 🎉
+# 🎉 聚會管理工具
 
-## 項目介紹
-歡迎來到這個派對管理系統的倉庫！該項目旨在通過 GitHub Actions 自動化管理派對的過程。我們通過調度兩個腳本的執行來簡化和優化派對策劃和管理流程。此系統不僅提高了效率，還加強了團隊協作。
+## 🚀 專案介紹
 
-## 📜 許可證
-本項目遵循 [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)。這個許可證為您使用、複製和分發軟件及其他作品提供了條款和條件。它還允許您在某些條件下修改和再分發衍生作品。
+歡迎來到聚會管理工具的專案！本專案旨在提供一個高效的解決方案，幫助用戶管理聚會活動。通過使用 GitHub Actions，我們可以定期自動執行兩個 Python 腳本，從而簡化聚會組織過程中的管理任務。無論是朋友聚會、團隊活動還是其他社交場合，這個工具都能幫助你輕鬆安排。
 
-### 關鍵條款
-- **Licensor**：許可方
-- **You**：使用者
-- **Work**：作品
-- **Derivative Works**：衍生作品
-- **Contribution**：貢獻
+## 📦 安裝步驟
 
-請注意，該許可強調作品提供為“原樣”，不提供任何擔保，對於任何損害不承擔責任。在使用該許可證時，請確保遵循許可條款。
+在開始使用聚會管理工具之前，請確保你的開發環境中已安裝 [Python](https://www.python.org/downloads/) 和 [Git](https://git-scm.com/downloads)。
 
-## 🚀 安裝步驟
-1. 克隆這個倉庫到您的本地環境：
+1. **克隆倉庫**
+
    ```bash
-   git clone https://github.com/yourusername/party-management-system.git
-   ```
-2. 進入項目目錄：
-   ```bash
-   cd party-management-system
-   ```
-3. 安裝所需的依賴項（如果有的話）：
-   ```bash
-   npm install
+   git clone https://github.com/你的用戶名/聚會管理工具.git
+   cd 聚會管理工具
    ```
 
-## 🛠️ 使用說明
-在配置完成後，您可以通過以下命令調度派對管理腳本的執行：
-```bash
-# 執行腳本1
-./script1.sh
+2. **安裝依賴**
 
-# 執行腳本2
-./script2.sh
-```
+   請確保在你的虛擬環境中安裝所需的依賴項：
 
-您可以在 GitHub Actions 中設置調度任務，使得這些腳本可以按期自動運行。
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## 📄 使用說明
+
+1. **配置腳本**
+
+   在使用之前，請根據你的需求配置 `script1.py` 和 `script2.py` 文件，確保它們具備正確的參數和設置。
+
+2. **手動執行**
+
+   你可以手動執行腳本來測試功能：
+
+   ```bash
+   python script1.py
+   python script2.py
+   ```
+
+3. **自動化執行**
+
+   通過 GitHub Actions，腳本將根據預設的時間表自動執行。你可以在 `.github/workflows` 目錄中查看和調整工作流。
 
 ## 🤝 貢獻指南
-我們非常歡迎任何形式的貢獻！如果您想要參與，請按照以下步驟進行：
-1. 在本倉庫中創建一個新的分支：
-   ```bash
-   git checkout -b feature/YourFeatureName
-   ```
-2. 提交您的更改：
-   ```bash
-   git commit -m "添加了新功能"
-   ```
-3. 將更改推送到遠程倉庫：
-   ```bash
-   git push origin feature/YourFeatureName
-   ```
-4. 提交拉取請求（Pull Request），我們會儘快與您聯繫！
 
-## 🎉 感謝參與
-感謝您對派對管理系統的關注與支持！如果您對項目有任何疑問或建議，請隨時聯繫我們。讓我們一起創造更美好的派對體驗！✨
-```
+我們歡迎任何形式的貢獻！如果你想為聚會管理工具貢獻代碼，請遵循以下步驟：
+
+1. **Fork 此倉庫**
+2. **創建一個新的分支**
+
+   ```bash
+   git checkout -b feature/你的特性
+   ```
+
+3. **提交更改**
+
+   ```bash
+   git commit -m "添加了一項新特性"
+   ```
+
+4. **推送到分支**
+
+   ```bash
+   git push origin feature/你的特性
+   ```
+
+5. **提交 pull request**
+
+請描述清楚你的更改和功能。感謝你的貢獻！💪
+
+## 📜 授權
+
+本專案遵循 [Apache License, Version 2.0](LICENSE)。請確保遵循授權條款，以便合法使用、複製和發佈本軟件。
+
+---
+
+感謝閱讀本 README 文件，祝你使用愉快！如果你有任何問題或建議，請隨時與我們聯繫！😊

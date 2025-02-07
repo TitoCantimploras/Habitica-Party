@@ -1,65 +1,80 @@
 [Back to main language README](README.md)
 
-```markdown
-# Nom du projet : Système de Gestion de Fête 🎉
+# 🎉 Outil de Gestion de Fête
 
-## Introduction du projet
-Bienvenue dans le dépôt de ce système de gestion de fête ! Ce projet a pour but d'automatiser le processus de gestion des fêtes grâce aux GitHub Actions. Nous simplifions et optimisons la planification et la gestion des fêtes en programmant l'exécution de deux scripts. Ce système améliore non seulement l'efficacité, mais renforce également la collaboration au sein de l'équipe.
+## 🚀 Introduction du Projet
 
-## 📜 Licence
-Ce projet est soumis à la [Licence Apache, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0). Cette licence fournit les termes et conditions pour utiliser, reproduire et distribuer le logiciel et d'autres œuvres. Elle vous permet également, sous certaines conditions, de modifier et de redistribuer des œuvres dérivées.
+Bienvenue dans le projet de l'outil de gestion de fête ! Ce projet a pour but de fournir une solution efficace pour aider les utilisateurs à gérer leurs événements festifs. En utilisant les Actions GitHub, nous pouvons exécuter automatiquement deux scripts Python à intervalles réguliers, simplifiant ainsi les tâches de gestion lors de l'organisation d'une fête. Que ce soit pour un rassemblement entre amis, une activité d'équipe ou d'autres occasions sociales, cet outil vous permet de tout planifier facilement.
 
-### Termes clés
-- **Licencié** : la partie qui accorde la licence
-- **Vous** : l'utilisateur
-- **Œuvre** : le travail
-- **Travaux dérivés** : œuvres issues de modifications
-- **Contribution** : apport
+## 📦 Étapes d'Installation
 
-Veuillez noter que cette licence souligne que l'œuvre est fournie "telle quelle", sans garantie, et ne sera pas tenue responsable des dommages. Lorsque vous utilisez cette licence, assurez-vous de respecter les termes de la licence.
+Avant de commencer à utiliser l'outil de gestion de fête, assurez-vous que votre environnement de développement dispose de [Python](https://www.python.org/downloads/) et de [Git](https://git-scm.com/downloads).
 
-## 🚀 Étapes d'installation
-1. Clonez ce dépôt sur votre environnement local :
+1. **Cloner le Dépôt**
+
    ```bash
-   git clone https://github.com/yourusername/party-management-system.git
-   ```
-2. Accédez au répertoire du projet :
-   ```bash
-   cd party-management-system
-   ```
-3. Installez les dépendances nécessaires (s'il y en a) :
-   ```bash
-   npm install
+   git clone https://github.com/votre-nom-d'utilisateur/outil-de-gestion-de-fête.git
+   cd outil-de-gestion-de-fête
    ```
 
-## 🛠️ Instructions d'utilisation
-Une fois la configuration terminée, vous pouvez programmer l'exécution des scripts de gestion de fête avec les commandes suivantes :
-```bash
-# Exécuter le script 1
-./script1.sh
+2. **Installer les Dépendances**
 
-# Exécuter le script 2
-./script2.sh
-```
+   Assurez-vous d'installer les dépendances nécessaires dans votre environnement virtuel :
 
-Vous pouvez également configurer des tâches programmées dans GitHub Actions afin que ces scripts s'exécutent automatiquement à intervalles réguliers.
-
-## 🤝 Guide de contribution
-Nous accueillons avec enthousiasme toute forme de contribution ! Si vous souhaitez participer, veuillez suivre les étapes suivantes :
-1. Créez une nouvelle branche dans ce dépôt :
    ```bash
-   git checkout -b feature/VotreNomDeFonctionnalité
+   pip install -r requirements.txt
    ```
-2. Soumettez vos modifications :
+
+## 📄 Instructions d'Utilisation
+
+1. **Configurer les Scripts**
+
+   Avant d'utiliser, veuillez configurer les fichiers `script1.py` et `script2.py` selon vos besoins pour vous assurer qu'ils disposent des bons paramètres et réglages.
+
+2. **Exécution Manuelle**
+
+   Vous pouvez exécuter les scripts manuellement pour tester leurs fonctionnalités :
+
+   ```bash
+   python script1.py
+   python script2.py
+   ```
+
+3. **Exécution Automatisée**
+
+   Grâce aux Actions GitHub, les scripts seront exécutés automatiquement selon un calendrier prédéfini. Vous pouvez consulter et ajuster le flux de travail dans le répertoire `.github/workflows`.
+
+## 🤝 Guide de Contribuition
+
+Nous accueillons toutes les formes de contributions ! Si vous souhaitez contribuer au code de l'outil de gestion de fête, veuillez suivre les étapes suivantes :
+
+1. **Forkez ce Dépôt**
+2. **Créez une Nouvelle Branche**
+
+   ```bash
+   git checkout -b feature/votre-fonctionnalité
+   ```
+
+3. **Soumettez vos Modifications**
+
    ```bash
    git commit -m "Ajout d'une nouvelle fonctionnalité"
    ```
-3. Poussez les modifications vers le dépôt distant :
-   ```bash
-   git push origin feature/VotreNomDeFonctionnalité
-   ```
-4. Soumettez une demande de tirage (Pull Request), nous vous contacterons dès que possible !
 
-## 🎉 Merci de votre participation
-Merci de l'intérêt et du soutien que vous portez à notre système de gestion de fête ! Si vous avez des questions ou des suggestions concernant le projet, n'hésitez pas à nous contacter. Créons ensemble une expérience de fête encore meilleure ! ✨
-```
+4. **Poussez vers la Branche**
+
+   ```bash
+   git push origin feature/votre-fonctionnalité
+   ```
+
+5. **Soumettez une Pull Request**
+
+Veuillez décrire clairement vos modifications et les fonctionnalités ajoutées. Merci pour votre contribution !💪
+
+## 📜 Licence
+
+Ce projet suit la [Licence Apache, Version 2.0](LICENSE). Veuillez vous assurer de respecter les termes de la licence pour utiliser, copier et distribuer ce logiciel légalement.
+
+---
+
+Merci d'avoir lu ce fichier README, nous vous souhaitons une excellente utilisation ! Si vous avez des questions ou des suggestions, n'hésitez pas à nous contacter !😊
