@@ -25,7 +25,7 @@ If a member does not log in for 5 days, we will remove `him/her` from our team. 
 ### a. Time
 
 Here is a table of UTC offsets for major world cities.
- 
+
 | City          | Time Zone                     | Abbreviation          |
 |---------------|-------------------------------|-----------------------|
 | Cairo         | UTC-2                         | EET                   |
@@ -43,7 +43,6 @@ Here is a table of UTC offsets for major world cities.
 | Hong Kong     | UTC+8                         | HKT                   |
 | Tokyo         | UTC+9                         | JST                   |
 | Sydney        | UTC+10, UTC+11 | AEST, AEDT            |
- 
 
 To find the time of the other party, add the difference between your time zone offset and the other party's time zone offset to your current local time.
 
