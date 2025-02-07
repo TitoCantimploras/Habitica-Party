@@ -7,7 +7,7 @@ This repository contains scripts and configurations designed to automate the man
 ## Features
 
 - **Member Management**: Automatically add or remove members from the party.
-- **Activity Monitoring**: Track member activity and remove inactive members.
+- **Activity Monitoring**: Track member activity.
 - **Party Description Updates**: Regularly update the party description with relevant information.
 
 ## Usage
@@ -17,6 +17,8 @@ This automation is set up to be run using GitHub Actions. The necessary workflow
 ## Repository Structure
 
 - `scripts/`: Contains the Python scripts for managing the Habitica party.
+- `documents/`: Contains the template.
+- `logs\`: Contains the scripts' logs.
 - `.github/workflows/`: Contains the GitHub Actions workflow files that define the automation tasks.
 
 ## Requirements
