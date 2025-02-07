@@ -25,7 +25,7 @@
 
 - 仓库已启用GitHub Actions。
 - Habitica API凭据用于认证。
-- 
+
 ## 许可证
 
 该项目在MIT许可证下授权 - 详见LICENSE文件。
