@@ -25,25 +25,6 @@ If a member does not log in for 5 days, we will remove `him/her` from our team. 
 ### a. Time
 
 Here is a table of UTC offsets for major world cities.
-
-```
-Cairo: UTC-2
-São Paulo: UTC-3
-New York: UTC-5 (EST), UTC-4 (EDT)
-Los Angeles: UTC-8 (PST), UTC-7 (PDT)
-London: UTC+0 (GMT), UTC+1 (BST)
-Paris: UTC+1 (CET), UTC+2 (CEST)
-Berlin: UTC+1 (CET), UTC+2 (CEST)
-Moscow: UTC+3
-Dubai: UTC+4
-New Delhi: UTC+5:30
-Jakarta: UTC+7
-Beijing: UTC+8
-Hong Kong: UTC+8
-Tokyo: UTC+9
-Sydney: UTC+10 (AEST), UTC+11 (AEDT)
-```
-
  
 | City          | Time Zone                     | Abbreviation          |
 |---------------|-------------------------------|-----------------------|
