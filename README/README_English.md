@@ -1,72 +1,65 @@
 [Back to main language README](README.md)
 
-# Project Name 🚀
+```markdown
+# Project Name: Party Management System 🎉
 
-Welcome to our project! This project is dedicated to providing high-quality software solutions while adhering to the open-source philosophy. We aim to drive technological advancement through sharing and collaboration.
+## Project Introduction
+Welcome to the repository of this Party Management System! This project aims to automate the process of managing parties using GitHub Actions. We simplify and optimize the planning and management process of parties by scheduling the execution of two scripts. This system not only enhances efficiency but also strengthens team collaboration.
 
-## License 📜
+## 📜 License
+This project is licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0). This license provides terms and conditions for you to use, copy, and distribute the software and other works. It also allows you to modify and redistribute derivative works under certain conditions.
 
-This project follows the [Apache License, Version 2.0](LICENSE). This license outlines the terms and conditions for using, copying, and distributing the software and other works. The primary purpose of the license is to provide legal guidance regarding copyrights and patents so that individuals or entities (hereafter referred to as "you") can use, modify, and distribute the licensed works (hereafter referred to as "the works") under specific conditions.
+### Key Terms
+- **Licensor**: The party granting the license
+- **You**: The user
+- **Work**: The software or material
+- **Derivative Works**: Works derived from the original
+- **Contribution**: Any kind of input into the project
 
-Key terms include:
-- Granting users copyright and patent licenses
-- Requirements for redistributing the works and modified works
-- Handling of contributions
-- Disclaimers and liability limitations
-- Guidelines on how to apply the license to your own work are provided in the appendix
+Please note that this license emphasizes that the work is provided "as is" without any warranties and that it does not hold liability for any damages. When using this license, please ensure to follow the terms.
 
-Our goal is to encourage open collaboration while protecting the rights of creators and users of the works.
-
-## Installation Steps ⚙️
-
-1. Clone this repository in your terminal:
+## 🚀 Installation Steps
+1. Clone this repository to your local environment:
    ```bash
-   git clone https://github.com/yourusername/yourproject.git
+   git clone https://github.com/yourusername/party-management-system.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd yourproject
+   cd party-management-system
    ```
-3. Install dependencies:
+3. Install the necessary dependencies (if any):
    ```bash
    npm install
    ```
 
-## Usage Instructions 🛠️
-
-To run the project, use the following command:
+## 🛠️ Usage Instructions
+Once configured, you can schedule the execution of the party management scripts with the following commands:
 ```bash
-npm start
+# Execute Script 1
+./script1.sh
+
+# Execute Script 2
+./script2.sh
 ```
 
-Once the project is up and running, you can visit [http://localhost:3000](http://localhost:3000) in your browser to see it in action.
+You can set up scheduled tasks in GitHub Actions to run these scripts automatically on a regular basis.
 
-For specific features and usage details, please refer to the additional documentation or use the provided examples.
-
-## Contribution Guidelines 🤝
-
-We welcome every open-source enthusiast to contribute code and suggestions! If you want to get involved, please follow these steps:
-
-1. Create a new branch:
+## 🤝 Contribution Guidelines
+We welcome all forms of contributions! If you would like to get involved, please follow these steps:
+1. Create a new branch in this repository:
    ```bash
-   git checkout -b feature/your-feature-name
+   git checkout -b feature/YourFeatureName
    ```
-2. Make modifications on that branch and commit your changes:
+2. Commit your changes:
    ```bash
-   git commit -m "Add your message here"
+   git commit -m "Added a new feature"
    ```
-3. Push to the remote:
+3. Push the changes to the remote repository:
    ```bash
-   git push origin feature/your-feature-name
+   git push origin feature/YourFeatureName
    ```
-4. Submit a pull request, describing the changes you made.
+4. Submit a Pull Request, and we'll get back to you as soon as possible!
 
-Thank you for your participation! Let’s work together to build better software!
-
-## Contact Information 📧
-
-If you have any questions or suggestions, please contact [your email](mailto:your.email@example.com). We look forward to collaborating with you!
-
----
-
-Thank you for checking out the documentation for this project! We hope you have a great experience using it! 🎉
+## 🎉 Thank You for Participating
+Thank you for your interest and support for the Party Management System! If you have any questions or suggestions about the project, feel free to reach out to us. Let's create a better party experience together! ✨
+```

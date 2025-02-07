@@ -1,72 +1,65 @@
 [Back to main language README](README.md)
 
-# Nom du projet 🚀
+```markdown
+# Nom du projet : Système de Gestion de Fête 🎉
 
-Bienvenue dans notre projet ! Ce projet vise à fournir des solutions logicielles de haute qualité, tout en respectant l'idée de l'open source. Nous espérons être en mesure de promouvoir le progrès technologique à travers le partage et la collaboration.
+## Introduction du projet
+Bienvenue dans le dépôt de ce système de gestion de fête ! Ce projet a pour but d'automatiser le processus de gestion des fêtes grâce aux GitHub Actions. Nous simplifions et optimisons la planification et la gestion des fêtes en programmant l'exécution de deux scripts. Ce système améliore non seulement l'efficacité, mais renforce également la collaboration au sein de l'équipe.
 
-## Licence 📜
+## 📜 Licence
+Ce projet est soumis à la [Licence Apache, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0). Cette licence fournit les termes et conditions pour utiliser, reproduire et distribuer le logiciel et d'autres œuvres. Elle vous permet également, sous certaines conditions, de modifier et de redistribuer des œuvres dérivées.
 
-Ce projet est régulé par [la Licence Apache, version 2.0](LICENSE), qui décrit en détail les termes et conditions pour l'utilisation, la reproduction et la distribution des logiciels et d'autres œuvres. L'objectif principal de cette licence est de fournir des conseils juridiques concernant les droits d'auteur et les brevets, afin que les individus ou entités (ci-après dénommés "vous") puissent utiliser, modifier et distribuer les œuvres sous licence (ci-après dénommées "œuvres") sous certaines conditions.
+### Termes clés
+- **Licencié** : la partie qui accorde la licence
+- **Vous** : l'utilisateur
+- **Œuvre** : le travail
+- **Travaux dérivés** : œuvres issues de modifications
+- **Contribution** : apport
 
-Les principales clauses incluent :
-- Accord de licences sur les droits d'auteur et les brevets
-- Exigences pour la redistribution des œuvres et des œuvres modifiées
-- Gestion des contributions
-- Avertissement et limitations de responsabilité
-- Des instructions sur la façon d'appliquer la licence à votre propre travail sont fournies en annexe
+Veuillez noter que cette licence souligne que l'œuvre est fournie "telle quelle", sans garantie, et ne sera pas tenue responsable des dommages. Lorsque vous utilisez cette licence, assurez-vous de respecter les termes de la licence.
 
-Notre objectif est d'encourager la collaboration ouverte tout en protégeant les droits des créateurs d'œuvres et des utilisateurs.
-
-## Étapes d'installation ⚙️
-
-1. Clonez ce dépôt dans le terminal :
+## 🚀 Étapes d'installation
+1. Clonez ce dépôt sur votre environnement local :
    ```bash
-   git clone https://github.com/votreutilisateur/votreprojet.git
+   git clone https://github.com/yourusername/party-management-system.git
    ```
 2. Accédez au répertoire du projet :
    ```bash
-   cd votreprojet
+   cd party-management-system
    ```
-3. Installez les dépendances :
+3. Installez les dépendances nécessaires (s'il y en a) :
    ```bash
    npm install
    ```
 
-## Instructions d'utilisation 🛠️
-
-Pour lancer le projet, utilisez la commande suivante :
+## 🛠️ Instructions d'utilisation
+Une fois la configuration terminée, vous pouvez programmer l'exécution des scripts de gestion de fête avec les commandes suivantes :
 ```bash
-npm start
+# Exécuter le script 1
+./script1.sh
+
+# Exécuter le script 2
+./script2.sh
 ```
 
-Une fois le projet lancé, vous pouvez accéder à [http://localhost:3000](http://localhost:3000) dans votre navigateur pour voir le résultat.
+Vous pouvez également configurer des tâches programmées dans GitHub Actions afin que ces scripts s'exécutent automatiquement à intervalles réguliers.
 
-Pour des informations détaillées sur les fonctionnalités et l'utilisation, veuillez consulter la documentation supplémentaire ou utiliser les exemples fournis.
-
-## Guide de contribution 🤝
-
-Nous accueillons chaque développeur passionné par l'open source pour contribuer avec du code et des suggestions ! Si vous souhaitez participer, veuillez suivre les étapes suivantes :
-
-1. Créez une nouvelle branche :
+## 🤝 Guide de contribution
+Nous accueillons avec enthousiasme toute forme de contribution ! Si vous souhaitez participer, veuillez suivre les étapes suivantes :
+1. Créez une nouvelle branche dans ce dépôt :
    ```bash
-   git checkout -b feature/votre-nom-de-fonctionnalité
+   git checkout -b feature/VotreNomDeFonctionnalité
    ```
-2. Modifiez sur cette branche et soumettez vos changements :
+2. Soumettez vos modifications :
    ```bash
-   git commit -m "Ajoutez votre message ici"
+   git commit -m "Ajout d'une nouvelle fonctionnalité"
    ```
-3. Poussez vers le dépôt distant :
+3. Poussez les modifications vers le dépôt distant :
    ```bash
-   git push origin feature/votre-nom-de-fonctionnalité
+   git push origin feature/VotreNomDeFonctionnalité
    ```
-4. Soumettez une pull request en décrivant vos modifications.
+4. Soumettez une demande de tirage (Pull Request), nous vous contacterons dès que possible !
 
-Merci de votre participation ! Travaillons ensemble pour créer un meilleur logiciel !
-
-## Contact 📧
-
-Pour toute question ou suggestion, veuillez contacter [votre email](mailto:your.email@example.com). Nous avons hâte de collaborer avec vous !
-
----
-
-Merci d'avoir consulté la documentation de ce projet ! Nous espérons que vous aurez une expérience agréable lors de son utilisation ! 🎉
+## 🎉 Merci de votre participation
+Merci de l'intérêt et du soutien que vous portez à notre système de gestion de fête ! Si vous avez des questions ou des suggestions concernant le projet, n'hésitez pas à nous contacter. Créons ensemble une expérience de fête encore meilleure ! ✨
+```
