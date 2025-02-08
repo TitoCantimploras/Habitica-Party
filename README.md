@@ -8,84 +8,83 @@
 - [Deutsch](README/README_Deutsch.md)
 - [日本語](README/README_日本語.md)
 
-# 🥳 自动化团队管理工具 README
+# 🎉 自动化队伍管理项目
 
-欢迎使用我们的自动化团队管理工具！这个项目旨在通过与 Habitica API 的集成，提升团队管理的效率与参与感。💼✨
+欢迎来到我们的**自动化队伍管理项目**! 🚀 本项目旨在通过自动化脚本轻松管理 Habitica 平台上的队伍成员，保持队伍活跃并提升管理效率。让我们一起看看这个项目的结构及其功能吧！
 
-## 📁 文件概述
+## 📁 项目结构
 
-### 1. GitHub Actions 工作流
-- **路径**: `.github/workflows/automated_party_management.yml`
-- **功能**: 该工作流每 10 分钟触发一次（也可以手动运行），包含以下关键步骤：
-  - 检出代码
-  - 设置 Python 环境
-  - 安装依赖
-  - 执行管理脚本以处理 Habitica 平台的团队成员
-  - 运行更新脚本记录更改
-- **特点**: 包含暂停功能以管理请求速率，最后将任何日志更改提交并推送到代码库。🔄
+```
+{
+  ".github": {
+    ".github/workflows": {
+      ".github/workflows/automated_party_management.yml": "自动化队伍管理工作流"
+    }
+  },
+  "LICENSE": "许可证文件",
+  "README.md": "项目说明文档",
+  "README": {
+    "README/README_Deutsch.md": "德语文档",
+    "README/README_English.md": "英语文档",
+    "README/README_Español.md": "西班牙语文档",
+    "README/README_Français.md": "法语文档",
+    "README/README_日本語.md": "日语文档",
+    "README/README_繁体中文.md": "繁体中文文档"
+  },
+  "documents": {
+    "documents/brief_description.md": "项目简要说明",
+    "documents/new_members.md": "新成员介绍",
+    "documents/party_description.md": "队伍描述",
+    "documents/remove_PM.md": "移除项目经理说明",
+    "documents/remove_members.md": "移除成员说明"
+  },
+  "logs": {
+    "logs/manage_members.log": "成员管理日志",
+    "logs/update_description.log": "更新描述日志"
+  },
+  "requirements.txt": "依赖包要求",
+  "scripts": {
+    "scripts/manage_members.py": "成员管理脚本",
+    "scripts/update_description.py": "更新描述脚本"
+  }
+}
+```
 
-### 2. 许可协议
-- **文件名**: `LICENSE`
-- **内容**: 内容为 Apache 许可证，版本 2.0，概述了软件及相关作品的使用、复制和分发的条款与条件，包括定义、用户权限、再分发要求及免责声明。📜
+## 📜 项目功能
 
-### 3. 成员管理脚本
-- **文件名**: `manage_members.py`
-- **功能**: 此 Python 脚本旨在管理 Habitica 平台中的团队成员，主要功能包括：
-  - **日志设置**: 初始化日志以跟踪脚本操作，包括错误和一般信息。
-  - **速率限制**: 实施机制以遵循 API 请求限制，通过控制请求时间进行管理。
-  - **成员管理**:
-    - 确定并检索基于最后登录时间的非活跃团队成员。
-    - 在移除成员前发送私信通知。
-    - 向团队聊天发送成员移除的通知。
-  - **邀请功能**: 寻找正在寻找团队的用户，并向他们发送邀请，包括格式化的消息列表出被邀请的成员。
-  - **实用工具**: 包含处理 API 响应、发送消息及根据用户活动计算时间的辅助函数。
+### 1. 自动化队伍管理工作流 🤖
+我们在 `.github/workflows/automated_party_management.yml` 中定义了一个名为“队伍自动化管理”的工作流。它每10分钟自动运行一次，而且也可以手动触发。这个工作流的主要目的是通过 Python 脚本管理和更新队伍成员信息，包含以下几个重要步骤：
 
-总之，此脚本通过自动化非活跃用户的移除和新用户的邀请，提升了 Habitica 的团队管理，促进了更好的用户参与。🎉
+- **代码检出**：获取代码库的最新代码。
+- **设置 Python 环境**：安装 Python 3.8。
+- **安装依赖项**：安装脚本所需的 `requests` 库。
+- **运行管理脚本**：执行 `manage_members.py` 脚本进行成员管理。
+- **限制请求频率**：通过休眠命令防止过载 API。
+- **运行更新脚本**：执行 `update_description.py` 脚本更新描述。
+- **记录更改**：记录所有操作并将日志提交到仓库。
 
-### 4. 描述更新脚本
-- **文件名**: `update_description.py`
-- **功能**: 此 Python 脚本旨在更新 Habitica 团队的描述，功能包括：
-  - 日常获取一句话和团队成员的最后登录详情。
-  - 日志记录、执行 API 请求的速率限制。
-  - 根据检索的数据动态更新团队描述。
-  - 从模板文件读取描述格式，编译成员信息，并向 Habitica API 发送更新请求。
-  - 记录操作过程中的成功与错误。
+### 2. 许可证 📝
+项目包含 `LICENSE` 文件，使用 Apache License, Version 2.0，为您提供使用、复制和分发本软件的条款和条件。
 
-## 🛠️ 安装与使用
+### 3. 依赖项 📦
+项目中的 `requirements.txt` 文件列出了项目运行所需的外部库，这里需要的库是 `requests`，这是一种流行的 HTTP 库，用于处理网络请求和响应。
 
-1. 克隆本仓库：
-   ```bash
-   git clone https://github.com/yourusername/repository.git
-   cd repository
-   ```
+### 4. 成员管理脚本 🧑‍🤝‍🧑
+`manage_members.py` 脚本负责管理 Habitica 平台上的队伍成员。它的主要功能包括：
+- 记录日志、设置请求频率、检测不活跃成员、发送邀请等，确保队伍活跃不掉队。
 
-2. 设置 Python 环境：
-   ```bash
-   python -m venv venv
-   source venv/bin/activate
-   ```
+### 5. 描述更新脚本 🔄
+`update_description.py` 脚本每隔一段时间更新队伍的描述，结合成员信息和来自外部 API 的内容，让你的队伍描述始终充满新意和吸引力。
 
-3. 安装依赖：
-   ```bash
-   pip install -r requirements.txt
-   ```
+## 🛠️ 如何运行
+- 确保你有 Python 环境，并且安装了 `requirements.txt` 中的依赖库。
+- 通过执行 `manage_members.py` 和 `update_description.py` 脚本，手动运行成员管理与描述更新。
+- 你也可以依赖自动化工作流，设置定时任务，轻松维护队伍信息。🎈
 
-4. 配置 GitHub Actions 工作流（若需要），并在 Habitica API 中生成一个有效的密钥。
+## 🌐 多语言支持
+项目附带了多种语言的说明文档，包括中文、德语、英语、西班牙语、法语和日语，确保每位用户都能方便地理解项目内容！🌍
 
-5. 运行脚本：
-   ```bash
-   python manage_members.py
-   python update_description.py
-   ```
+## 📬 反馈与支持
+欢迎向我们提交问题或建议，一起让这个项目变得更好！🙏
 
-## 💡 贡献
-
-欢迎任何形式的贡献！如有建议或问题，请提交 issue 或发起 pull request。😊
-
-## 📞 联系
-
-如果您有任何问题或反馈，请通过以下方式联系我：
-- 邮箱: your_email@example.com
-- GitHub: [你的GitHub用户名](https://github.com/yourusername)
-
-感谢您使用我们的工具，祝您在 Habitica 中的团队管理更加顺利！🎊
+感谢您阅读！愿您的队伍在 Habitica 上充满活力，永远走在成功的路上！💪✨

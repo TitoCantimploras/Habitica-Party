@@ -1,83 +1,82 @@
 [Back to main language README](README.md)
 
-# 🥳 Automatisierungstool für Teammanagement README
+# 🎉 Automatisierung des Teammanagementprojekts
 
-Willkommen bei unserem Automatisierungstool für das Teammanagement! Dieses Projekt zielt darauf ab, die Effizienz und das Engagement im Teammanagement durch die Integration der Habitica API zu steigern.💼✨
+Willkommen zu unserem **Automatisierung des Teammanagementprojekts**! 🚀 Dieses Projekt zielt darauf ab, die Teammitglieder auf der Habitica-Plattform mithilfe von Automatisierungsskripten einfach zu verwalten, das Team aktiv zu halten und die Verwaltungseffizienz zu steigern. Lassen Sie uns die Struktur und die Funktionen dieses Projekts näher betrachten!
 
-## 📁 Dateibeschreibung
+## 📁 Projektstruktur
 
-### 1. GitHub Actions Workflow
-- **Pfad**: `.github/workflows/automated_party_management.yml`
-- **Funktion**: Dieser Workflow wird alle 10 Minuten ausgelöst (kann auch manuell ausgeführt werden) und umfasst folgende wichtige Schritte:
-  - Code auschecken
-  - Python-Umgebung einrichten
-  - Abhängigkeiten installieren
-  - Verwaltungsskript ausführen, um die Teammitglieder auf der Habitica-Plattform zu verwalten
-  - Aktualisierungsskript ausführen, um Änderungen zu protokollieren
-- **Merkmale**: Enthält eine Pause-Funktion zur Verwaltung der Anforderungsrate und überträgt schließlich alle Protokolländerungen in das Repository.🔄
+```
+{
+  ".github": {
+    ".github/workflows": {
+      ".github/workflows/automated_party_management.yml": "Automatisierter Teamverwaltungs-Workflow"
+    }
+  },
+  "LICENSE": "Lizenzdatei",
+  "README.md": "Projektbeschreibung",
+  "README": {
+    "README/README_Deutsch.md": "Deutsch Dokumentation",
+    "README/README_English.md": "Englische Dokumentation",
+    "README/README_Español.md": "Spanische Dokumentation",
+    "README/README_Français.md": "Französische Dokumentation",
+    "README/README_日本語.md": "Japanische Dokumentation",
+    "README/README_繁体中文.md": "Traditionelle Chinesische Dokumentation"
+  },
+  "documents": {
+    "documents/brief_description.md": "Kurze Projektbeschreibung",
+    "documents/new_members.md": "Vorstellung neuer Mitglieder",
+    "documents/party_description.md": "Team Beschreibung",
+    "documents/remove_PM.md": "Entfernung des Projektleiters Anleitung",
+    "documents/remove_members.md": "Entfernung von Mitgliedern Anleitung"
+  },
+  "logs": {
+    "logs/manage_members.log": "Mitgliederverwaltungsprotokoll",
+    "logs/update_description.log": "Aktualisierungsprotokoll"
+  },
+  "requirements.txt": "Abhängigkeiten",
+  "scripts": {
+    "scripts/manage_members.py": "Mitgliederverwaltungs-Skript",
+    "scripts/update_description.py": "Aktualisierungs-Skript"
+  }
+}
+```
 
-### 2. Lizenzvereinbarung
-- **Dateiname**: `LICENSE`
-- **Inhalt**: Der Inhalt umfasst die Apache-Lizenz, Version 2.0, die die Bedingungen für die Nutzung, Vervielfältigung und Verteilung der Software sowie verwandter Werke umreißt, einschließlich Definitionen, Benutzerrechte, Anforderungen für die Weiterverteilung und Haftungsausschlüsse.📜
+## 📜 Projektfunktionen
 
-### 3. Mitgliedermanagement-Skript
-- **Dateiname**: `manage_members.py`
-- **Funktion**: Dieses Python-Skript dient der Verwaltung von Teammitgliedern auf der Habitica-Plattform. Die Hauptfunktionen umfassen:
-  - **Protokollierung**: Initialisiert Protokolle zur Verfolgung der Skriptaktivitäten, einschließlich Fehlern und allgemeinen Informationen.
-  - **Ratenbegrenzung**: Implementiert Mechanismen zur Einhaltung der API-Anforderungsgrenzen, indem die Anforderungszeit gesteuert wird.
-  - **Mitgliedermanagement**:
-    - Ermittelt und ruft inaktive Teammitglieder basierend auf der letzten Anmeldedatum ab.
-    - Sendet private Benachrichtigungen vor der Entfernung von Mitgliedern.
-    - Sendet Benachrichtigungen über die Entfernung von Mitgliedern im Team-Chat.
-  - **Einladungsfunktion**: Sucht nach Benutzern, die ein Team suchen, und sendet ihnen Einladungen, einschließlich einer formatierten Nachricht mit einer Liste der eingeladenen Mitglieder.
-  - **Hilfsfunktionen**: Enthält Hilfsfunktionen zur Verarbeitung von API-Antworten, zum Senden von Nachrichten und zur Berechnung von Zeit basierend auf der Benutzeraktivität.
+### 1. Automatisierter Teamverwaltungsworkflow 🤖
+Wir haben in `.github/workflows/automated_party_management.yml` einen Workflow namens "Automatisierte Teamverwaltung" definiert. Dieser läuft alle 10 Minuten automatisch und kann auch manuell ausgelöst werden. Das Hauptziel dieses Workflows ist es, Informationen über Teammitglieder mithilfe eines Python-Skripts zu verwalten und zu aktualisieren, das folgende wichtige Schritte umfasst:
 
-Zusammenfassend verbessert dieses Skript das Teammanagement in Habitica, indem es die Entfernung inaktiver Benutzer und die Einladung neuer Benutzer automatisiert, was zu besserer Benutzerbeteiligung führt.🎉
+- **Code-Checkout**: Holen Sie sich den neuesten Code aus dem Repository.
+- **Python-Umgebung einrichten**: Installieren Sie Python 3.8.
+- **Abhängigkeiten installieren**: Installieren Sie die erforderliche `requests`-Bibliothek.
+- **Verwaltungsskript ausführen**: Führen Sie das Skript `manage_members.py` zur Mitgliederverwaltung aus.
+- **Anfragenrate begrenzen**: Verwenden Sie Sleep-Befehle, um eine Überlastung der API zu verhindern.
+- **Aktualisierungsskript ausführen**: Führen Sie das Skript `update_description.py` zur Aktualisierung der Beschreibung aus.
+- **Änderungen protokollieren**: Protokollieren Sie alle Aktionen und übermitteln Sie die Protokolle an das Repository.
 
-### 4. Aktualisierungsskript für Beschreibungen
-- **Dateiname**: `update_description.py`
-- **Funktion**: Dieses Python-Skript dient der Aktualisierung der Beschreibung von Habitica-Teams. Zu den Funktionen gehören:
-  - Tägliche Abruf von Informationen über das Team und die letzten Anmeldedetails der Mitglieder.
-  - Protokollierung und Implementierung von Ratenbegrenzung für die API-Anfragen.
-  - Dynamische Aktualisierung der Teambeschreibung basierend auf den abgerufenen Daten.
-  - Lesen des Beschreibungsformats aus einer Template-Datei, Kompilieren von Mitgliederinformationen und Senden von Aktualisierungsanfragen an die Habitica-API.
-  - Protokollierung von Erfolgen und Fehlern während des Vorgangs.
+### 2. Lizenz 📝
+Das Projekt enthält eine `LICENSE`-Datei, die die Bedingungen und Konditionen für die Nutzung, Kopie und Verteilung dieser Software gemäß der Apache License, Version 2.0 festlegt.
 
-## 🛠️ Installation und Verwendung
+### 3. Abhängigkeiten 📦
+Die Datei `requirements.txt` im Projekt listet die externen Bibliotheken auf, die für den Betrieb des Projekts benötigt werden. Die benötigte Bibliothek ist `requests`, eine beliebte HTTP-Bibliothek zur Handhabung von Netzwerk-Anfragen und -Antworten.
 
-1. Klonen Sie dieses Repository:
-   ```bash
-   git clone https://github.com/yourusername/repository.git
-   cd repository
-   ```
+### 4. Mitgliederverwaltungs-Skript 🧑‍🤝‍🧑
+Das Skript `manage_members.py` ist verantwortlich für die Verwaltung der Teammitglieder auf der Habitica-Plattform. Seine Hauptfunktionen umfassen:
+- Protokollierung, Festlegung der Anfragefrequenz, Überwachung inaktiver Mitglieder, Versendung von Einladungen usw., um sicherzustellen, dass das Team aktiv bleibt.
 
-2. Python-Umgebung einrichten:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate
-   ```
+### 5. Aktualisierungsskript 🔄
+Das Skript `update_description.py` aktualisiert regelmäßig die Teambeschreibung, kombiniert Informationen über Mitglieder und Inhalte von externen APIs, damit Ihre Teambeschreibung immer frisch und ansprechend bleibt.
 
-3. Abhängigkeiten installieren:
-   ```bash
-   pip install -r requirements.txt
-   ```
+## 🛠️ So führen Sie es aus
+- Stellen Sie sicher, dass Sie eine Python-Umgebung haben und dass die Bibliotheken in `requirements.txt` installiert sind.
+- Führen Sie die Skripte `manage_members.py` und `update_description.py` aus, um die Mitgliederverwaltung und die Beschreibung manuell zu betreiben.
+- Sie können auch den automatisierten Workflow nutzen, um regelmäßige Aufgaben einzurichten und die Teaminformationen mühelos zu pflegen. 🎈
 
-4. Konfigurieren Sie den GitHub Actions-Workflow (falls erforderlich) und generieren Sie einen gültigen Schlüssel in der Habitica API.
+## 🌐 Mehrsprachige Unterstützung
+Das Projekt enthält Dokumentationen in mehreren Sprachen, darunter Chinesisch, Deutsch, Englisch, Spanisch, Französisch und Japanisch, um sicherzustellen, dass jeder Benutzer den Projektinhalt bequem verstehen kann! 🌍
 
-5. Skripte ausführen:
-   ```bash
-   python manage_members.py
-   python update_description.py
-   ```
+## 📬 Feedback und Unterstützung
+Wir freuen uns über Ihre Fragen oder Vorschläge, um dieses Projekt gemeinsam zu verbessern! 🙏
 
-## 💡 Beitrag
-
-Beiträge in jeglicher Form sind willkommen! Bei Vorschlägen oder Fragen reichen Sie bitte ein Issue ein oder erstellen Sie einen Pull Request.😊
-
-## 📞 Kontakt
-
-Wenn Sie Fragen oder Feedback haben, kontaktieren Sie mich bitte über die folgenden Kanäle:
-- E-Mail: your_email@example.com
-- GitHub: [IhrGitHubBenutzername](https://github.com/yourusername)
-
-Vielen Dank, dass Sie unser Werkzeug verwenden, und viel Erfolg bei der Teamverwaltung in Habitica!🎊
+Vielen Dank für Ihre Aufmerksamkeit! Möge Ihr Team auf Habitica voller Energie sein und immer auf dem Erfolgsweg bleiben! 💪✨

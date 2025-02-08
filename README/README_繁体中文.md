@@ -1,83 +1,82 @@
 [Back to main language README](README.md)
 
-# 🥳 自動化團隊管理工具 README
+# 🎉 自動化隊伍管理專案
 
-歡迎使用我們的自動化團隊管理工具！這個專案旨在通過與 Habitica API 的整合，提升團隊管理的效率與參與感。💼✨
+歡迎來到我們的**自動化隊伍管理專案**! 🚀 本專案旨在透過自動化腳本輕鬆管理 Habitica 平台上的隊伍成員，保持隊伍活躍並提升管理效率。讓我們一起看看這個專案的結構及其功能吧！
 
-## 📁 檔案概述
+## 📁 專案結構
 
-### 1. GitHub Actions 工作流程
-- **路徑**: `.github/workflows/automated_party_management.yml`
-- **功能**: 該工作流程每 10 分鐘觸發一次（也可以手動運行），包含以下關鍵步驟：
-  - 檢出程式碼
-  - 設置 Python 環境
-  - 安裝依賴
-  - 執行管理腳本以處理 Habitica 平台的團隊成員
-  - 運行更新腳本記錄變更
-- **特點**: 包含暫停功能以管理請求速率，最後將任何日誌變更提交並推送到代碼庫。🔄
+```
+{
+  ".github": {
+    ".github/workflows": {
+      ".github/workflows/automated_party_management.yml": "自動化隊伍管理工作流"
+    }
+  },
+  "LICENSE": "許可證文件",
+  "README.md": "專案說明文件",
+  "README": {
+    "README/README_Deutsch.md": "德語文件",
+    "README/README_English.md": "英語文件",
+    "README/README_Español.md": "西班牙語文件",
+    "README/README_Français.md": "法語文件",
+    "README/README_日本語.md": "日語文件",
+    "README/README_繁體中文.md": "繁體中文文件"
+  },
+  "documents": {
+    "documents/brief_description.md": "專案簡要說明",
+    "documents/new_members.md": "新成員介紹",
+    "documents/party_description.md": "隊伍描述",
+    "documents/remove_PM.md": "移除專案經理說明",
+    "documents/remove_members.md": "移除成員說明"
+  },
+  "logs": {
+    "logs/manage_members.log": "成員管理日誌",
+    "logs/update_description.log": "更新描述日誌"
+  },
+  "requirements.txt": "依賴包要求",
+  "scripts": {
+    "scripts/manage_members.py": "成員管理腳本",
+    "scripts/update_description.py": "更新描述腳本"
+  }
+}
+```
 
-### 2. 授權協議
-- **檔名**: `LICENSE`
-- **內容**: 內容為 Apache 授權，版本 2.0，概述了軟件及相關作品的使用、複製和散佈的條款與條件，包括定義、用戶權限、再散佈要求及免責聲明。📜
+## 📜 專案功能
 
-### 3. 成員管理腳本
-- **檔名**: `manage_members.py`
-- **功能**: 此 Python 腳本旨在管理 Habitica 平台中的團隊成員，主要功能包括：
-  - **日誌設置**: 初始化日誌以跟蹤腳本操作，包括錯誤和一般信息。
-  - **速率限制**: 實施機制以遵循 API 請求限制，透過控制請求時間進行管理。
-  - **成員管理**:
-    - 確定並檢索基於最後登錄時間的非活躍團隊成員。
-    - 在移除成員前發送私信通知。
-    - 向團隊聊天發送成員移除的通知。
-  - **邀請功能**: 尋找正在尋找團隊的用戶，並向他們發送邀請，包括格式化的消息列表出被邀請的成員。
-  - **實用工具**: 包含處理 API 響應、發送消息及根據用戶活動計算時間的輔助函數。
+### 1. 自動化隊伍管理工作流 🤖
+我們在 `.github/workflows/automated_party_management.yml` 中定義了一個名為“隊伍自動化管理”的工作流。它每10分鐘自動運行一次，而且也可以手動觸發。這個工作流的主要目的是透過 Python 腳本管理和更新隊伍成員資訊，包含以下幾個重要步驟：
 
-總之，此腳本通過自動化非活躍用戶的移除和新用戶的邀請，提升了 Habitica 的團隊管理，促進了更好的用戶參與。🎉
+- **代碼檢出**：獲取代碼庫的最新代碼。
+- **設置 Python 環境**：安裝 Python 3.8。
+- **安裝依賴項**：安裝腳本所需的 `requests` 庫。
+- **運行管理腳本**：執行 `manage_members.py` 腳本進行成員管理。
+- **限制請求頻率**：透過休眠命令防止過載 API。
+- **運行更新腳本**：執行 `update_description.py` 腳本更新描述。
+- **記錄更改**：記錄所有操作並將日誌提交到倉庫。
 
-### 4. 描述更新腳本
-- **檔名**: `update_description.py`
-- **功能**: 此 Python 腳本旨在更新 Habitica 團隊的描述，功能包括：
-  - 日常獲取一句話和團隊成員的最後登錄詳情。
-  - 日誌記錄、執行 API 請求的速率限制。
-  - 根據檢索的數據動態更新團隊描述。
-  - 從模板檔案讀取描述格式，編譯成員信息，並向 Habitica API 發送更新請求。
-  - 記錄操作過程中的成功與錯誤。
+### 2. 許可證 📝
+專案包含 `LICENSE` 文件，使用 Apache License, Version 2.0，為您提供使用、複製和分發本軟體的條款和條件。
 
-## 🛠️ 安裝與使用
+### 3. 依賴項 📦
+專案中的 `requirements.txt` 文件列出了專案運行所需的外部庫，這裡需要的庫是 `requests`，這是一種流行的 HTTP 庫，用於處理網路請求和響應。
 
-1. 克隆本倉庫：
-   ```bash
-   git clone https://github.com/yourusername/repository.git
-   cd repository
-   ```
+### 4. 成員管理腳本 🧑‍🤝‍🧑
+`manage_members.py` 腳本負責管理 Habitica 平台上的隊伍成員。它的主要功能包括：
+- 記錄日誌、設置請求頻率、檢測不活躍成員、發送邀請等，確保隊伍活躍不掉隊。
 
-2. 設置 Python 環境：
-   ```bash
-   python -m venv venv
-   source venv/bin/activate
-   ```
+### 5. 描述更新腳本 🔄
+`update_description.py` 腳本每隔一段時間更新隊伍的描述，結合成員資訊和來自外部 API 的內容，讓你的隊伍描述始終充滿新意和吸引力。
 
-3. 安裝依賴：
-   ```bash
-   pip install -r requirements.txt
-   ```
+## 🛠️ 如何運行
+- 確保你有 Python 環境，並且安裝了 `requirements.txt` 中的依賴庫。
+- 透過執行 `manage_members.py` 和 `update_description.py` 腳本，手動運行成員管理與描述更新。
+- 你也可以依賴自動化工作流，設置定時任務，輕鬆維護隊伍資訊。🎈
 
-4. 配置 GitHub Actions 工作流程（若需要），並在 Habitica API 中生成一個有效的密鑰。
+## 🌐 多語言支持
+專案附帶了多種語言的說明文件，包括中文、德語、英語、西班牙語、法語和日語，確保每位用戶都能方便地理解專案內容！🌍
 
-5. 運行腳本：
-   ```bash
-   python manage_members.py
-   python update_description.py
-   ```
+## 📬 反饋與支持
+歡迎向我們提交問題或建議，一起讓這個專案變得更好！🙏
 
-## 💡 貢獻
-
-歡迎任何形式的貢獻！如有建議或問題，請提交 issue 或發起 pull request。😊
-
-## 📞 聯繫
-
-如果您有任何問題或反饋，請通過以下方式聯繫我：
-- 郵箱: your_email@example.com
-- GitHub: [你的GitHub用戶名](https://github.com/yourusername)
-
-感謝您使用我們的工具，祝您在 Habitica 中的團隊管理更加順利！🎊
+感謝您閱讀！願您的隊伍在 Habitica 上充滿活力，永遠走在成功的路上！💪✨

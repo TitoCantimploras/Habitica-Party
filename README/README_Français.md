@@ -1,83 +1,82 @@
 [Back to main language README](README.md)
 
-# 🥳 Outil de Gestion d'Équipe Automatisé README
+# 🎉 Projet de gestion d'équipe automatisée
 
-Bienvenue dans notre outil de gestion d'équipe automatisé ! Ce projet vise à améliorer l'efficacité et l'engagement dans la gestion d'équipe grâce à l'intégration avec l'API Habitica. 💼✨
+Bienvenue dans notre **projet de gestion d'équipe automatisée**! 🚀 Ce projet vise à gérer facilement les membres de l'équipe sur la plateforme Habitica grâce à des scripts d'automatisation, maintenant ainsi l'activité de l'équipe et améliorant l'efficacité de la gestion. Jetons un coup d'œil à la structure et aux fonctionnalités de ce projet !
 
-## 📁 Aperçu des Fichiers
+## 📁 Structure du projet
 
-### 1. Flux de Travail GitHub Actions
-- **Chemin**: `.github/workflows/automated_party_management.yml`
-- **Fonction**: Ce flux de travail se déclenche toutes les 10 minutes (peut aussi être exécuté manuellement) et contient les étapes clés suivantes :
-  - Vérification du code
-  - Configuration de l'environnement Python
-  - Installation des dépendances
-  - Exécution de scripts de gestion pour traiter les membres de l'équipe sur la plateforme Habitica
-  - Exécution de scripts de mise à jour pour enregistrer les modifications
-- **Caractéristiques**: Inclut une fonctionnalité de pause pour gérer le taux de requêtes, et soumet finalement tous les journaux de modifications dans le dépôt de code. 🔄
+```
+{
+  ".github": {
+    ".github/workflows": {
+      ".github/workflows/automated_party_management.yml": "Flux de travail de gestion d'équipe automatisé"
+    }
+  },
+  "LICENSE": "Fichier de licence",
+  "README.md": "Documentation du projet",
+  "README": {
+    "README/README_Deutsch.md": "Documentation en allemand",
+    "README/README_English.md": "Documentation en anglais",
+    "README/README_Español.md": "Documentation en espagnol",
+    "README/README_Français.md": "Documentation en français",
+    "README/README_日本語.md": "Documentation en japonais",
+    "README/README_繁体中文.md": "Documentation en chinois traditionnel"
+  },
+  "documents": {
+    "documents/brief_description.md": "Brève description du projet",
+    "documents/new_members.md": "Présentation des nouveaux membres",
+    "documents/party_description.md": "Description de l'équipe",
+    "documents/remove_PM.md": "Instructions pour supprimer un chef de projet",
+    "documents/remove_members.md": "Instructions pour supprimer des membres"
+  },
+  "logs": {
+    "logs/manage_members.log": "Journal de gestion des membres",
+    "logs/update_description.log": "Journal de mise à jour de la description"
+  },
+  "requirements.txt": "Exigences des paquets dépendants",
+  "scripts": {
+    "scripts/manage_members.py": "Script de gestion des membres",
+    "scripts/update_description.py": "Script de mise à jour de la description"
+  }
+}
+```
 
-### 2. Licence
-- **Nom du Fichier**: `LICENSE`
-- **Contenu**: Contient la licence Apache, version 2.0, qui résume les termes et conditions d'utilisation, de reproduction et de distribution des logiciels et œuvres associées, y compris les définitions, les droits des utilisateurs, les exigences de redistribution et les clauses de non-responsabilité. 📜
+## 📜 Fonctionnalités du projet
 
-### 3. Script de Gestion des Membres
-- **Nom du Fichier**: `manage_members.py`
-- **Fonction**: Ce script Python est conçu pour gérer les membres de l'équipe sur la plateforme Habitica. Ses principales fonctions incluent :
-  - **Configuration des Journaux**: Initialiser les journaux pour suivre les opérations du script, y compris les erreurs et les informations générales.
-  - **Limite de Taux**: Mettre en œuvre un mécanisme pour respecter les limites des requêtes API, en gérant le temps entre les requêtes.
-  - **Gestion des Membres**:
-    - Identifier et récupérer les membres de l'équipe inactifs basés sur leur dernière connexion.
-    - Envoyer des notifications privées avant de retirer des membres.
-    - Envoyer des notifications dans le chat d'équipe pour informer du retrait des membres.
-  - **Fonction d'Invitation**: Rechercher les utilisateurs à la recherche d'une équipe et leur envoyer des invitations, y compris une liste formatée des membres invités.
-  - **Outils**: Inclut des fonctions utilitaires pour traiter les réponses API, envoyer des messages et calculer le temps en fonction de l'activité des utilisateurs.
+### 1. Flux de travail de gestion d'équipe automatisé 🤖
+Nous avons défini un flux de travail nommé "Gestion automatisée d'équipe" dans le fichier `.github/workflows/automated_party_management.yml`. Il s'exécute automatiquement toutes les 10 minutes et peut également être déclenché manuellement. L'objectif principal de ce flux est de gérer et de mettre à jour les informations des membres de l'équipe via un script Python, comprenant les étapes importantes suivantes :
 
-En résumé, ce script améliore la gestion d'équipe sur Habitica en automatisant le retrait des utilisateurs inactifs et l'invitation de nouveaux utilisateurs, favorisant ainsi un meilleur engagement des utilisateurs. 🎉
+- **Récupération du code** : obtenir le dernier code du dépôt.
+- **Configuration de l'environnement Python** : installation de Python 3.8.
+- **Installation des dépendances** : installer la bibliothèque `requests` requise par le script.
+- **Exécution du script de gestion** : exécuter le script `manage_members.py` pour la gestion des membres.
+- **Limitation de la fréquence des requêtes** : utiliser des commandes de sommeil pour éviter de surcharger l'API.
+- **Exécution du script de mise à jour** : exécuter le script `update_description.py` pour mettre à jour la description.
+- **Journaliser les modifications** : enregistrer toutes les actions et soumettre les journaux dans le dépôt.
 
-### 4. Script de Mise à Jour de la Description
-- **Nom du Fichier**: `update_description.py`
-- **Fonction**: Ce script Python est destiné à mettre à jour la description de l'équipe Habitica, et inclut les fonctionnalités suivantes :
-  - Récupérer quotidiennement une phrase et les détails de dernière connexion des membres de l'équipe.
-  - Journalisation et mise en œuvre de la limite de taux des requêtes API.
-  - Mise à jour dynamique de la description de l'équipe en fonction des données récupérées.
-  - Lecture du format de description à partir d'un fichier modèle, compilation des informations sur les membres et envoi de la requête de mise à jour à l'API Habitica.
-  - Enregistrer les réussites et les erreurs au cours des opérations.
+### 2. Licence 📝
+Le projet contient un fichier `LICENSE` qui utilise la licence Apache Version 2.0, vous offrant les termes et conditions pour utiliser, copier et distribuer ce logiciel.
 
-## 🛠️ Installation et Utilisation
+### 3. Dépendances 📦
+Le fichier `requirements.txt` du projet énumère les bibliothèques externes nécessaires à l'exécution du projet, la principale étant `requests`, une bibliothèque HTTP populaire pour gérer les requêtes et les réponses réseau.
 
-1. Clonez ce dépôt :
-   ```bash
-   git clone https://github.com/yourusername/repository.git
-   cd repository
-   ```
+### 4. Script de gestion des membres 🧑‍🤝‍🧑
+Le script `manage_members.py` est responsable de la gestion des membres de l'équipe sur la plateforme Habitica. Ses principales fonctionnalités incluent :
+- Journalisation, définition de la fréquence des requêtes, détection des membres inactifs, envoi d'invitations, etc., garantissant que l'équipe reste active et ne soit pas laissée pour compte.
 
-2. Configurez l'environnement Python :
-   ```bash
-   python -m venv venv
-   source venv/bin/activate
-   ```
+### 5. Script de mise à jour de la description 🔄
+Le script `update_description.py` met à jour la description de l'équipe à intervalles réguliers, intégrant des informations sur les membres et des contenus provenant d'API externes pour que la description de votre équipe soit toujours fraîche et attrayante.
 
-3. Installez les dépendances :
-   ```bash
-   pip install -r requirements.txt
-   ```
+## 🛠️ Comment exécuter
+- Assurez-vous d'avoir un environnement Python et d'installer les bibliothèques requises dans `requirements.txt`.
+- Exécutez manuellement les scripts `manage_members.py` et `update_description.py` pour la gestion des membres et la mise à jour des descriptions.
+- Vous pouvez également compter sur le flux de travail automatisé pour programmer des tâches et maintenir facilement les informations de l'équipe. 🎈
 
-4. Configurez le flux de travail GitHub Actions (si nécessaire) et générez une clé valide dans l'API Habitica.
+## 🌐 Support multilingue
+Le projet est accompagné de documents d'explication en plusieurs langues, y compris le chinois, l'allemand, l'anglais, l'espagnol, le français et le japonais, garantissant que chaque utilisateur puisse facilement comprendre le contenu du projet ! 🌍
 
-5. Exécutez les scripts :
-   ```bash
-   python manage_members.py
-   python update_description.py
-   ```
+## 📬 Retour d'information et soutien
+N'hésitez pas à nous soumettre vos questions ou suggestions, travaillons ensemble pour améliorer ce projet ! 🙏
 
-## 💡 Contributions
-
-Toutes les contributions sont les bienvenues ! Si vous avez des suggestions ou des questions, merci de soumettre un problème ou de faire une demande de tirage. 😊
-
-## 📞 Contact
-
-Si vous avez des questions ou des retours, n'hésitez pas à me contacter :
-- Email : your_email@example.com
-- GitHub : [votreNomGitHub](https://github.com/yourusername)
-
-Merci d'utiliser notre outil, et je vous souhaite une gestion d'équipe plus fluide sur Habitica ! 🎊
+Merci d'avoir lu ! Que votre équipe sur Habitica soit pleine de vitalité et toujours sur le chemin du succès ! 💪✨
