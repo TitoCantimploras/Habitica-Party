@@ -1,102 +1,84 @@
-- [{main_language}](README.md)- [切換語言: 繁體中文](README/README_繁体中文.md)
-- [Cambiar idioma: Español](README/README_Español.md)
-- [Changer de langue: Français](README/README_Français.md)
-- [Sprache wechseln: Deutsch](README/README_Deutsch.md)
-- [言語を切り替える: 日本語](README/README_日本語.md)
+- [简体中文](/README.md)
+- [切換語言: 繁體中文](/README/README_繁体中文.md)
+- [Cambiar idioma: Español](/README/README_Español.md)
+- [Changer de langue: Français](/README/README_Français.md)
+- [Sprache wechseln: Deutsch](/README/README_Deutsch.md)
+- [言語を切り替える: 日本語](/README/README_日本語.md)
 
-# 📚 Project Overview README
+# Project Introduction 📚
 
-Welcome to our project! 🎉 Here, we are dedicated to managing Habitica community team members through automation tools, making team management more efficient and effortless. Let’s dive into the structure and features of this project! ✨
+Welcome to the **Habitica Team Automation Management Project**! 🎉 This project aims to enhance your experience on the Habitica platform by optimizing member management through automation tools and scripts. Whether you're part of the game or just want to manage your team effortlessly, our tools are here to help you!
 
-## 📁 Project Structure
+## Project Structure 📂
+
+Here’s the structure of the project, ensuring you can easily find the files you need:
 
 ```
-{
-  ".github": {
-    ".github/workflows": {
-      ".github/workflows/automated_party_management.yml": "automated_party_management.yml"
-    }
-  },
-  "LICENSE": "LICENSE",
-  "README.md": "README.md",
-  "README": {
-    "README/README_Deutsch.md": "README_Deutsch.md",
-    "README/README_English.md": "README_English.md",
-    "README/README_Español.md": "README_Español.md",
-    "README/README_Français.md": "README_Français.md",
-    "README/README_日本語.md": "README_日本語.md",
-    "README/README_繁体中文.md": "README_繁体中文.md"
-  },
-  "documents": {
-    "documents/brief_description.md": "brief_description.md",
-    "documents/new_members.md": "new_members.md",
-    "documents/party_description.md": "party_description.md",
-    "documents/remove_PM.md": "remove_PM.md",
-    "documents/remove_members.md": "remove_members.md"
-  },
-  "logs": {
-    "logs/manage_members.log": "manage_members.log",
-    "logs/update_description.log": "update_description.log"
-  },
-  "requirements.txt": "requirements.txt",
-  "scripts": {
-    "scripts/manage_members.py": "manage_members.py",
-    "scripts/update_description.py": "update_description.py"
-  }
-}
+.
+├── .github
+│   └── workflows
+│       └── automated_party_management.yml
+├── LICENSE
+├── README.md
+├── README
+│   ├── README_Deutsch.md
+│   ├── README_English.md
+│   ├── README_Español.md
+│   ├── README_Français.md
+│   ├── README_日本語.md
+│   └── README_繁体中文.md
+├── documents
+│   ├── brief_description.md
+│   ├── new_members.md
+│   ├── party_description.md
+│   ├── remove_PM.md
+│   └── remove_members.md
+├── logs
+│   ├── manage_members.log
+│   └── update_description.log
+├── requirements.txt
+└── scripts
+    ├── manage_members.py
+    └── update_description.py
 ```
 
-## 📝 File Overview
+## File Descriptions 🔍
 
-### GitHub Actions Automation Workflow
+### Automated Team Management (`.github/workflows/automated_party_management.yml`)
+This file defines a GitHub Actions workflow named "Team Automation Management." It runs automatically every 10 minutes or can be triggered manually, performing the following functions:
+- Checks out the code repository
+- Sets up a Python 3.8 environment
+- Installs the required libraries (like `requests`)
+- Executes management scripts (`manage_members.py` and `update_description.py`) to interact with the Habitica API
+- Sets delays between script executions to prevent exceeding API rate limits
+- Commits and pushes log changes to document updates to the management scripts
 
-In the `.github/workflows/automated_party_management.yml` file, a GitHub Actions workflow is defined to automate team member management. It triggers every 10 minutes or can be manually invoked, running in an Ubuntu environment with several key steps:
+### License (`LICENSE`)
+This project follows the Apache License 2.0, aimed at promoting open-source collaboration and protecting the rights of creators and users. The license details the terms and conditions for using, copying, and distributing software and other works.
 
-1. **Checkout Code**: Retrieve the project code.
-2. **Set Up Python Environment**: Configure Python 3.8.
-3. **Install Dependencies**: Install the necessary `requests` library.
-4. **Execute Management Script**: Run the Python script for managing members (`manage_members.py`), utilizing environment variables to manage user credentials.
-5. **Rate Limiting**: Introduce pauses to manage request rates.
-6. **Run Update Script**: Execute the script to update descriptions (`update_description.py`), also using environment variables.
-7. **Log Changes**: Commit updates from the log generated by the scripts back to the repository.
-8. **Push Changes**: Push the updated logs back to the remote repository.
+### Dependency File (`requirements.txt`)
+This file lists the external libraries and dependencies needed for the project, currently only containing the `requests` library, which provides a simple way to send HTTP requests and handle responses.
 
-This workflow is designed to efficiently automate the management of team members and the updating of logs—what a smart assistant! 🤖
+### Member Management Script (`scripts/manage_members.py`)
+This script is used to manage members on the Habitica platform, automating the following tasks:
+- Removing inactive members and notifying them
+- Inviting new users seeking to join the team
 
-### License File
+### Description Update Script (`scripts/update_description.py`)
+This script is responsible for updating the Habitica team's description, dynamically fetching and updating content. Its key features include:
+- Daily inspirational quotes obtained from an external API
+- Automatic updates to the team description, ensuring the information stays fresh!
 
-The `LICENSE` file follows the Apache License 2.0, which serves as a permissive open-source software license outlining terms and conditions for using, reproducing, and distributing the software and other works. It grants users rights to modify and distribute the works while ensuring appropriate attribution to the original authors. Additionally, the file includes terms for trademark usage, liability disclaimers, and limitations of liability. This document aims to foster cooperation among developers and promote user access, maintaining software freedom while protecting the rights of the original authors.
+## Log Files 📜
+All executed operations are logged in the `logs` folder, making it easy for you to review execution history and troubleshoot potential issues.
 
-### Dependency File
+## Getting Started 🚀
 
-The `requirements.txt` file lists the external packages and libraries required to run the project. In this project, it only includes the `requests` library, a widely-used Python module that allows developers to easily send HTTP requests and interact with web services and APIs. With the simple command `pip install -r requirements.txt`, you can quickly install these dependencies and kick off your magical journey! ✨
+1. Clone the project repository
+2. Install dependencies: `pip install -r requirements.txt`
+3. Use GitHub Actions for an automated workflow and enjoy a seamless member management experience!
 
-### Script Files
+## Contributing 💡
+If you would like to contribute to this project, feel free to submit a PR or raise an issue! Let’s make Habitica even more exciting together! ⭐️
 
-- **Member Management Script `manage_members.py`**
-
-  This script is designed to manage members of the Habitica team and performs the following key functions:
-
-  1. **Logging**: Uses the logging module to record operations and errors, storing them in rotating log files and outputting important information to the console.
-  2. **Rate-Limited API Requests**: Defines a helper function to ensure requests adhere to specified intervals.
-  3. **User Management**: Retrieves the team member list, checks for inactive members, and removes them.
-  4. **Message Sending**: Can send private messages to users and post member invitations and removal messages in team chats.
-  5. **Inviting New Users**: Sends invitations to new users looking for a team and notifies the team in the chat.
-
-  With these functions, this script greatly simplifies the management of Habitica team members, making community management much more enjoyable! 🎈
-
-- **Update Description Script `update_description.py`**
-
-  This script automatically updates the Habitica team description by integrating daily quotes and member activity information. Its main functions include:
-
-  1. **Rate-Limited API Requests**: Manages the interval between requests to prevent overloading the Habitica API.
-  2. **Daily Quote Retrieval**: Fetches daily quotes from an external API, obtaining both the English content and translations.
-  3. **Member Data Collection**: Collects information about team members, including last login time and the duration of their last activity.
-  4. **Description Formatting**: Reads the Markdown template and formats it with current content, member information, and timestamps.
-  5. **Update Submission**: Sends the updated description back to the Habitica API.
-
-  Through such automation, this script continuously enhances the appeal of the team description and member interactions—it’s like having an artistic friend! 🎨
-
----
-
-Thank you for checking out our project! We hope the tools we provide will bring convenience and joy to your Habitica community management. If you have any questions, please feel free to reach out! 🎈👋
+Thank you for reading this project's README file! We look forward to your participation and support, so come and ⭐️ this project!
