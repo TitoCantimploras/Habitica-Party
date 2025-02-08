@@ -1,80 +1,49 @@
 [Back to main language README](README.md)
 
-# 🎉 Party Management Tool
+# Party Management Tool 🎉
 
-## 🚀 Project Introduction
+Welcome to the **Party Management Tool** project homepage! This project aims to simplify the organization of various social activities, such as get-togethers with friends or team event planning. Whether you want to host a small gathering or a large team event, our tool can make your life easier.
 
-Welcome to the Party Management Tool project! This project aims to provide an efficient solution to help users manage party events. By using GitHub Actions, we can automatically execute two Python scripts regularly, simplifying the management tasks involved in organizing events. Whether it’s a gathering with friends, a team activity, or any other social occasion, this tool will help you arrange everything easily.
+## 📃 Project Overview
+
+This project includes a variety of useful features, such as:
+
+- **Multilingual Support** 🌍: Links to README documents in different languages to assist users worldwide.
+- **Automated Management** 🤖: Use Python scripts to automatically execute management tasks in GitHub Actions, making the process more efficient.
+- **Development Environment Setup** 🛠️: Detailed setup instructions to guide you on how to clone the repository and install dependencies.
+- **Script Configuration and Manual Execution** 📝: Guidance on how to configure scripts and execute them manually for flexible workflow adjustments.
+- **Contribution Guidelines** 🤝: We welcome all users interested in improving the project, providing detailed instructions on how to contribute and collaborate.
 
 ## 📦 Installation Steps
 
-Before you start using the Party Management Tool, please ensure you have [Python](https://www.python.org/downloads/) and [Git](https://git-scm.com/downloads/) installed in your development environment.
+1. Clone the repository: `git clone <repository-url>`
+2. Install dependencies: `pip install -r requirements.txt`
+3. Configure scripts: Adjust the relevant settings as needed.
 
-1. **Clone the Repository**
+## 🚀 Usage Instructions
 
-   ```bash
-   git clone https://github.com/your-username/party-management-tool.git
-   cd party-management-tool
-   ```
+Using this tool for party management is super simple! Just follow these steps to get started:
 
-2. **Install Dependencies**
-
-   Make sure to install the required dependencies in your virtual environment:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## 📄 Usage Instructions
-
-1. **Configure the Scripts**
-
-   Before using the tool, please configure the `script1.py` and `script2.py` files according to your needs to ensure they have the correct parameters and settings.
-
-2. **Manual Execution**
-
-   You can manually execute the scripts to test their functionality:
-
-   ```bash
-   python script1.py
-   python script2.py
-   ```
-
-3. **Automated Execution**
-
-   With GitHub Actions, the scripts will run automatically based on a predefined schedule. You can view and adjust the workflows in the `.github/workflows` directory.
+1. Configure your event information.
+2. Utilize automated scripts to handle management tasks.
+3. Follow the documentation for instructions.
 
 ## 🤝 Contribution Guidelines
 
-We welcome contributions in any form! If you want to contribute code to the Party Management Tool, please follow these steps:
+We welcome all developers who wish to contribute to this project! Please adhere to the following steps:
 
-1. **Fork this Repository**
-2. **Create a New Branch**
+1. Fork this project
+2. Submit a Pull Request with a brief description of your changes
+3. Discuss your contributions with the project team
 
-   ```bash
-   git checkout -b feature/your-feature
-   ```
+## 📝 License
 
-3. **Commit Your Changes**
+This project is licensed under the [Apache License, Version 2.0](LICENSE). This open-source license allows individuals and entities to use, copy, and distribute the software and its derivative works, provided that certain requirements are met. We encourage the community to collaborate under a shared legal framework for mutual progress.
 
-   ```bash
-   git commit -m "Added a new feature"
-   ```
+## 💬 Feedback and Support
 
-4. **Push to the Branch**
-
-   ```bash
-   git push origin feature/your-feature
-   ```
-
-5. **Submit a Pull Request**
-
-Please clearly describe your changes and features. Thank you for your contribution! 💪
-
-## 📜 License
-
-This project is licensed under the [Apache License, Version 2.0](LICENSE). Please ensure you follow the licensing terms to legally use, copy, and distribute this software.
+If you have any questions or suggestions about this project, feel free to reach out to us anytime! We greatly value community feedback and look forward to connecting and collaborating with you.
 
 ---
 
-Thank you for reading this README file, and we hope you enjoy using it! If you have any questions or suggestions, please feel free to reach out to us! 😊
+Thank you for using the **Party Management Tool**! Let’s create unforgettable party memories together! 🎊

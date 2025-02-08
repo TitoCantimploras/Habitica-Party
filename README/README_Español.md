@@ -1,80 +1,49 @@
 [Back to main language README](README.md)
 
-# 🎉 Herramienta de Gestión de Eventos
+# Herramienta de Gestión de Fiestas (Party Management Tool) 🎉
 
-## 🚀 Introducción al Proyecto
+¡Bienvenido a la página principal del **Herramienta de Gestión de Fiestas**! Este proyecto tiene como objetivo simplificar la organización de diversas actividades sociales, como reuniones con amigos o actividades de equipo. Ya sea que desees organizar una pequeña reunión o un gran evento, nuestra herramienta te facilitará el proceso.
 
-¡Bienvenido al proyecto de la herramienta de gestión de eventos! Este proyecto tiene como objetivo proporcionar una solución eficiente para ayudar a los usuarios a gestionar actividades de eventos. Al utilizar GitHub Actions, podemos ejecutar automáticamente dos scripts de Python de manera regular, simplificando así las tareas de gestión en el proceso de organización de eventos. Ya sea para reuniones con amigos, actividades en equipo u otras ocasiones sociales, esta herramienta te ayudará a organizarte fácilmente.
+## 📃 Descripción del Proyecto
+
+Este proyecto cuenta con varias funciones útiles, que incluyen:
+
+- **Soporte Multilingüe** 🌍: Ofrecemos enlaces a versiones en diferentes idiomas del documento README, para facilitar su uso a usuarios de todo el mundo.
+- **Gestión Automatizada** 🤖: Ejecutamos tareas de gestión de manera automática en GitHub Actions usando scripts de Python, haciendo el proceso más eficiente.
+- **Configuración del Entorno de Desarrollo** 🛠️: Incluye instrucciones detalladas sobre cómo clonar el repositorio e instalar las dependencias.
+- **Configuración de Scripts y Ejecución Manual** 📝: Proporcionamos orientaciones sobre cómo configurar scripts y ejecutarlos manualmente, lo que permite ajustar el flujo de trabajo de manera flexible.
+- **Guía de Contribuciones** 🤝: Damos la bienvenida a todos los que deseen participar en la mejora del proyecto, proporcionando detalles sobre contribuciones y colaboraciones.
 
 ## 📦 Pasos de Instalación
 
-Antes de comenzar a usar la herramienta de gestión de eventos, asegúrate de que tu entorno de desarrollo tenga instalados [Python](https://www.python.org/downloads/) y [Git](https://git-scm.com/downloads).
+1. Clona el repositorio: `git clone <repository-url>`
+2. Instala las dependencias: `pip install -r requirements.txt`
+3. Configura los scripts: Ajusta las configuraciones necesarias según tus requerimientos.
 
-1. **Clona el Repositorio**
+## 🚀 Instrucciones de Uso
 
-   ```bash
-   git clone https://github.com/tu_usuario/herramienta-de-gestion-de-eventos.git
-   cd herramienta-de-gestion-de-eventos
-   ```
+¡Usar esta herramienta para gestionar fiestas es muy sencillo! Solo sigue estos pasos para comenzar:
 
-2. **Instala las Dependencias**
+1. Configura la información de tu evento.
+2. Utiliza los scripts de automatización para manejar las tareas de gestión.
+3. Sigue las instrucciones en la documentación para llevar a cabo las operaciones.
 
-   Asegúrate de instalar las dependencias necesarias en tu entorno virtual:
+## 🤝 Guía de Contribuciones
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+¡Damos la bienvenida a todos los desarrolladores que deseen contribuir a este proyecto! Por favor, sigue estos pasos:
 
-## 📄 Instrucciones de Uso
+1. Haz un Fork de este proyecto
+2. Envía un Pull Request, explicando brevemente tus cambios
+3. Discute tu contribución con el equipo del proyecto
 
-1. **Configura los Scripts**
+## 📝 Licencia
 
-   Antes de usar, ajusta los archivos `script1.py` y `script2.py` según tus necesidades para que tengan los parámetros y configuraciones correctas.
+Este proyecto se rige por la [Licencia Apache, Versión 2.0](LICENSE). Esta licencia de código abierto permite a individuos y entidades utilizar, copiar y distribuir el software y sus obras derivadas, siempre que se cumplan ciertos requisitos. Fomentamos la colaboración de la comunidad dentro de un marco legal común, para avanzar juntos.
 
-2. **Ejecuta Manualmente**
+## 💬 Comentarios y Soporte
 
-   Puedes ejecutar los scripts manualmente para probar su funcionalidad:
-
-   ```bash
-   python script1.py
-   python script2.py
-   ```
-
-3. **Ejecuta de Manera Automatizada**
-
-   A través de GitHub Actions, los scripts se ejecutarán automáticamente según el horario preestablecido. Puedes revisar y ajustar el flujo de trabajo en el directorio `.github/workflows`.
-
-## 🤝 Guía de Contribución
-
-¡Damos la bienvenida a cualquier tipo de contribución! Si deseas contribuir con código a la herramienta de gestión de eventos, sigue estos pasos:
-
-1. **Haz un Fork de este Repositorio**
-2. **Crea una Nueva Rama**
-
-   ```bash
-   git checkout -b feature/tu_característica
-   ```
-
-3. **Envía tus Cambios**
-
-   ```bash
-   git commit -m "Añadida una nueva característica"
-   ```
-
-4. **Empuja a la Rama**
-
-   ```bash
-   git push origin feature/tu_característica
-   ```
-
-5. **Envía un pull request**
-
-Por favor, describe claramente tus cambios y características. ¡Gracias por tu contribución!💪
-
-## 📜 Licencia
-
-Este proyecto se rige por la [Licencia Apache, Versión 2.0](LICENSE). Asegúrate de seguir los términos de la licencia para usar, copiar y distribuir este software de manera legal.
+¡Si tienes alguna pregunta o sugerencia sobre este proyecto, no dudes en contactarnos! Valoramos mucho los comentarios de la comunidad y esperamos poder comunicarnos y colaborar contigo. 
 
 ---
 
-¡Gracias por leer este archivo README, y te deseamos una buena experiencia con el uso de la herramienta! Si tienes alguna pregunta o sugerencia, ¡no dudes en contactarnos!😊
+¡Gracias por utilizar **Herramienta de Gestión de Fiestas**! ¡Vamos a crear recuerdos inolvidables juntos! 🎊
