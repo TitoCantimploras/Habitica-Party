@@ -1,82 +1,93 @@
 [Back to main language README](README.md)
 
-# 🎉 Automatisierung des Teammanagementprojekts
+切换语言: 简体中文
+切換語言: 繁體中文
+Switch Language: English
+Cambiar idioma: Español
+Changer de langue: Français
+言語を切り替える: 日本語
 
-Willkommen zu unserem **Automatisierung des Teammanagementprojekts**! 🚀 Dieses Projekt zielt darauf ab, die Teammitglieder auf der Habitica-Plattform mithilfe von Automatisierungsskripten einfach zu verwalten, das Team aktiv zu halten und die Verwaltungseffizienz zu steigern. Lassen Sie uns die Struktur und die Funktionen dieses Projekts näher betrachten!
+# Projekt Selbstverwaltungs-System README 🌟
 
-## 📁 Projektstruktur
+Willkommen zu unserem Projekt Selbstverwaltungs-System! 🎉 Dieses Projekt wurde für das Teammanagement auf der Habitica-Plattform entwickelt. Durch die Automatisierung der Verwaltung von Teammitgliedern und die Aktualisierung der Teambeschreibung wird sichergestellt, dass jedes Team in einem guten Zustand bleibt. 👏
+
+## Projektstruktur 🗂️
 
 ```
-{
-  ".github": {
-    ".github/workflows": {
-      ".github/workflows/automated_party_management.yml": "Automatisierter Teamverwaltungs-Workflow"
-    }
-  },
-  "LICENSE": "Lizenzdatei",
-  "README.md": "Projektbeschreibung",
-  "README": {
-    "README/README_Deutsch.md": "Deutsch Dokumentation",
-    "README/README_English.md": "Englische Dokumentation",
-    "README/README_Español.md": "Spanische Dokumentation",
-    "README/README_Français.md": "Französische Dokumentation",
-    "README/README_日本語.md": "Japanische Dokumentation",
-    "README/README_繁体中文.md": "Traditionelle Chinesische Dokumentation"
-  },
-  "documents": {
-    "documents/brief_description.md": "Kurze Projektbeschreibung",
-    "documents/new_members.md": "Vorstellung neuer Mitglieder",
-    "documents/party_description.md": "Team Beschreibung",
-    "documents/remove_PM.md": "Entfernung des Projektleiters Anleitung",
-    "documents/remove_members.md": "Entfernung von Mitgliedern Anleitung"
-  },
-  "logs": {
-    "logs/manage_members.log": "Mitgliederverwaltungsprotokoll",
-    "logs/update_description.log": "Aktualisierungsprotokoll"
-  },
-  "requirements.txt": "Abhängigkeiten",
-  "scripts": {
-    "scripts/manage_members.py": "Mitgliederverwaltungs-Skript",
-    "scripts/update_description.py": "Aktualisierungs-Skript"
-  }
-}
+.
+├── .github
+│   └── workflows
+│       └── automated_party_management.yml
+├── LICENSE
+├── README.md
+├── README
+│   ├── README_Deutsch.md
+│   ├── README_English.md
+│   ├── README_Español.md
+│   ├── README_Français.md
+│   ├── README_日本語.md
+│   └── README_繁体中文.md
+├── documents
+│   ├── brief_description.md
+│   ├── new_members.md
+│   ├── party_description.md
+│   ├── remove_PM.md
+│   └── remove_members.md
+├── logs
+│   ├── manage_members.log
+│   └── update_description.log
+├── requirements.txt
+└── scripts
+    ├── manage_members.py
+    └── update_description.py
 ```
 
-## 📜 Projektfunktionen
+## Projektdateien Übersicht 📁
 
-### 1. Automatisierter Teamverwaltungsworkflow 🤖
-Wir haben in `.github/workflows/automated_party_management.yml` einen Workflow namens "Automatisierte Teamverwaltung" definiert. Dieser läuft alle 10 Minuten automatisch und kann auch manuell ausgelöst werden. Das Hauptziel dieses Workflows ist es, Informationen über Teammitglieder mithilfe eines Python-Skripts zu verwalten und zu aktualisieren, das folgende wichtige Schritte umfasst:
+### Workflow-Dateien 🔄
+- **Automatisierter Verwaltungsworkflow**: Diese Datei befindet sich in `.github/workflows/automated_party_management.yml`, sie verwaltet das Team regelmäßig über GitHub Actions. Alle 10 Minuten wird sie ausgeführt, um sicherzustellen, dass der Teamstatus immer aktuell bleibt! 💼
 
-- **Code-Checkout**: Holen Sie sich den neuesten Code aus dem Repository.
-- **Python-Umgebung einrichten**: Installieren Sie Python 3.8.
-- **Abhängigkeiten installieren**: Installieren Sie die erforderliche `requests`-Bibliothek.
-- **Verwaltungsskript ausführen**: Führen Sie das Skript `manage_members.py` zur Mitgliederverwaltung aus.
-- **Anfragenrate begrenzen**: Verwenden Sie Sleep-Befehle, um eine Überlastung der API zu verhindern.
-- **Aktualisierungsskript ausführen**: Führen Sie das Skript `update_description.py` zur Aktualisierung der Beschreibung aus.
-- **Änderungen protokollieren**: Protokollieren Sie alle Aktionen und übermitteln Sie die Protokolle an das Repository.
+### Lizenz 📜
+- **LICENSE**: Dieses Projekt verwendet die Apache-Lizenz 2.0, die die Bedingungen für die Nutzung, Vervielfältigung und Verbreitung von Software und anderen Arbeiten detailliert festlegt, damit jeder gut informiert ist! ✨
 
-### 2. Lizenz 📝
-Das Projekt enthält eine `LICENSE`-Datei, die die Bedingungen und Konditionen für die Nutzung, Kopie und Verteilung dieser Software gemäß der Apache License, Version 2.0 festlegt.
+### Abhängigkeitsdatei 📦
+- **requirements.txt**: Diese Datei listet die erforderlichen Bibliotheken für das Projekt auf, wobei nur eine wichtige Bibliothek enthalten ist: `requests`, die uns hilft, HTTP-Anfragen einfach zu senden und den Code zu vereinfachen! 🚀
 
-### 3. Abhängigkeiten 📦
-Die Datei `requirements.txt` im Projekt listet die externen Bibliotheken auf, die für den Betrieb des Projekts benötigt werden. Die benötigte Bibliothek ist `requests`, eine beliebte HTTP-Bibliothek zur Handhabung von Netzwerk-Anfragen und -Antworten.
+### Skriptdateien 🖥️
+- **Mitgliederverwaltungsskript (manage_members.py)**: Dieses Skript überwacht den Aktivitätsstatus der Mitglieder, entfernt inaktive Mitglieder automatisch und lädt neue Mitglieder ein. So bleibt unser Team immer voller Energie! 💪
 
-### 4. Mitgliederverwaltungs-Skript 🧑‍🤝‍🧑
-Das Skript `manage_members.py` ist verantwortlich für die Verwaltung der Teammitglieder auf der Habitica-Plattform. Seine Hauptfunktionen umfassen:
-- Protokollierung, Festlegung der Anfragefrequenz, Überwachung inaktiver Mitglieder, Versendung von Einladungen usw., um sicherzustellen, dass das Team aktiv bleibt.
+- **Beschreibung aktualisieren Skript (update_description.py)**: Die Aufgabe dieses Skripts ist es, die Beschreibung des Teams zu aktualisieren, einschließlich motivierender Sprüche, Mitgliedsinformationen, aktueller Zeit usw., damit unser Team immer voller positiver Energie ist! 🌈
 
-### 5. Aktualisierungsskript 🔄
-Das Skript `update_description.py` aktualisiert regelmäßig die Teambeschreibung, kombiniert Informationen über Mitglieder und Inhalte von externen APIs, damit Ihre Teambeschreibung immer frisch und ansprechend bleibt.
+## Beitragsrichtlinien 🤝
 
-## 🛠️ So führen Sie es aus
-- Stellen Sie sicher, dass Sie eine Python-Umgebung haben und dass die Bibliotheken in `requirements.txt` installiert sind.
-- Führen Sie die Skripte `manage_members.py` und `update_description.py` aus, um die Mitgliederverwaltung und die Beschreibung manuell zu betreiben.
-- Sie können auch den automatisierten Workflow nutzen, um regelmäßige Aufgaben einzurichten und die Teaminformationen mühelos zu pflegen. 🎈
+Wir freuen uns über jeden, der Interesse an diesem Projekt hat, um seinen Beitrag zu leisten! Bitte stellen Sie sicher, dass Sie unsere Lizenz befolgen und freundlich mit anderen Mitwirkenden kommunizieren. 🌍
 
-## 🌐 Mehrsprachige Unterstützung
-Das Projekt enthält Dokumentationen in mehreren Sprachen, darunter Chinesisch, Deutsch, Englisch, Spanisch, Französisch und Japanisch, um sicherzustellen, dass jeder Benutzer den Projektinhalt bequem verstehen kann! 🌍
+## Bedienungsanleitung 🛠️
 
-## 📬 Feedback und Unterstützung
-Wir freuen uns über Ihre Fragen oder Vorschläge, um dieses Projekt gemeinsam zu verbessern! 🙏
+1. **Projekt klonen**: Verwenden Sie den folgenden Befehl, um das Projekt lokal zu klonen:
+   ```bash
+   git clone https://github.com/dein-repo-url.git
+   ```
 
-Vielen Dank für Ihre Aufmerksamkeit! Möge Ihr Team auf Habitica voller Energie sein und immer auf dem Erfolgsweg bleiben! 💪✨
+2. **Abhängigkeiten installieren**: Installieren Sie die erforderlichen Python-Bibliotheken mit pip:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **GitHub Secrets einrichten**: Konfigurieren Sie die erforderlichen Benutzer-ID und API-Schlüssel für das Verwaltungsskript, um sicherzustellen, dass Sie Zugriff auf die Habitica API haben.
+
+4. **Workflow starten**: Manuell den Workflow auslösen oder alle 10 Minuten auf die automatische Ausführung warten und genießen Sie den Spaß an der automatisierten Verwaltung! 🥳
+
+## Protokollierung 📊
+
+Im `logs` Ordner finden Sie die Protokolldateien, die während der Verwaltung des Teams und der Aktualisierung der Beschreibung generiert werden. Diese helfen uns, jeden Vorgang nachzuvollziehen! 🪄
+
+## Kontaktieren Sie uns 📧
+
+Wenn Sie während der Nutzung des Projekts auf Probleme stoßen oder Vorschläge machen möchten, zögern Sie nicht, uns per E-Mail zu kontaktieren! 😊
+
+Vielen Dank für Ihr Interesse an unserem Projekt! Lassen Sie uns gemeinsam ein aktiveres und effizienteres Team aufbauen! 🎊
+
+---
+
+Wir hoffen, diese Einführung weckt Ihr Interesse am Projekt. Kommen Sie und erleben Sie den Spaß an der automatisierten Verwaltung! 🚀✨

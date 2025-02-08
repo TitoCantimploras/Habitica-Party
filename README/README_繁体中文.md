@@ -1,82 +1,93 @@
 [Back to main language README](README.md)
 
-# 🎉 自動化隊伍管理專案
+切换语言: 简体中文
+Switch Language: English
+Cambiar idioma: Español
+Changer de langue: Français
+Sprache wechseln: Deutsch
+言語を切り替える: 日本語
 
-歡迎來到我們的**自動化隊伍管理專案**! 🚀 本專案旨在透過自動化腳本輕鬆管理 Habitica 平台上的隊伍成員，保持隊伍活躍並提升管理效率。讓我們一起看看這個專案的結構及其功能吧！
+# 項目自管理系統 README 🌟
 
-## 📁 專案結構
+歡迎來到我們的項目自管理系統！🎉 這個項目是為 Habitica 平台的團隊管理而設計的，通過自動化管理團隊成員和更新團隊描述，確保每個團隊在良好的狀態下運作。👏
+
+## 項目結構 🗂️
 
 ```
-{
-  ".github": {
-    ".github/workflows": {
-      ".github/workflows/automated_party_management.yml": "自動化隊伍管理工作流"
-    }
-  },
-  "LICENSE": "許可證文件",
-  "README.md": "專案說明文件",
-  "README": {
-    "README/README_Deutsch.md": "德語文件",
-    "README/README_English.md": "英語文件",
-    "README/README_Español.md": "西班牙語文件",
-    "README/README_Français.md": "法語文件",
-    "README/README_日本語.md": "日語文件",
-    "README/README_繁體中文.md": "繁體中文文件"
-  },
-  "documents": {
-    "documents/brief_description.md": "專案簡要說明",
-    "documents/new_members.md": "新成員介紹",
-    "documents/party_description.md": "隊伍描述",
-    "documents/remove_PM.md": "移除專案經理說明",
-    "documents/remove_members.md": "移除成員說明"
-  },
-  "logs": {
-    "logs/manage_members.log": "成員管理日誌",
-    "logs/update_description.log": "更新描述日誌"
-  },
-  "requirements.txt": "依賴包要求",
-  "scripts": {
-    "scripts/manage_members.py": "成員管理腳本",
-    "scripts/update_description.py": "更新描述腳本"
-  }
-}
+.
+├── .github
+│   └── workflows
+│       └── automated_party_management.yml
+├── LICENSE
+├── README.md
+├── README
+│   ├── README_Deutsch.md
+│   ├── README_English.md
+│   ├── README_Español.md
+│   ├── README_Français.md
+│   ├── README_日本語.md
+│   └── README_繁体中文.md
+├── documents
+│   ├── brief_description.md
+│   ├── new_members.md
+│   ├── party_description.md
+│   ├── remove_PM.md
+│   └── remove_members.md
+├── logs
+│   ├── manage_members.log
+│   └── update_description.log
+├── requirements.txt
+└── scripts
+    ├── manage_members.py
+    └── update_description.py
 ```
 
-## 📜 專案功能
+## 項目文件介紹 📁
 
-### 1. 自動化隊伍管理工作流 🤖
-我們在 `.github/workflows/automated_party_management.yml` 中定義了一個名為“隊伍自動化管理”的工作流。它每10分鐘自動運行一次，而且也可以手動觸發。這個工作流的主要目的是透過 Python 腳本管理和更新隊伍成員資訊，包含以下幾個重要步驟：
+### 工作流文件 🔄
+- **自動化管理工作流**: 這個文件位於 `.github/workflows/automated_party_management.yml`，它通過 GitHub Actions 定期管理團隊。每 10 分鐘執行一次，確保團隊狀態始終保持更新！💼
 
-- **代碼檢出**：獲取代碼庫的最新代碼。
-- **設置 Python 環境**：安裝 Python 3.8。
-- **安裝依賴項**：安裝腳本所需的 `requests` 庫。
-- **運行管理腳本**：執行 `manage_members.py` 腳本進行成員管理。
-- **限制請求頻率**：透過休眠命令防止過載 API。
-- **運行更新腳本**：執行 `update_description.py` 腳本更新描述。
-- **記錄更改**：記錄所有操作並將日誌提交到倉庫。
+### 許可證 📜
+- **LICENSE**: 本項目採用 Apache 許可證 2.0，詳細規定了軟體和其他作品的使用、複製和分發條款，讓每個人都清楚明瞭！✨
 
-### 2. 許可證 📝
-專案包含 `LICENSE` 文件，使用 Apache License, Version 2.0，為您提供使用、複製和分發本軟體的條款和條件。
+### 依賴文件 📦
+- **requirements.txt**: 該文件列出了項目所需的依賴庫，僅包含一個重要的庫：`requests`，幫助我們方便地發送 HTTP 請求，簡化了代碼編寫！🚀
 
-### 3. 依賴項 📦
-專案中的 `requirements.txt` 文件列出了專案運行所需的外部庫，這裡需要的庫是 `requests`，這是一種流行的 HTTP 庫，用於處理網路請求和響應。
+### 腳本文件 🖥️
+- **成員管理腳本 (manage_members.py)**: 此腳本負責監測成員活躍狀態、不活躍成員自動移除、邀請新成員等操作，確保團隊夥伴們始終活力四射！💪
 
-### 4. 成員管理腳本 🧑‍🤝‍🧑
-`manage_members.py` 腳本負責管理 Habitica 平台上的隊伍成員。它的主要功能包括：
-- 記錄日誌、設置請求頻率、檢測不活躍成員、發送邀請等，確保隊伍活躍不掉隊。
+- **描述更新腳本 (update_description.py)**: 該腳本的任務是更新團隊的描述，包含每日激勵的話、成員資訊、當前時間等，讓我們的團隊時刻充滿正能量！🌈
 
-### 5. 描述更新腳本 🔄
-`update_description.py` 腳本每隔一段時間更新隊伍的描述，結合成員資訊和來自外部 API 的內容，讓你的隊伍描述始終充滿新意和吸引力。
+## 貢獻指南 🤝
 
-## 🛠️ 如何運行
-- 確保你有 Python 環境，並且安裝了 `requirements.txt` 中的依賴庫。
-- 透過執行 `manage_members.py` 和 `update_description.py` 腳本，手動運行成員管理與描述更新。
-- 你也可以依賴自動化工作流，設置定時任務，輕鬆維護隊伍資訊。🎈
+歡迎任何一位對這個項目感興趣的人來貢獻你的力量！請確保遵循我們的許可證，並友好地與其他貢獻者交流。🌍
 
-## 🌐 多語言支持
-專案附帶了多種語言的說明文件，包括中文、德語、英語、西班牙語、法語和日語，確保每位用戶都能方便地理解專案內容！🌍
+## 使用說明 🛠️
 
-## 📬 反饋與支持
-歡迎向我們提交問題或建議，一起讓這個專案變得更好！🙏
+1. **克隆項目**: 使用以下命令將項目克隆到本地：
+   ```bash
+   git clone https://github.com/your-repo-url.git
+   ```
 
-感謝您閱讀！願您的隊伍在 Habitica 上充滿活力，永遠走在成功的路上！💪✨
+2. **安裝依賴**: 使用 pip 安裝所需的 Python 類庫：
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **設置 GitHub Secrets**: 為管理腳本配置所需的用戶 ID 和 API 密鑰，確保您有權訪問 Habitica API 接口。
+
+4. **啟動工作流**: 手動觸發工作流或等待每 10 分鐘自動執行，體驗自動化管理的樂趣吧！🥳
+
+## 日誌記錄 📊
+
+在 `logs` 文件夾中，您可以找到管理團隊和更新描述過程中生成的日誌文件，幫助我們追蹤每一次操作！🪄
+
+## 聯繫我們 📧
+
+如果您在使用項目的過程中遇到問題，或想提出建議，請隨時通過電子郵件與我們聯繫！😊
+
+感謝您對項目的關注與使用！讓我們一起構建更加活躍、高效的團隊吧！🎊
+
+---
+
+希望這種介紹能讓您對項目充滿興趣，接下來快來體驗自動化管理的樂趣吧！🚀✨
