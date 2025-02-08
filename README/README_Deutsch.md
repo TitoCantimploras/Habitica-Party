@@ -1,37 +1,83 @@
 [Back to main language README](README.md)
 
-# 📄 Projektname
+# 🥳 Automatisierungstool für Teammanagement README
 
-Willkommen zu unserem Projekt! Der Code dieses Projekts folgt der Apache Lizenz, Version 2.0. Hier sind einige wichtige Informationen und Bestimmungen zu dieser Lizenz.
+Willkommen bei unserem Automatisierungstool für das Teammanagement! Dieses Projekt zielt darauf ab, die Effizienz und das Engagement im Teammanagement durch die Integration der Habitica API zu steigern.💼✨
 
-## 📜 Lizenzübersicht
+## 📁 Dateibeschreibung
 
-Diese Datei trägt den Namen **LICENSE**, und ihr Inhalt ist die Apache Lizenz, Version 2.0. Diese Lizenz legt klare Bedingungen und Voraussetzungen für die Nutzung, Kopie und Verbreitung der Software fest, sodass Benutzer unter bestimmten Bedingungen die lizenzierten Werke ändern und teilen können, während die Rechte an Urheberrechts- und Patentanmeldungen gewahrt bleiben.
+### 1. GitHub Actions Workflow
+- **Pfad**: `.github/workflows/automated_party_management.yml`
+- **Funktion**: Dieser Workflow wird alle 10 Minuten ausgelöst (kann auch manuell ausgeführt werden) und umfasst folgende wichtige Schritte:
+  - Code auschecken
+  - Python-Umgebung einrichten
+  - Abhängigkeiten installieren
+  - Verwaltungsskript ausführen, um die Teammitglieder auf der Habitica-Plattform zu verwalten
+  - Aktualisierungsskript ausführen, um Änderungen zu protokollieren
+- **Merkmale**: Enthält eine Pause-Funktion zur Verwaltung der Anforderungsrate und überträgt schließlich alle Protokolländerungen in das Repository.🔄
 
-## 🔍 Inhalt der Lizenz
+### 2. Lizenzvereinbarung
+- **Dateiname**: `LICENSE`
+- **Inhalt**: Der Inhalt umfasst die Apache-Lizenz, Version 2.0, die die Bedingungen für die Nutzung, Vervielfältigung und Verteilung der Software sowie verwandter Werke umreißt, einschließlich Definitionen, Benutzerrechte, Anforderungen für die Weiterverteilung und Haftungsausschlüsse.📜
 
-- **Definitionen**: Diese Lizenz bietet einige grundlegende Begriffsbestimmungen, um Benutzern zu helfen, ihren Inhalt besser zu verstehen.
-- **Rechte**: Benutzer haben bei Einhaltung der festgelegten Bedingungen das Recht zur Nutzung, Änderung, Verbreitung usw.
-- **Pflichten**: Die Lizenz beschreibt detailliert die Pflichten, die Benutzer beim Einsatz der Software einhalten müssen.
-- **Haftungsausschluss**: Es wird ein Haftungsausschluss in Bezug auf die Nutzung der lizenzierten Materialien bereitgestellt, der die Verantwortung klar einschränkt.
+### 3. Mitgliedermanagement-Skript
+- **Dateiname**: `manage_members.py`
+- **Funktion**: Dieses Python-Skript dient der Verwaltung von Teammitgliedern auf der Habitica-Plattform. Die Hauptfunktionen umfassen:
+  - **Protokollierung**: Initialisiert Protokolle zur Verfolgung der Skriptaktivitäten, einschließlich Fehlern und allgemeinen Informationen.
+  - **Ratenbegrenzung**: Implementiert Mechanismen zur Einhaltung der API-Anforderungsgrenzen, indem die Anforderungszeit gesteuert wird.
+  - **Mitgliedermanagement**:
+    - Ermittelt und ruft inaktive Teammitglieder basierend auf der letzten Anmeldedatum ab.
+    - Sendet private Benachrichtigungen vor der Entfernung von Mitgliedern.
+    - Sendet Benachrichtigungen über die Entfernung von Mitgliedern im Team-Chat.
+  - **Einladungsfunktion**: Sucht nach Benutzern, die ein Team suchen, und sendet ihnen Einladungen, einschließlich einer formatierten Nachricht mit einer Liste der eingeladenen Mitglieder.
+  - **Hilfsfunktionen**: Enthält Hilfsfunktionen zur Verarbeitung von API-Antworten, zum Senden von Nachrichten und zur Berechnung von Zeit basierend auf der Benutzeraktivität.
 
-## ✨ Gebrauchsanweisung
+Zusammenfassend verbessert dieses Skript das Teammanagement in Habitica, indem es die Entfernung inaktiver Benutzer und die Einladung neuer Benutzer automatisiert, was zu besserer Benutzerbeteiligung führt.🎉
 
-Beim Einsatz des Codes dieses Projekts bitten wir Sie, die folgenden Schritte zu befolgen:
+### 4. Aktualisierungsskript für Beschreibungen
+- **Dateiname**: `update_description.py`
+- **Funktion**: Dieses Python-Skript dient der Aktualisierung der Beschreibung von Habitica-Teams. Zu den Funktionen gehören:
+  - Tägliche Abruf von Informationen über das Team und die letzten Anmeldedetails der Mitglieder.
+  - Protokollierung und Implementierung von Ratenbegrenzung für die API-Anfragen.
+  - Dynamische Aktualisierung der Teambeschreibung basierend auf den abgerufenen Daten.
+  - Lesen des Beschreibungsformats aus einer Template-Datei, Kompilieren von Mitgliederinformationen und Senden von Aktualisierungsanfragen an die Habitica-API.
+  - Protokollierung von Erfolgen und Fehlern während des Vorgangs.
 
-1. **Lizenz lesen**: Bitte lesen Sie die LICENSE-Datei vollständig, bevor Sie den Code nutzen oder ändern, um Ihre Rechte und Pflichten zu verstehen.
-2. **Regelungen einhalten**: Stellen Sie sicher, dass Sie die Bestimmungen der Lizenz einhalten, wenn Sie den geänderten Code verbreiten oder den Originalcode nutzen.
-3. **Urheberrechtshinweise beibehalten**: Bewahren Sie bei Änderungen und der Verbreitung des Codes die Urheberrechtshinweise und den Lizenztext des ursprünglichen Autors.
+## 🛠️ Installation und Verwendung
 
-## 🌟 Kontaktieren Sie uns
+1. Klonen Sie dieses Repository:
+   ```bash
+   git clone https://github.com/yourusername/repository.git
+   cd repository
+   ```
 
-Wenn Sie Fragen zur Lizenz oder zum Projekt haben, zögern Sie bitte nicht, uns zu kontaktieren:
+2. Python-Umgebung einrichten:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate
+   ```
 
-- **E-Mail**: [your-email@example.com](mailto:your-email@example.com)
-- **GitHub**: [GitHub-Projektlink](https://github.com/your-repo)
+3. Abhängigkeiten installieren:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Vielen Dank für Ihren Besuch und Ihre Unterstützung! 🚀
+4. Konfigurieren Sie den GitHub Actions-Workflow (falls erforderlich) und generieren Sie einen gültigen Schlüssel in der Habitica API.
 
----
+5. Skripte ausführen:
+   ```bash
+   python manage_members.py
+   python update_description.py
+   ```
 
-Wir hoffen, dass Sie bei der Nutzung dieses Projekts eine unterhaltsame und produktive Erfahrung haben! 🎉
+## 💡 Beitrag
+
+Beiträge in jeglicher Form sind willkommen! Bei Vorschlägen oder Fragen reichen Sie bitte ein Issue ein oder erstellen Sie einen Pull Request.😊
+
+## 📞 Kontakt
+
+Wenn Sie Fragen oder Feedback haben, kontaktieren Sie mich bitte über die folgenden Kanäle:
+- E-Mail: your_email@example.com
+- GitHub: [IhrGitHubBenutzername](https://github.com/yourusername)
+
+Vielen Dank, dass Sie unser Werkzeug verwenden, und viel Erfolg bei der Teamverwaltung in Habitica!🎊
