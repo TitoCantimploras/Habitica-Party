@@ -1,49 +1,51 @@
 [Back to main language README](README.md)
 
-# Party Management Tool (Veranstaltungsmanagement-Tool) 🎉
+# 📄 Apache Lizenz 2.0 Erklärung
 
-Willkommen auf der Projektseite des **Veranstaltungsmanagement-Tools**! Dieses Projekt zielt darauf ab, die Organisation verschiedener sozialer Aktivitäten zu vereinfachen, sei es eine Zusammenkunft mit Freunden oder die Planung von Teamveranstaltungen. Egal, ob du eine kleine Feier oder eine große Teamaktivität veranstalten möchtest, unser Tool bietet dir die nötige Unterstützung.
+Willkommen zur Erklärung der Apache Lizenz, Version 2.0! 🎉
 
-## 📃 Projektübersicht
+## 📜 Überblick
 
-Dieses Projekt bietet eine Vielzahl nützlicher Funktionen, darunter:
+Dieses Dokument beschreibt ausführlich die Bedingungen und Anforderungen, die Sie beim Verwenden, Kopieren und Verteilen von Software und anderen Werken einhalten müssen. Die Apache Lizenz zielt darauf ab, die Zusammenarbeit im Open-Source-Bereich zu fördern und gleichzeitig die Rechte von Beitragenden und Nutzern zu schützen.
 
-- **Mehrsprachige Unterstützung** 🌍: Bereitstellung von README-Dokumenten in verschiedenen Sprachen für eine einfache Nutzung durch globale Benutzer.
-- **Automatisiertes Management** 🤖: Durchführung von Verwaltungsaufgaben durch Python-Skripte in GitHub Actions, wodurch der Prozess effizienter wird.
-- **Einrichtung der Entwicklungsumgebung** 🛠️: Enthält detaillierte Anweisungen zur Klonung des Repositories und zur Installation der Abhängigkeiten.
-- **Skriptkonfiguration und manuelle Ausführung** 📝: Bereitstellung von Anleitungen zur Konfiguration von Skripten und deren manueller Ausführung, um den Workflow flexibel anzupassen.
-- **Beitragsrichtlinien** 🤝: Jeder, der zur Verbesserung des Projekts beitragen möchte, ist herzlich eingeladen, mit detaillierten Informationen zu Beiträgen und Kooperationen.
+## 🔑 Schlüsselbegriffe
 
-## 📦 Installationsschritte
+- **Lizenzgeber**: Die Person oder das Unternehmen, das die Lizenz erteilt.
+- **Sie**: Jedes Individuum oder jede Einheit, die die Lizenz akzeptiert.
+- **Werk**: Originalsoftware oder anderes Material, das unter den Bedingungen dieser Lizenz verteilt wird.
+- **Abgeleitete Werke**: Jegliche Werke, die basierend auf dem ursprünglichen Werk modifiziert oder erstellt wurden.
+- **Beiträge**: Jegliche Verbesserungen oder Änderungen, die Nutzer am Werk vorgenommen haben.
 
-1. Repository klonen: `git clone <repository-url>`
-2. Abhängigkeiten installieren: `pip install -r requirements.txt`
-3. Skripte konfigurieren: Die relevanten Einstellungen nach Bedarf anpassen.
+## 🌍 Lizenzbedingungen
 
-## 🚀 Verwendungshinweise
+Diese Lizenz gewährt Ihnen die folgenden Rechte:
 
-Die Nutzung dieses Tools für das Veranstaltungsmanagement ist ganz einfach! Folge einfach diesen Schritten, um zu beginnen:
+- **Weltweit gültig**: Sie können dieses Werk überall und in jeder Region verwenden.
+- **Nicht exklusiv**: Sie können dieses Werk gemeinsam mit anderen nutzen.
+- **Lizenzfrei**: Die Nutzung dieses Werkes erfordert keine Zahlungen.
 
-1. Konfiguriere deine Veranstaltungsinformationen.
-2. Nutze die automatisierten Skripte zur Bearbeitung von Verwaltungsaufgaben.
-3. Befolge die Anweisungen im Dokument.
+### ⏳ Einschränkungen
 
-## 🤝 Beitragsrichtlinien
+Beim Genuss der obigen Rechte müssen Sie die folgenden Bedingungen einhalten:
 
-Wir heißen alle Entwickler willkommen, die zu diesem Projekt beitragen möchten! Bitte beachte die folgenden Schritte:
+1. **Bereitstellung einer Kopie der Lizenz**: Jedes verteilte Werk muss eine Kopie dieser Lizenz enthalten.
+2. **Beibehaltung von Namensnennungen**: Stellen Sie sicher, dass die Namensnennung und die zugehörigen Hinweise des ursprünglichen Werks erhalten bleiben.
 
-1. Forke dieses Projekt.
-2. Reiche einen Pull Request ein und beschreibe kurz deine Änderungen.
-3. Diskutiere deine Beiträge gemeinsam mit dem Projektteam.
+## ⚖️ Patentlizenz
 
-## 📝 Lizenz
+Diese Lizenz enthält auch Bestimmungen zur Patentlizenz, die sicherstellen, dass Sie dieses Werk nutzen können, ohne Patentrechte zu verletzen.
 
-Dieses Projekt folgt der [Apache License, Version 2.0](LICENSE). Diese Open-Source-Lizenz erlaubt es Einzelpersonen und Organisationen, die Software sowie ihre abgeleiteten Werke zu verwenden, zu kopieren und zu vertreiben, sofern bestimmte Anforderungen beachtet werden. Wir ermutigen die Gemeinschaft zu einer Zusammenarbeit innerhalb eines gemeinsamen rechtlichen Rahmens, um gemeinsam Fortschritte zu erzielen.
+## 🚫 Haftungsbeschränkung und Disclaimer
 
-## 💬 Feedback und Unterstützung
+Bitte beachten Sie beim Gebrauch dieses Werkes die folgenden Bedingungen:
 
-Wenn du Fragen oder Vorschläge zu diesem Projekt hast, zögere nicht, uns zu kontaktieren! Wir schätzen das Feedback der Gemeinschaft sehr und freuen uns auf den Austausch und die Zusammenarbeit mit dir.
+- **Haftungsbeschränkung**: Im rechtlich zulässigen Rahmen haftet der Lizenzgeber nicht für Verluste oder Schäden, die aus der Nutzung dieses Werkes resultieren.
+- **Haftungsausschluss**: Der Lizenzgeber gibt keinerlei Garantien bezüglich der Eignung oder Funktionalität des Werkes.
 
----
+## 🤝 Fazit
 
-Vielen Dank, dass du das **Veranstaltungsmanagement-Tool** nutzt! Lass uns gemeinsam unvergessliche Feierlichkeiten schaffen! 🎊
+Das Kernziel der Apache Lizenz 2.0 ist es, die Entwicklung und Zusammenarbeit bei Open-Source-Projekten zu fördern und gleichzeitig die Rechte jedes Beitragsleistenden und Nutzers zu schützen. Indem wir diese Bedingungen einhalten, tragen wir gemeinsam zu Innovation und Fortschritt in der Technologie bei! 🚀
+
+Bei Fragen oder dem Bedarf an weiteren Informationen, konsultieren Sie bitte das vollständige Dokument, das dieser Lizenz beigefügt ist. Vielen Dank für Ihre Unterstützung und Ihr Verständnis! 💻🔧
+
+Wir freuen uns auf Ihre Teilnahme und Beiträge! ✨

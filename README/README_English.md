@@ -1,49 +1,51 @@
 [Back to main language README](README.md)
 
-# Party Management Tool 🎉
+# 📄 Apache License 2.0 Explanation Document
 
-Welcome to the **Party Management Tool** project homepage! This project aims to simplify the organization of various social activities, such as get-togethers with friends or team event planning. Whether you want to host a small gathering or a large team event, our tool can make your life easier.
+Welcome to the explanation document for the Apache License, Version 2.0! 🎉
 
-## 📃 Project Overview
+## 📜 Overview
 
-This project includes a variety of useful features, such as:
+This document outlines the terms and conditions you need to follow when using, copying, and distributing software and other works. The Apache License aims to promote open-source collaboration while protecting the rights of both contributors and users.
 
-- **Multilingual Support** 🌍: Links to README documents in different languages to assist users worldwide.
-- **Automated Management** 🤖: Use Python scripts to automatically execute management tasks in GitHub Actions, making the process more efficient.
-- **Development Environment Setup** 🛠️: Detailed setup instructions to guide you on how to clone the repository and install dependencies.
-- **Script Configuration and Manual Execution** 📝: Guidance on how to configure scripts and execute them manually for flexible workflow adjustments.
-- **Contribution Guidelines** 🤝: We welcome all users interested in improving the project, providing detailed instructions on how to contribute and collaborate.
+## 🔑 Key Terms
 
-## 📦 Installation Steps
+- **Licensor**: The individual or company granting the license.
+- **You**: Any individual or entity that accepts the license.
+- **Work**: The original software or other materials distributed under the terms of this license.
+- **Derivative Works**: Any works modified or built based on the original work.
+- **Contributions**: Any improvements or modifications made by users to the work.
 
-1. Clone the repository: `git clone <repository-url>`
-2. Install dependencies: `pip install -r requirements.txt`
-3. Configure scripts: Adjust the relevant settings as needed.
+## 🌍 License Terms
 
-## 🚀 Usage Instructions
+This license grants you the following rights:
 
-Using this tool for party management is super simple! Just follow these steps to get started:
+- **Worldwide Validity**: You can use the work in any region, no matter where you are.
+- **Non-Exclusive**: You can use the work alongside others.
+- **Royalty-Free**: No fees are required to use the work.
 
-1. Configure your event information.
-2. Utilize automated scripts to handle management tasks.
-3. Follow the documentation for instructions.
+### ⏳ Conditions and Limitations
 
-## 🤝 Contribution Guidelines
+While enjoying the above rights, you must adhere to the following conditions:
 
-We welcome all developers who wish to contribute to this project! Please adhere to the following steps:
+1. **Provide a Copy of the License**: Any distributed work must include a copy of this license.
+2. **Maintain Attribution**: Be sure to keep the original work’s attribution and related notices intact.
 
-1. Fork this project
-2. Submit a Pull Request with a brief description of your changes
-3. Discuss your contributions with the project team
+## ⚖️ Patent License
 
-## 📝 License
+This license also includes terms regarding patent licensing, ensuring you can use the work without infringing on patent rights.
 
-This project is licensed under the [Apache License, Version 2.0](LICENSE). This open-source license allows individuals and entities to use, copy, and distribute the software and its derivative works, provided that certain requirements are met. We encourage the community to collaborate under a shared legal framework for mutual progress.
+## 🚫 Limitation of Liability and Disclaimer
 
-## 💬 Feedback and Support
+When using this work, please note the following terms:
 
-If you have any questions or suggestions about this project, feel free to reach out to us anytime! We greatly value community feedback and look forward to connecting and collaborating with you.
+- **Limitation of Liability**: To the extent permitted by law, the licensor is not liable for any loss or damage resulting from the use of this work.
+- **Disclaimer**: The licensor makes no guarantees about the applicability or functionality of the work.
 
----
+## 🤝 Conclusion
 
-Thank you for using the **Party Management Tool**! Let’s create unforgettable party memories together! 🎊
+The core goal of the Apache License 2.0 is to foster the development and collaboration of open-source projects while ensuring the rights of every contributor and user are protected. By adhering to these terms, we all contribute to technological innovation and progress! 🚀
+
+If you have any questions or need more information, please consult the complete document accompanying this license. Thank you for your support and understanding! 💻🔧
+
+We welcome your participation and contributions! ✨
