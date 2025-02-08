@@ -1,4 +1,4 @@
-- [{main_language}](README.md)- [Switch Language: English](README/README_English.md)
+- [{main_language}](/README.md)- [Switch Language: English](README/README_English.md)
 - [Cambiar idioma: Español](README/README_Español.md)
 - [Changer de langue: Français](README/README_Français.md)
 - [Sprache wechseln: Deutsch](README/README_Deutsch.md)
