@@ -1,4 +1,4 @@
-- [简体中文](/README.md)
+- [切换语言: 简体中文](/README.md)
 - [Switch Language: English](/README/README_English.md)
 - [Cambiar idioma: Español](/README/README_Español.md)
 - [Changer de langue: Français](/README/README_Français.md)
