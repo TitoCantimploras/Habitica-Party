@@ -5051,3 +5051,37 @@
 2025-02-09 20:24:12,927 - habitica_manage_members - DEBUG - Request: <function get at 0x7f84bf2b9280> https://habitica.com/api/v3/looking-for-party <Response [429]>
 2025-02-09 20:24:12,927 - habitica_manage_members - ERROR - Fetching users looking for party failed: Status code 429, Response: {"success":false,"error":"TooManyRequests","message":"This User ID or IP address has been rate limited due to an excess amount of requests to the Habitica API v3. More info can be found in the response headers and at https://github.com/HabitRPG/habitica/wiki/API-Usage-Guidelines#rate-limiting ."}
 2025-02-09 20:24:12,928 - habitica_manage_members - INFO - Habitica party management script completed successfully.
+2025-02-09 20:31:34,186 - habitica_manage_members - INFO - # 403
+2025-02-09 20:31:34,381 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/groups/party/members <Response [200]>
+2025-02-09 20:31:35,602 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/members/09d5fabe-2754-4785-8e41-6304fab53246 <Response [200]>
+2025-02-09 20:31:36,869 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/members/0b2be4a0-025e-436c-8d58-bba044ee5a97 <Response [200]>
+2025-02-09 20:31:38,053 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/members/0b41e9cd-4d27-4841-b887-1d4faf7cb390 <Response [200]>
+2025-02-09 20:31:39,254 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/members/0c0f7c85-363c-48ca-a502-cc7fc154a177 <Response [200]>
+2025-02-09 20:31:40,339 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/members/1347f170-5bff-4012-920a-afc7a40a86d1 <Response [200]>
+2025-02-09 20:31:41,562 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/members/1955f4c2-9faf-4f9f-81b8-c3e47573202d <Response [200]>
+2025-02-09 20:31:42,681 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/members/1c171be5-5ec4-4925-b18d-8fffd6203226 <Response [200]>
+2025-02-09 20:31:43,737 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/members/1e8f9f06-e087-4ec9-8f84-2eec9f44953e <Response [200]>
+2025-02-09 20:31:44,796 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/members/2228f1cf-0f01-44f5-8288-1948b57f24c8 <Response [200]>
+2025-02-09 20:31:45,854 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/members/2f98b665-722a-4c26-8603-cd5fea0e6063 <Response [200]>
+2025-02-09 20:31:46,911 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/members/5a2dd3b1-59cf-4bd8-9a6c-640a7235fa83 <Response [200]>
+2025-02-09 20:31:47,992 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/members/61fb3fd2-7588-4c00-be14-80925db41f3e <Response [200]>
+2025-02-09 20:31:49,279 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/members/65f2c0bf-9ca5-461c-af41-a39c9c921878 <Response [200]>
+2025-02-09 20:31:50,341 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/members/6ec29d00-a648-410d-9faf-09800d3eda25 <Response [200]>
+2025-02-09 20:31:51,400 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/members/708ddcc9-a990-4763-b09f-48f990c121f8 <Response [200]>
+2025-02-09 20:31:52,468 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/members/744f8c1d-9255-4c96-b718-f10900aaaae0 <Response [200]>
+2025-02-09 20:31:53,528 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/members/76d6e354-0000-4690-afd9-60408b0b7116 <Response [200]>
+2025-02-09 20:31:54,616 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/members/81f65303-a333-4f77-bb67-df60a7797c41 <Response [200]>
+2025-02-09 20:31:55,672 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/members/854a662c-cddb-4c04-8151-e1f91dd8a0b8 <Response [200]>
+2025-02-09 20:31:56,732 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/members/8c80a7c5-0693-45e0-8972-de6920b31e8d <Response [200]>
+2025-02-09 20:31:57,855 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/members/96f06ed0-045a-4815-babd-7c7a20f7b1c5 <Response [200]>
+2025-02-09 20:31:58,916 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/members/9844bbfe-7242-4f51-a374-f35ef513de58 <Response [200]>
+2025-02-09 20:31:59,978 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/members/abc52830-5322-441f-aa49-907791cfc177 <Response [200]>
+2025-02-09 20:32:01,104 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/members/b1db9578-67c0-43b2-b889-7fad8e578ef4 <Response [200]>
+2025-02-09 20:32:02,168 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/members/b4c136e9-c93c-4195-8433-7faa5f0414a9 <Response [200]>
+2025-02-09 20:32:03,230 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/members/c64822a0-bc13-40d3-8dc7-4a09a915c903 <Response [200]>
+2025-02-09 20:32:04,576 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/members/d7a489cf-0c42-4f67-bd34-44c7dcc66425 <Response [200]>
+2025-02-09 20:32:05,636 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/members/e0a6d76a-4116-43bb-b4e5-cb43e6de741b <Response [200]>
+2025-02-09 20:32:06,696 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/members/f52990be-42cf-4504-8bb5-4cb24db403c5 <Response [200]>
+2025-02-09 20:32:07,749 - habitica_manage_members - DEBUG - Request: <function get at 0x7fa90dc40280> https://habitica.com/api/v3/looking-for-party <Response [429]>
+2025-02-09 20:32:07,749 - habitica_manage_members - ERROR - Fetching users looking for party failed: Status code 429, Response: {"success":false,"error":"TooManyRequests","message":"This User ID or IP address has been rate limited due to an excess amount of requests to the Habitica API v3. More info can be found in the response headers and at https://github.com/HabitRPG/habitica/wiki/API-Usage-Guidelines#rate-limiting ."}
+2025-02-09 20:32:07,749 - habitica_manage_members - INFO - Habitica party management script completed successfully.
