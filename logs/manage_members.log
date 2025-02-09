@@ -3367,3 +3367,35 @@
 2025-02-09 09:52:04,742 - habitica_manage_members - DEBUG - Request: <function post at 0x7f07fcdf3430> https://habitica.com/api/v3/groups/party/invite <Response [429]>
 2025-02-09 09:52:04,742 - habitica_manage_members - ERROR - Sending invitations failed: Status code 429, Response: {"success":false,"error":"TooManyRequests","message":"This User ID or IP address has been rate limited due to an excess amount of requests to the Habitica API v3. More info can be found in the response headers and at https://github.com/HabitRPG/habitica/wiki/API-Usage-Guidelines#rate-limiting ."}
 2025-02-09 09:52:04,742 - habitica_manage_members - INFO - Habitica party management script completed successfully.
+2025-02-09 10:07:39,739 - habitica_manage_members - INFO - # 353
+2025-02-09 10:07:39,934 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/groups/party/members <Response [200]>
+2025-02-09 10:07:41,168 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/members/09d5fabe-2754-4785-8e41-6304fab53246 <Response [200]>
+2025-02-09 10:07:42,377 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/members/0b2be4a0-025e-436c-8d58-bba044ee5a97 <Response [200]>
+2025-02-09 10:07:43,566 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/members/0b41e9cd-4d27-4841-b887-1d4faf7cb390 <Response [200]>
+2025-02-09 10:07:44,800 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/members/0c0f7c85-363c-48ca-a502-cc7fc154a177 <Response [200]>
+2025-02-09 10:07:46,054 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/members/1347f170-5bff-4012-920a-afc7a40a86d1 <Response [200]>
+2025-02-09 10:07:47,195 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/members/1955f4c2-9faf-4f9f-81b8-c3e47573202d <Response [200]>
+2025-02-09 10:07:48,423 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/members/1c171be5-5ec4-4925-b18d-8fffd6203226 <Response [200]>
+2025-02-09 10:07:49,654 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/members/1e8f9f06-e087-4ec9-8f84-2eec9f44953e <Response [200]>
+2025-02-09 10:07:50,781 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/members/2228f1cf-0f01-44f5-8288-1948b57f24c8 <Response [200]>
+2025-02-09 10:07:51,944 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/members/2f98b665-722a-4c26-8603-cd5fea0e6063 <Response [200]>
+2025-02-09 10:07:53,187 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/members/5a2dd3b1-59cf-4bd8-9a6c-640a7235fa83 <Response [200]>
+2025-02-09 10:07:54,309 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/members/61fb3fd2-7588-4c00-be14-80925db41f3e <Response [200]>
+2025-02-09 10:07:55,480 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/members/65f2c0bf-9ca5-461c-af41-a39c9c921878 <Response [200]>
+2025-02-09 10:07:56,649 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/members/6ec29d00-a648-410d-9faf-09800d3eda25 <Response [200]>
+2025-02-09 10:07:57,829 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/members/708ddcc9-a990-4763-b09f-48f990c121f8 <Response [200]>
+2025-02-09 10:07:59,111 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/members/744f8c1d-9255-4c96-b718-f10900aaaae0 <Response [200]>
+2025-02-09 10:08:00,232 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/members/76d6e354-0000-4690-afd9-60408b0b7116 <Response [200]>
+2025-02-09 10:08:01,461 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/members/81f65303-a333-4f77-bb67-df60a7797c41 <Response [200]>
+2025-02-09 10:08:02,580 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/members/854a662c-cddb-4c04-8151-e1f91dd8a0b8 <Response [200]>
+2025-02-09 10:08:08,004 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/members/8c80a7c5-0693-45e0-8972-de6920b31e8d <Response [200]>
+2025-02-09 10:08:09,171 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/members/96f06ed0-045a-4815-babd-7c7a20f7b1c5 <Response [200]>
+2025-02-09 10:08:10,333 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/members/9844bbfe-7242-4f51-a374-f35ef513de58 <Response [200]>
+2025-02-09 10:08:11,456 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/members/abc52830-5322-441f-aa49-907791cfc177 <Response [200]>
+2025-02-09 10:08:12,574 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/members/b4c136e9-c93c-4195-8433-7faa5f0414a9 <Response [200]>
+2025-02-09 10:08:13,696 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/members/c64822a0-bc13-40d3-8dc7-4a09a915c903 <Response [200]>
+2025-02-09 10:08:14,816 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/members/d7a489cf-0c42-4f67-bd34-44c7dcc66425 <Response [200]>
+2025-02-09 10:08:15,936 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/members/e0a6d76a-4116-43bb-b4e5-cb43e6de741b <Response [200]>
+2025-02-09 10:08:17,057 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/members/f52990be-42cf-4504-8bb5-4cb24db403c5 <Response [200]>
+2025-02-09 10:08:27,588 - habitica_manage_members - DEBUG - Request: <function get at 0x7ff8b1c40280> https://habitica.com/api/v3/looking-for-party <Response [200]>
+2025-02-09 10:08:27,588 - habitica_manage_members - INFO - Habitica party management script completed successfully.
