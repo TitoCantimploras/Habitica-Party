@@ -32,9 +32,6 @@ jobs:
           RUN_NUMBER: ${{ github.run_number }}
         run: python scripts/manage_members.py
 
-      - name: Pause execution to reduce request rate
-        run: sleep 30
-
       - name: Execute update script
         env:
           HABITICA_USER_ID: ${{ secrets.HABITICA_USER_ID }}
