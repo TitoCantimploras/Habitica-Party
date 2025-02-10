@@ -21,7 +21,7 @@ logger.addHandler(handler)
 logger.addHandler(console_handler)
 
 last_request_time = 0
-request_interval = 1
+request_interval = 2
 
 time_limit = timedelta(days=5)
 
