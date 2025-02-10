@@ -48,7 +48,7 @@ def rate_limited_request(method, url, **kwargs):
         time.sleep(wait_time)
     response = method(url, **kwargs)
     last_request_time = time.time()
-    logger.debug(f"Request: {method} {url} {response}")
+    logger.debug(f"Request: {method} {url}")
     return response
 
 def get_json_response(response):
@@ -59,7 +59,7 @@ def get_json_response(response):
         return None
 
 def log_response_error(response, action):
-    logger.error(f"{action} failed: Status code {response.status_code}, Response: {response.text}")
+    logger.error(f"{action} failed: Status code {response.status_code}\n{response.headers}\n{response.text}")
 
 def send_message_to_user(user_id, message):
     url = "https://habitica.com/api/v3/members/send-private-message"
