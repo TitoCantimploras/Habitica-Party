@@ -11,7 +11,7 @@ logger.setLevel(logging.DEBUG)
 
 handler = RotatingFileHandler('logs/manage_members.log', maxBytes=1024*1024, backupCount=1)
 handler.setLevel(logging.DEBUG)
-handler.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
+handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
 
 console_handler = logging.StreamHandler()
 console_handler.setLevel(logging.INFO)
