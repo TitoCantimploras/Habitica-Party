@@ -12,4 +12,4 @@
 
 ###### Last updated: {time_str}
 
-###### by scheduled `Actions`
+###### by scheduled `Actions` or `Dᵕ̈W`
