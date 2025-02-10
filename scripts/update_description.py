@@ -23,7 +23,7 @@ logger.addHandler(console_handler)
 
 # 全局变量
 last_request_time = 0
-request_interval = 1  # 默认请求间隔为1秒
+request_interval = 2  # 默认请求间隔为1秒
 
 def rate_limited_request(method, url, **kwargs):
     global last_request_time
