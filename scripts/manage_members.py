@@ -59,7 +59,7 @@ def get_json_response(response):
         return None
 
 def log_response_error(response, action):
-    logger.error(f"{action} failed: Status code {response.status_code}\n{response.headers}\n{response.text}")
+    logger.error(f"{action} failed: Status code {response.status_code}\nHeaders: {response.headers}\nText: {response.text}")
 
 def send_message_to_user(user_id, message):
     url = "https://habitica.com/api/v3/members/send-private-message"
