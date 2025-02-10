@@ -1,48 +1,48 @@
-name: 队伍自动化管理
+name: Team Automation Management
 
 on:
   # push:
   #   branches:
   #     - main
   schedule:
-    - cron: '0/10 * * * *'  # 每10分钟触发一次
-  workflow_dispatch: # 允许手动触发
+    - cron: '0/10 * * * *'  # Trigger every 10 minutes
+  workflow_dispatch: # Allow manual triggering
 
 jobs:
-  update_description:
+  management_and_description:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 检出代码
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: 设置 Python 环境
+      - name: Set up Python environment
         uses: actions/setup-python@v4
         with:
           python-version: '3.8'
 
-      - name: 安装依赖
+      - name: Install dependencies
         run: |
           pip install requests
 
-      - name: 执行管理脚本
+      - name: Execute management script
         env:
           HABITICA_USER_ID: ${{ secrets.HABITICA_USER_ID }}
           HABITICA_API_KEY: ${{ secrets.HABITICA_API_KEY }}
           RUN_NUMBER: ${{ github.run_number }}
         run: python scripts/manage_members.py
 
-      - name: 暂停执行以降低请求速率
+      - name: Pause execution to reduce request rate
         run: sleep 30
 
-      - name: 执行更新脚本
+      - name: Execute update script
         env:
           HABITICA_USER_ID: ${{ secrets.HABITICA_USER_ID }}
           HABITICA_API_KEY: ${{ secrets.HABITICA_API_KEY }}
           RUN_NUMBER: ${{ github.run_number }}
         run: python scripts/update_description.py
 
-      - name: 确认日志更改
+      - name: Commit log changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
@@ -50,6 +50,6 @@ jobs:
           git add logs/manage_members.log
           git commit -m "Update logs/update_description.log & logs/manage_members.log from GitHub Actions"
 
-      - name: 推送日志更改
+      - name: Push log changes
         run: |
           git push
