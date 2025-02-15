@@ -30,7 +30,7 @@ jobs:
           HABITICA_USER_ID: ${{ secrets.HABITICA_USER_ID }}
           HABITICA_API_KEY: ${{ secrets.HABITICA_API_KEY }}
           RUN_NUMBER: ${{ github.run_number }}
-        run: python # scripts/manage_members.py
+        run: python scripts/manage_members.py
 
       - name: Execute update script
         env:
