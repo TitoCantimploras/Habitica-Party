@@ -23,7 +23,7 @@ logger.addHandler(console_handler)
 last_request_time = 0
 request_interval = 2
 
-time_limit = timedelta(days=5)
+time_limit = timedelta(days=4)
 
 headers = {
     "x-api-user": os.environ["HABITICA_USER_ID"],
