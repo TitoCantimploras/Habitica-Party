@@ -1,4 +1,4 @@
-#### Here is a list of invited members: 
+#### Here is a list of invited member(s): 
 
 {list_str}
 
