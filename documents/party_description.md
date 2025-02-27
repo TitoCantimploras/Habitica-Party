@@ -18,7 +18,7 @@ Anyone can initiate a quest, but they need to complete the same series in order 
 
 We only use your **last login time** to determine if you're still using habitica, so don't worry too much about it.
 
-If a member does not log in for 5 days, we will remove `him/her` from our team. Don't worry, if you want to rejoin us later, just send me a private message.
+If a member does not log in for `4 days`, we will remove `him/her` from our team. Don't worry, if you want to rejoin us later, just send me a private message.
 
 ## 附录 · Appendix :four_leaf_clover:
 
