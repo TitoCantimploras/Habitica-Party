@@ -1,3 +1,5 @@
+##### Ramadan mubarak!
+
 ### Daily Sentence 🌹
 
 > {content}
