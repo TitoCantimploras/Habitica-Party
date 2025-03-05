@@ -3747,3 +3747,41 @@ Text: {"success":false,"error":"BadRequest","message":"队伍最大成员数：3
 Headers: {'Date': 'Wed, 05 Mar 2025 05:42:09 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '77', 'Connection': 'keep-alive', 'X-DNS-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'OPTIONS,GET,POST,PUT,HEAD,DELETE', 'Access-Control-Allow-Headers': 'Authorization,Content-Type,Accept,Content-Encoding,X-Requested-With,x-api-user,x-api-key,x-client', 'Access-Control-Expose-Headers': 'X-RateLimit-Limit,X-RateLimit-Remaining,X-RateLimit-Reset,Retry-After', 'Vary': 'X-HTTP-Method-Override, Accept-Encoding', 'X-Powered-By': 'Express', 'X-RateLimit-Limit': '30', 'X-RateLimit-Remaining': '24', 'X-RateLimit-Reset': 'Wed Mar 05 2025 05:42:51 GMT+0000 (Coordinated Universal Time)', 'Cache-Control': 'no-store', 'Set-Cookie': 'connect:sess=eyJ1c2VySWQiOiI2NWYyYzBiZi05Y2E1LTQ2MWMtYWY0MS1hMzljOWM5MjE4NzgifQ==; path=/; expires=Sat, 03 Mar 2035 05:42:09 GMT; secure; httponly, connect:sess.sig=rX4-ESmvYiL1wJ7uoVUUM7xy26I; path=/; expires=Sat, 03 Mar 2035 05:42:09 GMT; secure; httponly'}
 Text: {"success":false,"error":"BadRequest","message":"队伍最大成员数：30"}
 2025-03-05 05:42:09,420 - INFO - Habitica party management script completed successfully.
+2025-03-05 05:56:52,286 - INFO - # 2161
+2025-03-05 05:56:52,423 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/groups/party/members
+2025-03-05 05:56:54,523 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/09d5fabe-2754-4785-8e41-6304fab53246
+2025-03-05 05:56:56,646 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/0b41e9cd-4d27-4841-b887-1d4faf7cb390
+2025-03-05 05:56:58,746 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/0c0f7c85-363c-48ca-a502-cc7fc154a177
+2025-03-05 05:57:00,882 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/0d627228-1608-4a8f-9efa-b607bbcf0845
+2025-03-05 05:57:02,982 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/1347f170-5bff-4012-920a-afc7a40a86d1
+2025-03-05 05:57:05,080 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/17d8f429-a274-40d0-a0c0-67acdaabd1fe
+2025-03-05 05:57:07,524 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/1c171be5-5ec4-4925-b18d-8fffd6203226
+2025-03-05 05:57:09,622 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/1e8f9f06-e087-4ec9-8f84-2eec9f44953e
+2025-03-05 05:57:11,744 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/35062395-1fe1-4755-bc43-80f928b45210
+2025-03-05 05:57:13,885 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/469579e0-87b0-4e92-a278-500753f2d5b1
+2025-03-05 05:57:15,982 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/4907c639-82f6-4b96-a0bf-33f29af512f4
+2025-03-05 05:57:18,254 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/5f207ba6-5d13-468d-9890-2fe78340b41a
+2025-03-05 05:57:20,488 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/61fb3fd2-7588-4c00-be14-80925db41f3e
+2025-03-05 05:57:22,586 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/65f2c0bf-9ca5-461c-af41-a39c9c921878
+2025-03-05 05:57:24,728 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/6ec29d00-a648-410d-9faf-09800d3eda25
+2025-03-05 05:57:26,828 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/708ddcc9-a990-4763-b09f-48f990c121f8
+2025-03-05 05:57:29,039 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/70b71ce7-125f-43b3-b384-4592b93b19f5
+2025-03-05 05:57:31,134 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/744f8c1d-9255-4c96-b718-f10900aaaae0
+2025-03-05 05:57:33,319 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/84fc4dfb-d14e-4476-8b0c-b253134746b8
+2025-03-05 05:57:35,415 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/8ecdf10a-fec8-4e58-b205-987ec79ee28a
+2025-03-05 05:57:37,541 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/905a4b51-6fe3-4df5-b647-961473b4f573
+2025-03-05 05:57:39,911 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/9e169b42-8f3c-4cdd-acb4-1f07a9203206
+2025-03-05 05:57:42,016 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/abc52830-5322-441f-aa49-907791cfc177
+2025-03-05 05:57:44,114 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/b453d01f-42f5-451c-87f5-d3b628969a74
+2025-03-05 05:57:46,256 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/d7a489cf-0c42-4f67-bd34-44c7dcc66425
+2025-03-05 05:57:48,354 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/dc015e4c-545a-418d-b8be-b621be2472cb
+2025-03-05 05:57:50,450 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/e150227f-eda1-4a6b-88a2-99570a092222
+2025-03-05 05:57:52,548 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/e2ce7520-3ca5-45e1-acd7-4f65e14ab6c3
+2025-03-05 05:57:54,774 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/f00c8609-83f9-4810-8e70-cfc48fc9ac18
+2025-03-05 05:57:56,869 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/members/f52990be-42cf-4504-8bb5-4cb24db403c5
+2025-03-05 05:58:03,992 - DEBUG - Request: <function get at 0x7f2a29c123a0> https://habitica.com/api/v3/looking-for-party
+2025-03-05 05:58:06,096 - DEBUG - Request: <function post at 0x7f2a29c12550> https://habitica.com/api/v3/groups/party/invite
+2025-03-05 05:58:06,096 - ERROR - Sending invitations failed: Status code 400
+Headers: {'Date': 'Wed, 05 Mar 2025 05:58:06 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '77', 'Connection': 'keep-alive', 'X-DNS-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'OPTIONS,GET,POST,PUT,HEAD,DELETE', 'Access-Control-Allow-Headers': 'Authorization,Content-Type,Accept,Content-Encoding,X-Requested-With,x-api-user,x-api-key,x-client', 'Access-Control-Expose-Headers': 'X-RateLimit-Limit,X-RateLimit-Remaining,X-RateLimit-Reset,Retry-After', 'Vary': 'X-HTTP-Method-Override, Accept-Encoding', 'X-Powered-By': 'Express', 'X-RateLimit-Limit': '30', 'X-RateLimit-Remaining': '25', 'X-RateLimit-Reset': 'Wed Mar 05 2025 05:58:52 GMT+0000 (Coordinated Universal Time)', 'Cache-Control': 'no-store', 'Set-Cookie': 'connect:sess=eyJ1c2VySWQiOiI2NWYyYzBiZi05Y2E1LTQ2MWMtYWY0MS1hMzljOWM5MjE4NzgifQ==; path=/; expires=Sat, 03 Mar 2035 05:58:06 GMT; secure; httponly, connect:sess.sig=rX4-ESmvYiL1wJ7uoVUUM7xy26I; path=/; expires=Sat, 03 Mar 2035 05:58:06 GMT; secure; httponly'}
+Text: {"success":false,"error":"BadRequest","message":"队伍最大成员数：30"}
+2025-03-05 05:58:06,096 - INFO - Habitica party management script completed successfully.
