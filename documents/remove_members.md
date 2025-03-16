@@ -4,4 +4,4 @@
 
 #### Reason: Not logged in for 4 days.
 
-###### by `scheduled Actions` or `Dᵕ̈W`
+###### by `scheduled Actions` or `Dᵕ̈W`###### by [`scheduled Actions`](https://github.com/Delta-Water/Habitica-Party/)
