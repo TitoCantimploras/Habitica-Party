@@ -12,4 +12,4 @@
 
 ###### Last updated: {time_str}
 
-###### by `scheduled Actions` or `Dᵕ̈W`
+###### by [`scheduled Actions`](https://github.com/Delta-Water/Habitica-Party/blob/main/documents/party_description.md)
