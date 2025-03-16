@@ -2,4 +2,4 @@
 
 {list_str}
 
-###### by `scheduled Actions` or `Dᵕ̈W`
+###### by [`scheduled Actions`](https://github.com/Delta-Water/Habitica-Party/)
