@@ -1,3 +1,9 @@
+<div align="center">
+
+[繁体中文](/README/README_zh-TW.md) /[English](/README/README_en.md) /[Español](/README/README_es.md) /[Français](/README/README_fr.md) /[Deutsch](/README/README_de.md) /[日本語](/README/README_ja.md)
+
+</div>
+
 # 🎉 自动化党派管理系统 📈
 
 欢迎加入 **自动化党派管理系统** 项目！我们的目标是为 Habitica 用户提供高效、便捷的党派管理工具。无论您是热爱管理的领袖，还是希望积极参与的成员，这里都有您所需的工具和文档！✨
