@@ -4,9 +4,9 @@
 
 </div>
 
-# 🎉 Automated Guild Management System 📈
+# 🎉 Automated Party Management System 📈
 
-Welcome to the **Automated Guild Management System** project! Our goal is to provide Habitica users with an efficient and convenient tool for guild management. Whether you're a passionate leader or a member looking to engage actively, we have the tools and documentation you need! ✨
+Welcome to the **Automated Party Management System** project! Our goal is to provide Habitica users with an efficient and convenient Party management tool. Whether you are a management-loving leader or a member eager to participate, we have the tools and documentation you need right here! ✨
 
 ## 🚀 Project Structure
 
@@ -17,47 +17,47 @@ Welcome to the **Automated Guild Management System** project! Our goal is to pro
 │       └── automated_party_management.yml    # GitHub Actions workflow file
 ├── LICENSE                                    # Project license
 ├── documents                                  # Project documentation folder
-│   ├── brief_description.md                   # Brief description document 
-│   ├── new_members.md                         # New members list document 
-│   ├── party_description.md                   # Guild description document 
-│   ├── remove_PM.md                           # Member removal notification template 
-│   └── remove_members.md                      # Member removal record template 
+│   ├── brief_description.md                   # Brief description document
+│   ├── new_members.md                         # New members list document
+│   ├── party_description.md                   # Party description document
+│   ├── remove_PM.md                           # Member removal notification template
+│   └── remove_members.md                      # Remove members record template
 ├── logs                                        # Log folder
 │   ├── manage_members.log                     # Member management log
 │   └── update_description.log                 # Description update log
-├── requirements.txt                           # Dependency file 
+├── requirements.txt                           # Dependency file
 └── scripts                                     # Scripts directory
-    ├── manage_members.py                      # Script for managing members 
-    └── update_description.py                  # Script for updating the guild description 
+    ├── manage_members.py                      # Script for managing members
+    └── update_description.py                  # Script for updating party description
 ```
 
 ## 📄 File Overview
 
-| Filename                                 | Description                                                  |
-|-----------------------------------------|-----------------------------------------------------------|
-| **automated_party_management.yml**      | A GitHub Actions workflow file that runs automatically every 10 minutes to manage team tasks. By setting up a Python environment, installing dependencies, and executing member management and description update scripts, it ensures your guild stays active! 🎯 |
-| **brief_description.md**                | Provides a daily quote and its translation, promoting language learning and community engagement. This document also updates the latest member information automatically, ensuring fresh content. 🌱 |
-| **new_members.md**                      | Records invitations for new members, emphasizing community engagement. This document updates periodically, ensuring you don't miss any new participants joining! 👥 |
-| **party_description.md**                | Outlines the guild's mission and rules, encouraging members to share personal experiences and actively participate in tasks. It also includes discussions on existentialism and nihilism, aiding you in exploring deeper meanings in life. 📚 |
-| **remove_PM.md**                        | A friendly notification template used to inform members removed due to inactivity, providing an option for rejoining, enhancing the friendliness and efficiency of communication. 🤝 |
-| **remove_members.md**                   | Records reasons for member removal and related links, ensuring transparency in the management process, and updated regularly for auditing and record-keeping. 🔍 |
-| **requirements.txt**                    | Lists the required Python dependencies to ensure your environment is set up consistently for easy installation of necessary libraries. ⚙️ |
-| **manage_members.py**                   | A script for managing guild members, including functions for removing inactive members, sending invitations, and logging, which simplifies the management process. ⚡️ |
-| **update_description.py**               | A script for automatically updating the guild description, ensuring you have daily updated content to share with members, enhancing engagement. 🌟 |
+| File Name                                 | Description                                                       |
+|---------------------------------------|------------------------------------------------------------|
+| **automated_party_management.yml**    | A GitHub Actions workflow file that runs automatically every 10 minutes, responsible for managing team tasks. It sets up the Python environment, installs dependencies, and executes member management and description update scripts to keep your Party active! 🎯 |
+| **brief_description.md**              | Provides a daily quote and its translation to promote language learning and community engagement. This document also automatically updates with the latest member information to ensure fresh content. 🌱 |
+| **new_members.md**                    | Records invitations to new members, highlighting community participation. This document is updated regularly to ensure you don't miss any new members joining! 👥 |
+| **party_description.md**              | Outlines the purpose and rules of the Party, encouraging members to share their personal experiences and actively participate in tasks. It also includes discussions of existentialism and nihilism to help you explore deeper meanings in life. 📚 |
+| **remove_PM.md**                      | A friendly notification template to inform members who have been removed due to inactivity, providing options for rejoining, enhancing the friendliness and efficiency of communication. 🤝 |
+| **remove_members.md**                 | Records the reasons for member removals and related links, ensuring transparency in the management process and regularly updated for auditing and recording purposes. 🔍 |
+| **requirements.txt**                  | Lists the required Python dependencies to ensure your environment is set up consistently for easy installation of needed libraries. ⚙️ |
+| **manage_members.py**                 | Script for managing Party members, including features for removing inactive members, sending invitations, and logging activities to simplify the management process. ⚡️ |
+| **update_description.py**             | Script for automatically updating the Party description, ensuring you have updated content to share with members daily, enhancing engagement. 🌟 |
 
 ## How to Use
 
-1. **Fork this project**: Click on the "**Fork**" button in the upper right corner.
+1. **Fork this Project**: Click the "**Fork**" button in the upper right corner.
 2. **Configure API Token**: Set up your Habitica API token and ID in the Actions secrets of your cloned project.
-3. **Customize Templates**: Modify the templates in the `documents` folder as needed, ensuring placeholders are not broken.
+3. **Customize Templates**: Modify the templates in the `documents` folder as needed, ensuring placeholders remain intact.
 4. **Enjoy Automated Management**: Once you've completed these steps, you'll be able to achieve the desired automated management! 🚀
 
 ## 🌟 How to Contribute
 
-If you find this project helpful or wish to get involved, feel free to give our project a ⭐️! Your support is our greatest motivation! We're looking forward to your suggestions, bug reports, or code contributions—your participation is welcome! 💪
+If you find this project helpful or want to get involved, please give our project a ⭐️! Your support is our biggest motivation! We look forward to your suggestions, bug reports, and code contributions—your participation is welcome! 💪
 
 ## 📧 Contact Us
 
-If you have any questions or suggestions, please feel free to reach out through Issues, and we will respond as soon as possible! 😉
+If you have any questions or suggestions, feel free to contact us through Issues, and we will respond to you as soon as possible! 😉
 
-Thank you for your interest in the Automated Guild Management System, and happy using! 🎉
+Thank you for your interest in the Automated Party Management System, and we hope you enjoy using it! 🎉

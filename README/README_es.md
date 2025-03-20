@@ -4,9 +4,9 @@
 
 </div>
 
-# 🎉 Sistema de Gestión de Partidos Automatizado 📈
+# 🎉 Sistema de Gestión de Party Automatizado 📈
 
-¡Bienvenido al proyecto del **Sistema de Gestión de Partidos Automatizado**! Nuestro objetivo es proporcionar herramientas eficientes y convenientes para la gestión de partidos a los usuarios de Habitica. ¡Ya seas un líder apasionado por la gestión o un miembro que desea participar activamente, aquí encontrarás las herramientas y la documentación que necesitas! ✨
+¡Bienvenido al proyecto **Sistema de Gestión de Party Automatizado**! Nuestro objetivo es proporcionar a los usuarios de Habitica herramientas de gestión de Party eficientes y convenientes. ¡Ya seas un líder apasionado por la gestión o un miembro que desea participar activamente, aquí encontrarás las herramientas y documentos que necesitas! ✨
 
 ## 🚀 Estructura del Proyecto
 
@@ -16,48 +16,48 @@
 │   └── workflows
 │       └── automated_party_management.yml    # Archivo de flujo de trabajo de GitHub Actions
 ├── LICENSE                                    # Licencia del proyecto
-├── documents                                  # Carpeta de documentación del proyecto
-│   ├── brief_description.md                   # Documento de descripción breve
-│   ├── new_members.md                         # Documento de lista de nuevos miembros
-│   ├── party_description.md                   # Documento de descripción del partido
-│   ├── remove_PM.md                           # Plantilla de notificación para la eliminación de miembros
-│   └── remove_members.md                      # Plantilla de registro de miembros eliminados
+├── documents                                  # Carpeta de documentos del proyecto
+│   ├── brief_description.md                   # Documento de breve descripción 
+│   ├── new_members.md                         # Documento de lista de nuevos miembros 
+│   ├── party_description.md                   # Documento de descripción de la Party 
+│   ├── remove_PM.md                           # Plantilla de notificación para eliminación de miembros 
+│   └── remove_members.md                      # Plantilla de registro de eliminación de miembros 
 ├── logs                                        # Carpeta de logs
 │   ├── manage_members.log                     # Registro de gestión de miembros
-│   └── update_description.log                 # Registro de actualizaciones de descripción
-├── requirements.txt                           # Archivo de dependencias
+│   └── update_description.log                 # Registro de actualización de descripción
+├── requirements.txt                           # Archivo de dependencias 
 └── scripts                                     # Directorio de scripts
-    ├── manage_members.py                      # Script para gestionar miembros
-    └── update_description.py                  # Script para actualizar la descripción del partido
+    ├── manage_members.py                      # Script para gestionar miembros 
+    └── update_description.py                  # Script para actualizar la descripción de la Party 
 ```
 
-## 📄 Resumen de Archivos
+## 📄 Introducción a los Archivos
 
-| Nombre del archivo                         | Descripción                                                       |
-|------------------------------------------|------------------------------------------------------------------|
-| **automated_party_management.yml**       | Archivo de flujo de trabajo de GitHub Actions que se ejecuta cada 10 minutos, encargado de gestionar tareas del equipo. Configura el entorno de Python, instala dependencias y ejecuta scripts de gestión de miembros y actualizaciones de descripción, ¡asegurando que tu partido esté siempre activo! 🎯 |
-| **brief_description.md**                 | Proporciona una cita diaria y su traducción, fomentando el aprendizaje de idiomas y la participación comunitaria. Este documento también se actualiza automáticamente con la información más reciente de los miembros, garantizando contenido fresco. 🌱 |
-| **new_members.md**                       | Registra las invitaciones a nuevos miembros, destacando la participación activa de la comunidad. Este documento se actualiza a través de operaciones programadas, ¡asegurando que no te pierdas la llegada de nuevos compañeros! 👥 |
-| **party_description.md**                 | Explica los objetivos y reglas del partido, alentando a los miembros a compartir experiencias personales y participar activamente en las tareas. Además, contiene discusiones sobre existencialismo y nihilismo, ayudándote a explorar significados más profundos en la vida. 📚 |
-| **remove_PM.md**                         | Plantilla de notificación amigable para informar a los miembros que han sido eliminados por baja actividad, ofreciendo opciones para reintegrarse y mejorando la comunicación y la eficiencia. 🤝 |
-| **remove_members.md**                    | Registra las razones por las que los miembros fueron eliminados y enlaces relacionados, asegurando un proceso de gestión transparente y actualizándose regularmente para auditoría y registro. 🔍 |
-| **requirements.txt**                     | Lista las dependencias de Python necesarias, asegurando que la configuración de tu entorno sea consistente para facilitar la instalación de las bibliotecas requeridas. ⚙️ |
-| **manage_members.py**                    | Script para gestionar a los miembros del partido, incluyendo la eliminación de miembros inactivos, envíos de invitaciones y registro de logs, simplificando el proceso de gestión. ⚡️ |
-| **update_description.py**                | Script que actualiza automáticamente la descripción del partido, asegurando que tengas contenido actualizado cada día para compartir con los miembros, aumentando el sentido de participación. 🌟 |
+| Nombre del Archivo                        | Descripción                                                 |
+|---------------------------------------|------------------------------------------------------------|
+| **automated_party_management.yml**    | Archivo de flujo de trabajo de GitHub Actions que se ejecuta cada 10 minutos, encargado de gestionar las tareas del equipo. Configura el entorno Python, instala las dependencias y ejecuta scripts de gestión de miembros y actualización de descripciones, ¡asegurando que tu Party se mantenga siempre activa! 🎯 |
+| **brief_description.md**              | Proporciona una cita del día y su traducción, promoviendo el aprendizaje de idiomas y la participación en la comunidad. Este documento también se actualiza automáticamente con la información de los nuevos miembros, garantizando contenido fresco. 🌱 |
+| **new_members.md**                    | Registra las invitaciones a nuevos miembros, destacando la participación activa de la comunidad. Este documento se actualiza a través de operaciones programadas, ¡asegurando que no te pierdas la llegada de nuevos compañeros! 👥 |
+| **party_description.md**              | Explica la misión y reglas de la Party, animando a los miembros a compartir experiencias personales y participar activamente en las tareas. Además, el contenido incluye discusiones sobre el existencialismo y el nihilismo, ayudándote a explorar un significado más profundo en la vida. 📚 |
+| **remove_PM.md**                      | Una plantilla de notificación amigable, que informa a los miembros que fueron eliminados por inactividad, ofreciendo opciones para volver a unirse, mejorando la amabilidad y eficiencia en la comunicación. 🤝 |
+| **remove_members.md**                 | Registra las razones para la eliminación de miembros y enlaces relacionados, asegurando que el proceso de gestión sea transparente y se actualice regularmente para auditoría y registro. 🔍 |
+| **requirements.txt**                  | Lista las dependencias de Python necesarias, asegurando que tu entorno esté configurado de manera uniforme para facilitar la instalación de las bibliotecas requeridas. ⚙️ |
+| **manage_members.py**                 | Script para gestionar miembros de la Party, incluyendo la eliminación de miembros inactivos, el envío de invitaciones y el registro de logs, simplificando el proceso de gestión. ⚡️ |
+| **update_description.py**             | Script que actualiza automáticamente la descripción de la Party, asegurando que tengas contenido actualizado para compartir con los miembros cada día, mejorando el sentido de participación. 🌟 |
 
 ## Cómo Usar
 
-1. **Forkea este proyecto**: Haz clic en el botón "**Fork**" en la esquina superior derecha.
-2. **Configura el API Token**: Configura tu token de API de Habitica y ID en los secretos de Actions de tu proyecto clonado.
-3. **Personaliza las plantillas**: Modifica según sea necesario las plantillas en la carpeta `documents`, asegurándote de no dañar los marcadores de posición.
-4. **¡Disfruta de la gestión automatizada!**: ¡Una vez completados estos pasos, podrás disfrutar de la gestión automatizada que esperabas! 🚀
+1. **Hacer Fork de este proyecto**: Haz clic en el botón "**Fork**" en la esquina superior derecha.
+2. **Configurar API Token**: Configura tu token API de Habitica y ID en los secretos de Actions de tu proyecto clonado.
+3. **Personalizar Plantillas**: Modifica las plantillas en la carpeta `documents` según sea necesario, asegurándote de no alterar los marcadores.
+4. **Disfrutar de la gestión automatizada**: ¡Después de completar los pasos anteriores, podrás lograr la gestión automatizada que deseas! 🚀
 
 ## 🌟 Cómo Contribuir
 
-Si consideras que este proyecto te ha sido útil o deseas participar, ¡te invitamos a darle un ⭐️ a nuestro proyecto! ¡Tu apoyo es nuestra mayor motivación! Esperamos tus sugerencias, reportes de problemas o contribuciones de código, ¡tu participación es bienvenida! 💪
+Si consideras que este proyecto te ha sido útil, o si deseas ser parte de él, ¡te invitamos a darle una ⭐️ a nuestro proyecto! ¡Tu apoyo es nuestra mayor motivación! Esperamos tus sugerencias, reportes de problemas o contribuciones de código, ¡bienvenido a participar! 💪
 
 ## 📧 Contáctanos
 
-Si tienes alguna pregunta o sugerencia, no dudes en contactarnos a través de Issues, ¡te responderemos lo antes posible! 😉
+Si tienes alguna pregunta o sugerencia, no dudes en contactarnos a través de Issues y te responderemos lo antes posible. 😉 
 
-¡Gracias por tu interés en el Sistema de Gestión de Partidos Automatizado y que tengas una excelente experiencia usando la herramienta! 🎉
+¡Gracias por tu interés en el Sistema de Gestión de Party Automatizado, y que disfrutes su uso! 🎉

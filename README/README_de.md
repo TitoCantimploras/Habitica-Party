@@ -4,9 +4,9 @@
 
 </div>
 
-# 🎉 Automatisiertes Parteienmanagementsystem 📈
+# 🎉 Automatisiertes Party-Management-System 📈
 
-Willkommen beim **Automatisierten Parteienmanagementsystem** Projekt! Unser Ziel ist es, Habitica-Nutzern effiziente und benutzerfreundliche Werkzeuge für das Parteienmanagement zur Verfügung zu stellen. Egal ob Sie ein leidenschaftlicher Manager sind oder ein aktives Mitglied, hier finden Sie die Werkzeuge und Dokumente, die Sie benötigen!✨
+Willkommen beim **Automatisierten Party-Management-System** Projekt! Unser Ziel ist es, Habitica-Nutzern effiziente und benutzerfreundliche Party-Management-Tools anzubieten. Egal, ob Sie ein leidenschaftlicher Leiter oder ein engagiertes Mitglied sind, hier finden Sie die Werkzeuge und Dokumente, die Sie benötigen! ✨
 
 ## 🚀 Projektstruktur
 
@@ -16,48 +16,48 @@ Willkommen beim **Automatisierten Parteienmanagementsystem** Projekt! Unser Ziel
 │   └── workflows
 │       └── automated_party_management.yml    # GitHub Actions Workflow-Datei
 ├── LICENSE                                    # Projektlizenz
-├── documents                                  # Dokumentenordner des Projekts
-│   ├── brief_description.md                   # Kurzdokumentation 
-│   ├── new_members.md                         # Dokument für neue Mitglieder 
-│   ├── party_description.md                   # Parteibeschreibung 
-│   ├── remove_PM.md                           # Vorlage für die Benachrichtigung über Mitgliedsentfernung 
+├── documents                                  # Projekt-Dokumentenordner
+│   ├── brief_description.md                   # Dokument mit kurzer Beschreibung 
+│   ├── new_members.md                         # Dokument mit neuer Mitgliederliste 
+│   ├── party_description.md                   # Dokument mit Party-Beschreibung 
+│   ├── remove_PM.md                           # Benachrichtigungsvorlage für Mitgliedsentfernungen 
 │   └── remove_members.md                      # Vorlage für Aufzeichnungen über entfernte Mitglieder 
-├── logs                                        # Log-Ordner
-│   ├── manage_members.log                     # Protokoll für Mitgliederverwaltung
+├── logs                                        # Protokollordner
+│   ├── manage_members.log                     # Mitgliederverwaltungsprotokoll
 │   └── update_description.log                 # Protokoll für Beschreibungsaktualisierungen
 ├── requirements.txt                           # Abhängigkeitsdatei 
 └── scripts                                     # Skriptverzeichnis
     ├── manage_members.py                      # Skript zur Verwaltung von Mitgliedern 
-    └── update_description.py                  # Skript zur Aktualisierung der Parteibeschreibung 
+    └── update_description.py                  # Skript zur Aktualisierung der Party-Beschreibung 
 ```
 
-## 📄 Dateibeschreibung
+## 📄 Dateiübersicht
 
-| Dateiname                                 | Beschreibung                                                 |
-|---------------------------------------|------------------------------------------------------------|
-| **automated_party_management.yml**    | GitHub Actions Workflow-Datei, die alle 10 Minuten automatisch läuft und für die Verwaltung von Teamaufgaben zuständig ist. Durch das Einrichten der Python-Umgebung, Installation der Abhängigkeiten und Ausführung von Mitgliedermanagement- und Beschreibungsaktualisierungsskripten bleibt Ihre Partei immer aktiv! 🎯 |
-| **brief_description.md**              | Bietet täglich ein Zitat und dessen Übersetzung, um das Sprachenlernen und die Gemeinschaftsaktivitäten zu fördern. Dieses Dokument aktualisiert automatisch die Informationen zu neuen Mitgliedern, um frische Inhalte zu gewährleisten. 🌱 |
-| **new_members.md**                    | Dokumentiert die Einladungen neuer Mitglieder und betont die aktive Teilnahme an der Gemeinschaft. Dieses Dokument aktualisiert sich regelmäßig, damit Sie keine neuen Partner verpassen! 👥 |
-| **party_description.md**              | Erläutert die Ziele und Regeln der Partei und ermutigt die Mitglieder, persönliche Erfahrungen zu teilen und aktiv an Aufgaben teilzunehmen. Der Inhalt diskutiert auch existenzialistische und nihilistische Themen, die Ihnen helfen, tiefere Bedeutungen im Leben zu erkunden. 📚 |
-| **remove_PM.md**                      | Eine freundliche Benachrichtigungsvorlage, um Mitglieder, die aufgrund von Inaktivität entfernt wurden, zu informieren und ihnen die Möglichkeit zur Wiederaufnahme zu geben, um die Kommunikation freundlicher und effizienter zu gestalten. 🤝 |
-| **remove_members.md**                 | Dokumentiert die Gründe für die Entfernung von Mitgliedern sowie relevante Links, um den Managementprozess transparent zu gestalten und regelmäßig aktualisiert zu werden für Audits und Aufzeichnungen. 🔍 |
-| **requirements.txt**                  | Listet die erforderlichen Python-Abhängigkeiten auf, um sicherzustellen, dass Ihre Umgebung konsistent eingerichtet ist und die benötigten Bibliotheken einfach installiert werden können. ⚙️ |
-| **manage_members.py**                 | Skript zur Verwaltung von Parteimitgliedern, einschließlich der Entfernung inaktiver Mitglieder, dem Versenden von Einladungen und Protokollierung, um den Verwaltungsprozess zu vereinfachen. ⚡️ |
-| **update_description.py**             | Skript zur automatischen Aktualisierung der Parteibeschreibung, damit Sie täglich aktualisierte Inhalte mit den Mitgliedern teilen können, um das Engagement zu steigern. 🌟 |
+| Dateiname                                | Beschreibung                                                  |
+|------------------------------------------|-------------------------------------------------------------|
+| **automated_party_management.yml**       | GitHub Actions Workflow-Datei, die alle 10 Minuten automatisch ausgeführt wird und für das Management von Teamaufgaben verantwortlich ist. Mit Python-Umgebung, Installation von Abhängigkeiten und Ausführung der Skripte zur Mitgliederverwaltung und Beschreibungsaktualisierung sorgt sie dafür, dass Ihre Party immer aktiv bleibt! 🎯 |
+| **brief_description.md**                 | Bietet täglich ein Zitat und seine Übersetzung, um das Sprachenlernen und die Gemeinschaftsbeteiligung zu fördern. Dieses Dokument wird auch automatisch mit den neuesten Mitgliederdaten aktualisiert und sorgt für frische Inhalte. 🌱 |
+| **new_members.md**                       | Dokumentiert Einladungen neuer Mitglieder und betont die aktive Beteiligung der Gemeinschaft. Dieses Dokument wird regelmäßig aktualisiert, damit Sie keinen neuen Freund verpassen! 👥 |
+| **party_description.md**                 | Erläutert die Mission und Regeln der Party, ermutigt Mitglieder, persönliche Erfahrungen zu teilen und aktiv an Aufgaben teilzunehmen. Außerdem diskutiert es existenzialistische und nihilistische Themen, um Ihnen zu helfen, tiefere Bedeutungen im Leben zu erkunden. 📚 |
+| **remove_PM.md**                         | Eine freundliche Benachrichtigungsvorlage, um Mitglieder, die aufgrund von Inaktivität entfernt wurden, zu informieren und ihnen eine Möglichkeit zur Wiederbeitrag zu bieten, wodurch die Kommunikation freundlicher und effizienter wird. 🤝 |
+| **remove_members.md**                    | Dokumentiert die Gründe für die Entfernung von Mitgliedern und relevante Links, um den Verwaltungsprozess transparent zu gestalten und regelmäßig aktualisiert zu werden, um Audits und Aufzeichnungen zu erleichtern. 🔍 |
+| **requirements.txt**                     | Listet die erforderlichen Python-Abhängigkeiten auf, um sicherzustellen, dass Ihre Umgebungsinstallation konsistent und die Installation der erforderlichen Bibliotheken einfach ist. ⚙️ |
+| **manage_members.py**                    | Skript zur Verwaltung von Party-Mitgliedern, das Funktionen wie das Entfernen inaktiver Mitglieder, das Versenden von Einladungen und das Führen von Protokollen umfasst und den Verwaltungsprozess vereinfacht. ⚡️ |
+| **update_description.py**                | Skript zur automatischen Aktualisierung der Party-Beschreibung, um sicherzustellen, dass Sie täglich aktualisierte Inhalte mit den Mitgliedern teilen können und das Engagement erhöhen. 🌟 |
 
-## So verwenden Sie es
+## Wie man es benutzt
 
-1. **Forken Sie dieses Projekt**: Klicken Sie auf die Schaltfläche "**Fork**" oben rechts.
-2. **Konfigurieren Sie das API-Token**: Richten Sie in den Action-Geheimnissen Ihres geklonten Projekts Ihr Habitica API-Token und Ihre ID ein.
-3. **Passen Sie die Vorlagen an**: Ändern Sie nach Bedarf die Vorlagen im `documents`-Ordner, um sicherzustellen, dass die Platzhalter nicht kaputtgehen.
-4. **Genießen Sie die automatisierte Verwaltung**: Nach Abschluss der obigen Schritte können Sie die gewünschte automatisierte Verwaltung genießen! 🚀
+1. **Forken Sie dieses Projekt**: Klicken Sie auf die Schaltfläche „**Fork**“ in der oberen rechten Ecke.
+2. **API-Token konfigurieren**: Konfigurieren Sie Ihr Habitica API-Token und Ihre ID in den Actions-Secrets Ihres geklonten Projekts.
+3. **Vorlagen anpassen**: Passen Sie die Vorlagen im `documents`-Ordner nach Bedarf an, um sicherzustellen, dass die Platzhalter nicht beschädigt werden.
+4. **Genießen Sie die automatisierte Verwaltung**: Nach Abschluss dieser Schritte können Sie die gewünschte automatisierte Verwaltung genießen! 🚀
 
 ## 🌟 Wie man beiträgt
 
-Wenn Sie denken, dass dieses Projekt Ihnen hilfreich ist oder Sie daran teilnehmen möchten, freuen wir uns über einen ⭐️ für unser Projekt! Ihre Unterstützung ist unsere größte Motivation! Wir freuen uns auf Ihre Vorschläge, Fehlermeldungen oder Codebeiträge – Ihre Teilnahme ist herzlich willkommen!💪
+Wenn Sie denken, dass dieses Projekt Ihnen hilfreich ist oder Sie daran teilnehmen möchten, freuen wir uns über einen ⭐️ für unser Projekt! Ihre Unterstützung ist unsere größte Motivation! Wir freuen uns auf Anregungen, Problemmeldungen oder Code-Beiträge von Ihnen!💪
 
 ## 📧 Kontaktieren Sie uns
 
-Wenn Sie Fragen oder Anregungen haben, zögern Sie nicht, uns über Issues zu kontaktieren, wir werden Ihnen so schnell wie möglich antworten!😉
+Wenn Sie Fragen oder Vorschläge haben, zögern Sie nicht, uns über Issues zu kontaktieren. Wir werden Ihnen so schnell wie möglich antworten! 😉
 
-Vielen Dank für Ihr Interesse am Automatisierten Parteienmanagementsystem, und viel Spaß bei der Nutzung!🎉
+Danke für Ihr Interesse am automatisierten Party-Management-System. Wir wünschen Ihnen viel Freude bei der Nutzung! 🎉
