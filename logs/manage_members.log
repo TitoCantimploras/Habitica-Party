@@ -4010,3 +4010,50 @@ Text: {"success":false,"error":"NotAuthorized","message":"You cannot remove your
 ###### by [`scheduled Actions`](https://github.com/Delta-Water/Habitica-Party/).
 2025-04-12 15:20:35,639 - INFO - Invitations sent to ['Ilha'].
 2025-04-12 15:20:35,639 - INFO - Habitica party management script completed successfully.
+2025-04-12 23:46:45,606 - INFO - # 3935
+2025-04-12 23:46:45,862 - DEBUG - Request: <function get at 0x7fdac30c0430> https://habitica.com/api/v3/groups/party/members
+2025-04-12 23:46:48,109 - DEBUG - Request: <function get at 0x7fdac30c0430> https://habitica.com/api/v3/members/0b41e9cd-4d27-4841-b887-1d4faf7cb390
+2025-04-12 23:46:50,360 - DEBUG - Request: <function get at 0x7fdac30c0430> https://habitica.com/api/v3/members/1347f170-5bff-4012-920a-afc7a40a86d1
+2025-04-12 23:46:52,486 - DEBUG - Request: <function get at 0x7fdac30c0430> https://habitica.com/api/v3/members/2f954fc0-426a-4757-812c-28e17dd455ec
+2025-04-12 23:46:54,676 - DEBUG - Request: <function get at 0x7fdac30c0430> https://habitica.com/api/v3/members/35062395-1fe1-4755-bc43-80f928b45210
+2025-04-12 23:46:56,819 - DEBUG - Request: <function get at 0x7fdac30c0430> https://habitica.com/api/v3/members/3e95e228-d253-482a-b95e-0130df2126e2
+2025-04-12 23:46:59,063 - DEBUG - Request: <function get at 0x7fdac30c0430> https://habitica.com/api/v3/members/52545ad8-378e-4737-a5e7-3376570198e0
+2025-04-12 23:47:01,171 - DEBUG - Request: <function get at 0x7fdac30c0430> https://habitica.com/api/v3/members/64491d41-97f3-4428-b4d3-d7dda1cca648
+2025-04-12 23:47:03,373 - DEBUG - Request: <function get at 0x7fdac30c0430> https://habitica.com/api/v3/members/708ddcc9-a990-4763-b09f-48f990c121f8
+2025-04-12 23:47:05,520 - DEBUG - Request: <function get at 0x7fdac30c0430> https://habitica.com/api/v3/members/70b71ce7-125f-43b3-b384-4592b93b19f5
+2025-04-12 23:47:07,641 - DEBUG - Request: <function get at 0x7fdac30c0430> https://habitica.com/api/v3/members/744f8c1d-9255-4c96-b718-f10900aaaae0
+2025-04-12 23:47:09,754 - DEBUG - Request: <function get at 0x7fdac30c0430> https://habitica.com/api/v3/members/8ecdf10a-fec8-4e58-b205-987ec79ee28a
+2025-04-12 23:47:11,869 - DEBUG - Request: <function get at 0x7fdac30c0430> https://habitica.com/api/v3/members/9e169b42-8f3c-4cdd-acb4-1f07a9203206
+2025-04-12 23:47:14,038 - DEBUG - Request: <function get at 0x7fdac30c0430> https://habitica.com/api/v3/members/abc52830-5322-441f-aa49-907791cfc177
+2025-04-12 23:47:16,162 - DEBUG - Request: <function get at 0x7fdac30c0430> https://habitica.com/api/v3/members/b5119d0f-7044-4ec0-beea-eb03ff75b57f
+2025-04-12 23:47:18,324 - DEBUG - Request: <function get at 0x7fdac30c0430> https://habitica.com/api/v3/members/c6e210e3-030a-4cec-9a9a-3ba23be20a4f
+2025-04-12 23:47:20,443 - DEBUG - Request: <function get at 0x7fdac30c0430> https://habitica.com/api/v3/members/d7a489cf-0c42-4f67-bd34-44c7dcc66425
+2025-04-12 23:47:22,565 - DEBUG - Request: <function get at 0x7fdac30c0430> https://habitica.com/api/v3/members/d7c27862-16f4-4cac-9e37-bff7799e4dcc
+2025-04-12 23:47:24,752 - DEBUG - Request: <function get at 0x7fdac30c0430> https://habitica.com/api/v3/members/dc015e4c-545a-418d-b8be-b621be2472cb
+2025-04-12 23:47:26,857 - DEBUG - Request: <function get at 0x7fdac30c0430> https://habitica.com/api/v3/members/e2ce7520-3ca5-45e1-acd7-4f65e14ab6c3
+2025-04-12 23:47:29,013 - DEBUG - Request: <function get at 0x7fdac30c0430> https://habitica.com/api/v3/members/fb839cf4-222e-42a9-a51a-f083746a5a47
+2025-04-12 23:47:31,149 - DEBUG - Request: <function get at 0x7fdac30c0430> https://habitica.com/api/v3/members/fe9b78bf-eae6-4b63-84f5-141a6c3a77a7
+2025-04-12 23:47:33,306 - DEBUG - Request: <function post at 0x7fdac30c05e0> https://habitica.com/api/v3/members/send-private-message
+2025-04-12 23:47:33,307 - INFO - Message sent to user d7c27862-16f4-4cac-9e37-bff7799e4dcc.
+2025-04-12 23:47:35,451 - DEBUG - Request: <function post at 0x7fdac30c05e0> https://habitica.com/api/v3/groups/party/removeMember/d7c27862-16f4-4cac-9e37-bff7799e4dcc
+2025-04-12 23:47:37,668 - DEBUG - Request: <function post at 0x7fdac30c05e0> https://habitica.com/api/v3/groups/party/chat
+2025-04-12 23:47:37,668 - INFO - Party chat message sent: #### Here is a removed member: 
+
+[Marisabel Pedroza](https://habitica.com/profile/d7c27862-16f4-4cac-9e37-bff7799e4dcc)
+
+#### Reason: Not logged in for 4 days.
+
+###### by [`scheduled Actions`](https://github.com/Delta-Water/Habitica-Party/).
+2025-04-12 23:47:37,668 - INFO - User {'id': 'd7c27862-16f4-4cac-9e37-bff7799e4dcc', 'name': 'Marisabel Pedroza'} has been removed from the party.
+2025-04-12 23:47:42,067 - DEBUG - Request: <function get at 0x7fdac30c0430> https://habitica.com/api/v3/looking-for-party
+2025-04-12 23:47:44,233 - DEBUG - Request: <function post at 0x7fdac30c05e0> https://habitica.com/api/v3/groups/party/invite
+2025-04-12 23:47:46,450 - DEBUG - Request: <function post at 0x7fdac30c05e0> https://habitica.com/api/v3/groups/party/chat
+2025-04-12 23:47:46,450 - INFO - Party chat message sent: #### Here is a list of invited member(s): 
+
+- [Adriana García](https://habitica.com/profile/da8ec5d8-ab10-4499-bf94-122585450752)
+
+- [fried ramen](https://habitica.com/profile/7249ee76-1238-4394-a840-bb7f14cb65bf)
+
+###### by [`scheduled Actions`](https://github.com/Delta-Water/Habitica-Party/).
+2025-04-12 23:47:46,451 - INFO - Invitations sent to ['Adriana García', 'fried ramen'].
+2025-04-12 23:47:46,451 - INFO - Habitica party management script completed successfully.
