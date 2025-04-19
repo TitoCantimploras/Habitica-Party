@@ -5,7 +5,7 @@ on:
   #   branches:
   #     - main
   schedule:
-    - cron: '0/30 * * * *' # Change to every twenty minutes
+    - cron: '0/20 * * * *' # Change to every twenty minutes
   workflow_dispatch:
 
 jobs:
