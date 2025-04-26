@@ -1,10 +1,10 @@
-## 队伍宗旨 · Party Purpose :star2:
+## · Party Purpose :star2:
 
 A new guild rises from the ashes of procrastination… YOUR guild. We are warriors of routine, mages of mindfulness, rogues of responsibility. And we’re looking for more adventurers to join our quest! Join us in daily missions, epic to-dos, and habit-slaying battles! Whether you're trying to build better habits, level up your real life, or just want an awesome party to share the grind with—we've got a place for you.
 
 If a member does not log in for 4 days, we will remove him/her from our team. Don't worry, if you want to rejoin us later, just send me a private message.
 
-## 规则 · Rules :traffic_light:
+## · Rules :traffic_light:
 
  * Normally, we will end the participation of the next quest at **15 o'clock** on the day after the completion of the previous one. (UTC + 0)
 
@@ -20,7 +20,7 @@ If a member does not log in for 4 days, we will remove him/her from our team. Do
 
  * If a member does not log in for `4 days`, we will remove `him/her` from our team. Don't worry, if you want to rejoin us later, just send me a private message.
 
-## 附录 · Appendix :four_leaf_clover:
+## · Appendix :four_leaf_clover:
 
 ### a. Time
 
