@@ -80,7 +80,7 @@ def send_invite(id_list, name_list):
     if response.status_code == 200:
         id_str = '\n\n'.join([f"- [{name}](https://habitica.com/profile/{id})" for name, id in zip(name_list, id_list)])
         message = template_new.format(list_str=id_str)
-        send_party_chat(message)
+        #send_party_chat(message)
         logger.info(f"Invitations sent to {name_list}.")
     else:
         log_response_error(response, "Sending invitations")
@@ -123,7 +123,7 @@ def remove_users_from_party(user_to_remove):
     for user in user_to_remove:
         send_message_to_user(user['id'], template_message.format(name=user['name']))
         response = rate_limited_request(requests.post, url.format(id=user['id']), headers=headers)
-        send_party_chat(template_remove.format(name=user['name'], id=user['id']))
+        #send_party_chat(template_remove.format(name=user['name'], id=user['id']))
         if response.status_code == 200:
             logger.info(f"User {user} has been removed from the party.")
         else:
@@ -152,7 +152,7 @@ def main():
     remove_id_list = get_inactive_party_members(time_limit)
     if remove_id_list:
         remove_users_from_party(remove_id_list)
-    search_and_invite_users()
+    #search_and_invite_users()
     logger.info("Habitica party management script completed successfully.")
 
 if __name__ == "__main__":
