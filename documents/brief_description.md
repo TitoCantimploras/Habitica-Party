@@ -9,7 +9,7 @@ If a member does not log in for 4 days, we will remove him/her from our team. Do
 
 ## · Rules :traffic_light:
 
- * Normally, we will end the participation of the next quest at **15 o'clock** on the day after the completion of the previous one. (UTC + 0)
+ * Normally, we will end the participation of the next quest at **12 hours** since it started.
 
  * However, in order to ensure the efficient completion of the quest, after 10 hours or more, we will directly start it if only a minority of those who were **already   
    logged** in that day are not involved. (I'm sorry if not everyone has been taken care of.)
