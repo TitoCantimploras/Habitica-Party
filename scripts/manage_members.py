@@ -128,16 +128,26 @@ def remove_users_from_party(user_to_remove):
             logger.info(f"User {user} has been removed from the party.")
         else:
             log_response_error(response, f"Removing user {user} from the party")
-
-def search_and_invite_users():
+            
+## FUNCION PROPIA
+def search_and_invite_users(min_level=10):
+    min_level = 10
     url = "https://habitica.com/api/v3/looking-for-party"
     response = rate_limited_request(requests.get, url, headers=headers)
+    
     if response.status_code == 200:
         groups = get_json_response(response).get('data', [])
-        id_list = [group['_id'] for group in groups]
-        name_list = [group['profile']['name'] for group in groups]
+        
+        # Filtrar por nivel mínimo
+        filtered_groups = [group for group in groups if group['stats']['lvl'] >= min_level]
+        
+        id_list = [group['_id'] for group in filtered_groups]
+        name_list = [group['profile']['name'] for group in filtered_groups]
+        
         if id_list:
             send_invite(id_list, name_list)
+        else:
+            print(f"No se encontraron usuarios con nivel >= {min_level}")
     else:
         log_response_error(response, "Fetching users looking for party")
 
@@ -152,7 +162,7 @@ def main():
     remove_id_list = get_inactive_party_members(time_limit)
     if remove_id_list:
         remove_users_from_party(remove_id_list)
-    #search_and_invite_users()
+    search_and_invite_users()
     logger.info("Habitica party management script completed successfully.")
 
 if __name__ == "__main__":
