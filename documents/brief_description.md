@@ -1,4 +1,5 @@
 ### Daily Sentence 🌹
+> {content}
 
 ## · Party Purpose :star2:
 
