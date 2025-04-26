@@ -169,3 +169,24 @@
 2025-04-26 20:45:55,667 - DEBUG - Request: <function post at 0x7f7116079550> https://habitica.com/api/v3/groups/party/invite
 2025-04-26 20:45:55,667 - INFO - Invitations sent to ['Meraru'].
 2025-04-26 20:45:55,668 - INFO - Habitica party management script completed successfully.
+2025-04-26 21:14:52,483 - INFO - # 237
+2025-04-26 21:14:52,778 - DEBUG - Request: <function get at 0x7f0d956983a0> https://habitica.com/api/v3/groups/party/members
+2025-04-26 21:14:54,963 - DEBUG - Request: <function get at 0x7f0d956983a0> https://habitica.com/api/v3/members/03af268c-e6f7-4c56-ae1e-8cf39894f17c
+2025-04-26 21:14:57,278 - DEBUG - Request: <function get at 0x7f0d956983a0> https://habitica.com/api/v3/members/1db7268a-1d80-43eb-b0f6-d4143ea7a765
+2025-04-26 21:14:59,567 - DEBUG - Request: <function get at 0x7f0d956983a0> https://habitica.com/api/v3/members/2390fb0d-6b8c-4c30-8643-662f2eb5ca7c
+2025-04-26 21:15:01,821 - DEBUG - Request: <function get at 0x7f0d956983a0> https://habitica.com/api/v3/members/4292e80b-1a55-424e-876d-7be722faa1a0
+2025-04-26 21:15:04,095 - DEBUG - Request: <function get at 0x7f0d956983a0> https://habitica.com/api/v3/members/44dc74d3-aec4-45d6-a7cc-7ccb23ec1728
+2025-04-26 21:15:06,392 - DEBUG - Request: <function get at 0x7f0d956983a0> https://habitica.com/api/v3/members/48572283-2e31-4ade-bc06-354927d7dbe3
+2025-04-26 21:15:08,644 - DEBUG - Request: <function get at 0x7f0d956983a0> https://habitica.com/api/v3/members/6e93dff7-0fdc-4486-87e2-70451273dbcd
+2025-04-26 21:15:10,840 - DEBUG - Request: <function get at 0x7f0d956983a0> https://habitica.com/api/v3/members/704817e6-e3fe-4c54-8339-618ba694cf6c
+2025-04-26 21:15:13,022 - DEBUG - Request: <function get at 0x7f0d956983a0> https://habitica.com/api/v3/members/934ca92f-c81b-4281-a7d2-6b3a3ff54b7a
+2025-04-26 21:15:15,260 - DEBUG - Request: <function get at 0x7f0d956983a0> https://habitica.com/api/v3/members/95e63aaa-dd9a-4876-bdee-f1e2a24e834c
+2025-04-26 21:15:17,517 - DEBUG - Request: <function get at 0x7f0d956983a0> https://habitica.com/api/v3/members/cc40b725-4ab5-468e-9b7f-27d21c6cde92
+2025-04-26 21:15:19,770 - DEBUG - Request: <function get at 0x7f0d956983a0> https://habitica.com/api/v3/members/ccbe8a25-b8c8-4756-be08-8c572e911983
+2025-04-26 21:15:21,955 - DEBUG - Request: <function get at 0x7f0d956983a0> https://habitica.com/api/v3/members/d19af6c5-6a9e-4a41-ad41-90cdec2e3d8f
+2025-04-26 21:15:24,224 - DEBUG - Request: <function get at 0x7f0d956983a0> https://habitica.com/api/v3/members/dc0beb65-09c3-4dad-b899-8d6765151be2
+2025-04-26 21:15:26,406 - DEBUG - Request: <function get at 0x7f0d956983a0> https://habitica.com/api/v3/members/dc3af925-5e35-4957-80b5-a0d77648102f
+2025-04-26 21:15:28,627 - DEBUG - Request: <function get at 0x7f0d956983a0> https://habitica.com/api/v3/members/edeb0e4b-0b5e-41e5-ab39-d2fd052d4a8f
+2025-04-26 21:15:30,809 - DEBUG - Request: <function get at 0x7f0d956983a0> https://habitica.com/api/v3/members/f29666a3-ac22-493e-87a4-178e98588296
+2025-04-26 21:15:37,514 - DEBUG - Request: <function get at 0x7f0d956983a0> https://habitica.com/api/v3/looking-for-party
+2025-04-26 21:15:37,515 - INFO - Habitica party management script completed successfully.
