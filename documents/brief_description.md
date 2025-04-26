@@ -2,8 +2,6 @@
 
 > {content}
 
-> {translation}
-
 ### Last Updated Time 👀
 
 {members_str}
