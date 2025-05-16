@@ -6477,3 +6477,29 @@ Text: {"success":false,"error":"NotAuthorized","message":"No puedes enviar un me
 2025-05-16 23:17:39,327 - INFO - User {'id': 'a5276421-40f4-4c0e-9176-5113a4c11c12', 'name': 'kjjnnm'} has been removed from the party.
 2025-05-16 23:17:42,094 - DEBUG - Request: <function get at 0x7fb07a2774c0> https://habitica.com/api/v3/looking-for-party
 2025-05-16 23:17:42,095 - INFO - Habitica party management script completed successfully.
+2025-05-16 23:31:29,725 - INFO - # 1320
+2025-05-16 23:31:30,002 - DEBUG - Request: <function get at 0x7fcf955424c0> https://habitica.com/api/v3/groups/party/members
+2025-05-16 23:31:32,196 - DEBUG - Request: <function get at 0x7fcf955424c0> https://habitica.com/api/v3/members/03af268c-e6f7-4c56-ae1e-8cf39894f17c
+2025-05-16 23:31:34,395 - DEBUG - Request: <function get at 0x7fcf955424c0> https://habitica.com/api/v3/members/13e2f611-0330-4de3-bc6b-132c68237d02
+2025-05-16 23:31:36,707 - DEBUG - Request: <function get at 0x7fcf955424c0> https://habitica.com/api/v3/members/1db7268a-1d80-43eb-b0f6-d4143ea7a765
+2025-05-16 23:31:39,014 - DEBUG - Request: <function get at 0x7fcf955424c0> https://habitica.com/api/v3/members/1eb1730f-0dba-4fdd-b880-e07807efdb43
+2025-05-16 23:31:41,209 - DEBUG - Request: <function get at 0x7fcf955424c0> https://habitica.com/api/v3/members/2390fb0d-6b8c-4c30-8643-662f2eb5ca7c
+2025-05-16 23:31:43,447 - DEBUG - Request: <function get at 0x7fcf955424c0> https://habitica.com/api/v3/members/4292e80b-1a55-424e-876d-7be722faa1a0
+2025-05-16 23:31:45,755 - DEBUG - Request: <function get at 0x7fcf955424c0> https://habitica.com/api/v3/members/645a8f8a-8e22-42e5-a986-3f617f9022f2
+2025-05-16 23:31:48,060 - DEBUG - Request: <function get at 0x7fcf955424c0> https://habitica.com/api/v3/members/6f5691c7-6e3c-40fb-9bd0-5dda0ee7ca4b
+2025-05-16 23:31:50,252 - DEBUG - Request: <function get at 0x7fcf955424c0> https://habitica.com/api/v3/members/7295b8a7-bc9e-4019-8bcb-148e6c3e5628
+2025-05-16 23:31:52,540 - DEBUG - Request: <function get at 0x7fcf955424c0> https://habitica.com/api/v3/members/7c07d1f0-66ee-48a8-94e8-618049546263
+2025-05-16 23:31:54,724 - DEBUG - Request: <function get at 0x7fcf955424c0> https://habitica.com/api/v3/members/86049d3a-02a7-412d-b0ab-5834a166c6d0
+2025-05-16 23:31:56,920 - DEBUG - Request: <function get at 0x7fcf955424c0> https://habitica.com/api/v3/members/901b8556-e91a-4a9e-977d-d39a38c5ba19
+2025-05-16 23:31:59,113 - DEBUG - Request: <function get at 0x7fcf955424c0> https://habitica.com/api/v3/members/95e63aaa-dd9a-4876-bdee-f1e2a24e834c
+2025-05-16 23:32:01,307 - DEBUG - Request: <function get at 0x7fcf955424c0> https://habitica.com/api/v3/members/acf222d2-3c6a-4e90-a7d5-4b2be69169cc
+2025-05-16 23:32:03,493 - DEBUG - Request: <function get at 0x7fcf955424c0> https://habitica.com/api/v3/members/b1a75660-12e9-4c81-864a-80095959f621
+2025-05-16 23:32:05,695 - DEBUG - Request: <function get at 0x7fcf955424c0> https://habitica.com/api/v3/members/d1d53d13-2888-4150-8717-e389ca7e628c
+2025-05-16 23:32:07,884 - DEBUG - Request: <function get at 0x7fcf955424c0> https://habitica.com/api/v3/members/da7a54eb-634f-4437-8399-78225c3bc810
+2025-05-16 23:32:10,077 - DEBUG - Request: <function get at 0x7fcf955424c0> https://habitica.com/api/v3/members/ddb7fd41-08fc-4deb-8c7a-16bd11c3758c
+2025-05-16 23:32:12,268 - DEBUG - Request: <function get at 0x7fcf955424c0> https://habitica.com/api/v3/members/e6b8bc21-826f-4704-9c1b-4b1124ce5528
+2025-05-16 23:32:14,458 - DEBUG - Request: <function get at 0x7fcf955424c0> https://habitica.com/api/v3/members/edeb0e4b-0b5e-41e5-ab39-d2fd052d4a8f
+2025-05-16 23:32:16,648 - DEBUG - Request: <function get at 0x7fcf955424c0> https://habitica.com/api/v3/members/f0e57f6c-ab3f-4c1d-bd1a-2872b831a38b
+2025-05-16 23:32:18,839 - DEBUG - Request: <function get at 0x7fcf955424c0> https://habitica.com/api/v3/members/f29666a3-ac22-493e-87a4-178e98588296
+2025-05-16 23:32:21,740 - DEBUG - Request: <function get at 0x7fcf955424c0> https://habitica.com/api/v3/looking-for-party
+2025-05-16 23:32:21,741 - INFO - Habitica party management script completed successfully.
