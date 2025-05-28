@@ -5978,3 +5978,33 @@ Text: {"success":false,"error":"BadRequest","message":"Un Equipo solo puede tene
 2025-05-28 11:16:54,187 - DEBUG - Request: <function get at 0x7f28d64444c0> https://habitica.com/api/v3/members/f0e57f6c-ab3f-4c1d-bd1a-2872b831a38b
 2025-05-28 11:16:57,256 - DEBUG - Request: <function get at 0x7f28d64444c0> https://habitica.com/api/v3/looking-for-party
 2025-05-28 11:16:57,256 - INFO - Habitica party management script completed successfully.
+2025-05-28 11:30:42,337 - INFO - # 1935
+2025-05-28 11:30:42,472 - DEBUG - Request: <function get at 0x7fbf549a54c0> https://habitica.com/api/v3/groups/party/members
+2025-05-28 11:30:44,595 - DEBUG - Request: <function get at 0x7fbf549a54c0> https://habitica.com/api/v3/members/08ad6c5d-4854-40ea-9d7d-b0ade78f3ec5
+2025-05-28 11:30:46,671 - DEBUG - Request: <function get at 0x7fbf549a54c0> https://habitica.com/api/v3/members/13e2f611-0330-4de3-bc6b-132c68237d02
+2025-05-28 11:30:48,756 - DEBUG - Request: <function get at 0x7fbf549a54c0> https://habitica.com/api/v3/members/1db7268a-1d80-43eb-b0f6-d4143ea7a765
+2025-05-28 11:30:50,973 - DEBUG - Request: <function get at 0x7fbf549a54c0> https://habitica.com/api/v3/members/1eb1730f-0dba-4fdd-b880-e07807efdb43
+2025-05-28 11:30:53,107 - DEBUG - Request: <function get at 0x7fbf549a54c0> https://habitica.com/api/v3/members/2390fb0d-6b8c-4c30-8643-662f2eb5ca7c
+2025-05-28 11:30:55,173 - DEBUG - Request: <function get at 0x7fbf549a54c0> https://habitica.com/api/v3/members/2876573d-0a43-4644-98f1-000703fc86a0
+2025-05-28 11:30:57,300 - DEBUG - Request: <function get at 0x7fbf549a54c0> https://habitica.com/api/v3/members/645a8f8a-8e22-42e5-a986-3f617f9022f2
+2025-05-28 11:30:59,436 - DEBUG - Request: <function get at 0x7fbf549a54c0> https://habitica.com/api/v3/members/7295b8a7-bc9e-4019-8bcb-148e6c3e5628
+2025-05-28 11:31:01,574 - DEBUG - Request: <function get at 0x7fbf549a54c0> https://habitica.com/api/v3/members/7c07d1f0-66ee-48a8-94e8-618049546263
+2025-05-28 11:31:03,703 - DEBUG - Request: <function get at 0x7fbf549a54c0> https://habitica.com/api/v3/members/901b8556-e91a-4a9e-977d-d39a38c5ba19
+2025-05-28 11:31:05,769 - DEBUG - Request: <function get at 0x7fbf549a54c0> https://habitica.com/api/v3/members/95e63aaa-dd9a-4876-bdee-f1e2a24e834c
+2025-05-28 11:31:07,837 - DEBUG - Request: <function get at 0x7fbf549a54c0> https://habitica.com/api/v3/members/a46759da-ba81-4e1d-aab2-c95623240557
+2025-05-28 11:31:09,922 - DEBUG - Request: <function get at 0x7fbf549a54c0> https://habitica.com/api/v3/members/acf222d2-3c6a-4e90-a7d5-4b2be69169cc
+2025-05-28 11:31:11,992 - DEBUG - Request: <function get at 0x7fbf549a54c0> https://habitica.com/api/v3/members/b1a75660-12e9-4c81-864a-80095959f621
+2025-05-28 11:31:14,057 - DEBUG - Request: <function get at 0x7fbf549a54c0> https://habitica.com/api/v3/members/bbf5da20-7c0f-4f04-a492-2e950e02e1f1
+2025-05-28 11:31:16,121 - DEBUG - Request: <function get at 0x7fbf549a54c0> https://habitica.com/api/v3/members/c520eaaf-f136-4eda-b20c-f2841e1ac27d
+2025-05-28 11:31:18,188 - DEBUG - Request: <function get at 0x7fbf549a54c0> https://habitica.com/api/v3/members/d1d53d13-2888-4150-8717-e389ca7e628c
+2025-05-28 11:31:20,263 - DEBUG - Request: <function get at 0x7fbf549a54c0> https://habitica.com/api/v3/members/da7a54eb-634f-4437-8399-78225c3bc810
+2025-05-28 11:31:22,329 - DEBUG - Request: <function get at 0x7fbf549a54c0> https://habitica.com/api/v3/members/ddb7fd41-08fc-4deb-8c7a-16bd11c3758c
+2025-05-28 11:31:24,443 - DEBUG - Request: <function get at 0x7fbf549a54c0> https://habitica.com/api/v3/members/e6b8bc21-826f-4704-9c1b-4b1124ce5528
+2025-05-28 11:31:26,514 - DEBUG - Request: <function get at 0x7fbf549a54c0> https://habitica.com/api/v3/members/edeb0e4b-0b5e-41e5-ab39-d2fd052d4a8f
+2025-05-28 11:31:28,582 - DEBUG - Request: <function get at 0x7fbf549a54c0> https://habitica.com/api/v3/members/f0e57f6c-ab3f-4c1d-bd1a-2872b831a38b
+2025-05-28 11:31:31,723 - DEBUG - Request: <function get at 0x7fbf549a54c0> https://habitica.com/api/v3/looking-for-party
+2025-05-28 11:31:33,786 - DEBUG - Request: <function post at 0x7fbf549a5670> https://habitica.com/api/v3/groups/party/invite
+2025-05-28 11:31:33,786 - ERROR - Sending invitations failed: Status code 400
+Headers: {'Date': 'Wed, 28 May 2025 11:31:33 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '106', 'Connection': 'keep-alive', 'X-DNS-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'OPTIONS,GET,POST,PUT,HEAD,DELETE', 'Access-Control-Allow-Headers': 'Authorization,Content-Type,Accept,Content-Encoding,X-Requested-With,x-api-user,x-api-key,x-client', 'Access-Control-Expose-Headers': 'X-RateLimit-Limit,X-RateLimit-Remaining,X-RateLimit-Reset,Retry-After', 'Vary': 'X-HTTP-Method-Override, Accept-Encoding', 'X-Powered-By': 'Express', 'X-RateLimit-Limit': '30', 'X-RateLimit-Remaining': '5', 'X-RateLimit-Reset': 'Wed May 28 2025 11:31:42 GMT+0000 (Coordinated Universal Time)', 'Cache-Control': 'no-store', 'Set-Cookie': 'connect:sess=eyJ1c2VySWQiOiI5NWU2M2FhYS1kZDlhLTQ4NzYtYmRlZS1mMWUyYTI0ZTgzNGMifQ==; path=/; expires=Sat, 26 May 2035 11:31:33 GMT; secure; httponly, connect:sess.sig=n0hQUr4cw2w-AOvJ-Zk6PUC-6CE; path=/; expires=Sat, 26 May 2035 11:31:33 GMT; secure; httponly'}
+Text: {"success":false,"error":"BadRequest","message":"El número de integrantes de equipo está limitado a 30"}
+2025-05-28 11:31:33,786 - INFO - Habitica party management script completed successfully.
