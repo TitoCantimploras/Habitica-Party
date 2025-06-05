@@ -3296,3 +3296,11 @@
 2025-06-05 17:46:54,502 - DEBUG - Request: <function get at 0x7fb5bf1c6430> https://habitica.com/api/v3/members/f16eb5b5-584a-487a-8b57-84095a115c52
 2025-06-05 17:46:56,757 - DEBUG - Request: <function put at 0x7fb5bf1c6670> https://habitica.com/api/v3/groups/party
 2025-06-05 17:46:56,757 - INFO - Party description updated successfully.
+2025-06-05 19:01:07,542 - INFO - # 2371
+2025-06-05 19:01:08,560 - DEBUG - Request: <function get at 0x7fa4e4dab430> https://sentence.iciba.com/?c=dailysentence&m=getTodaySentence
+2025-06-05 19:01:10,657 - DEBUG - Request: <function get at 0x7fa4e4dab430> https://habitica.com/api/v3/groups/party/members
+2025-06-05 19:01:10,657 - ERROR - Getting party data failed: Status code 429
+Headers: {'Date': 'Thu, 05 Jun 2025 19:01:10 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '297', 'Connection': 'keep-alive', 'X-DNS-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'OPTIONS,GET,POST,PUT,HEAD,DELETE', 'Access-Control-Allow-Headers': 'Authorization,Content-Type,Accept,Content-Encoding,X-Requested-With,x-api-user,x-api-key,x-client', 'Access-Control-Expose-Headers': 'X-RateLimit-Limit,X-RateLimit-Remaining,X-RateLimit-Reset,Retry-After', 'X-Powered-By': 'Express', 'X-RateLimit-Limit': '30', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': 'Thu Jun 05 2025 19:01:11 GMT+0000 (Coordinated Universal Time)', 'Retry-After': '0.552', 'ETag': 'W/"129-VBtBpeUSMz7DTPQlUTaBL2xJZvg"', 'Vary': 'Accept-Encoding'}
+Text: {"success":false,"error":"TooManyRequests","message":"This User ID or IP address has been rate limited due to an excess amount of requests to the Habitica API v3. More info can be found in the response headers and at https://github.com/HabitRPG/habitica/wiki/API-Usage-Guidelines#rate-limiting ."}
+2025-06-05 19:01:12,981 - DEBUG - Request: <function put at 0x7fa4e4dab670> https://habitica.com/api/v3/groups/party
+2025-06-05 19:01:12,981 - INFO - Party description updated successfully.
