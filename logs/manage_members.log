@@ -2958,3 +2958,34 @@ Text: {"success":false,"error":"BadRequest","message":"El número de integrantes
 2025-06-10 04:54:09,954 - DEBUG - Request: <function get at 0x7fcacc8b1550> https://habitica.com/api/v3/members/f16eb5b5-584a-487a-8b57-84095a115c52
 2025-06-10 04:54:12,118 - DEBUG - Request: <function get at 0x7fcacc8b1550> https://habitica.com/api/v3/looking-for-party
 2025-06-10 04:54:12,119 - INFO - Habitica party management script completed successfully.
+2025-06-10 05:18:13,938 - INFO - # 2602
+2025-06-10 05:18:14,336 - DEBUG - Request: <function get at 0x7f4ac762b550> https://habitica.com/api/v3/groups/party/members
+2025-06-10 05:18:16,552 - DEBUG - Request: <function get at 0x7f4ac762b550> https://habitica.com/api/v3/members/07b51e34-3d2e-4a76-a67d-e8f232379d09
+2025-06-10 05:18:18,700 - DEBUG - Request: <function get at 0x7f4ac762b550> https://habitica.com/api/v3/members/13e2f611-0330-4de3-bc6b-132c68237d02
+2025-06-10 05:18:20,885 - DEBUG - Request: <function get at 0x7f4ac762b550> https://habitica.com/api/v3/members/18043773-7138-42e0-84f5-e34736a586db
+2025-06-10 05:18:23,077 - DEBUG - Request: <function get at 0x7f4ac762b550> https://habitica.com/api/v3/members/1db7268a-1d80-43eb-b0f6-d4143ea7a765
+2025-06-10 05:18:25,198 - DEBUG - Request: <function get at 0x7f4ac762b550> https://habitica.com/api/v3/members/1eb1730f-0dba-4fdd-b880-e07807efdb43
+2025-06-10 05:18:27,354 - DEBUG - Request: <function get at 0x7f4ac762b550> https://habitica.com/api/v3/members/235ce9e3-18dd-453a-863c-f96dbd4af278
+2025-06-10 05:18:29,580 - DEBUG - Request: <function get at 0x7f4ac762b550> https://habitica.com/api/v3/members/2390fb0d-6b8c-4c30-8643-662f2eb5ca7c
+2025-06-10 05:18:31,825 - DEBUG - Request: <function get at 0x7f4ac762b550> https://habitica.com/api/v3/members/2b401aa3-6c63-4f44-9bfb-4302eda43101
+2025-06-10 05:18:33,952 - DEBUG - Request: <function get at 0x7f4ac762b550> https://habitica.com/api/v3/members/48bd8d13-1e20-4ee4-adaf-5ab5988be23e
+2025-06-10 05:18:36,092 - DEBUG - Request: <function get at 0x7f4ac762b550> https://habitica.com/api/v3/members/4a85a286-282e-4839-9e46-3970415cb395
+2025-06-10 05:18:38,366 - DEBUG - Request: <function get at 0x7f4ac762b550> https://habitica.com/api/v3/members/645a8f8a-8e22-42e5-a986-3f617f9022f2
+2025-06-10 05:18:40,595 - DEBUG - Request: <function get at 0x7f4ac762b550> https://habitica.com/api/v3/members/7295b8a7-bc9e-4019-8bcb-148e6c3e5628
+2025-06-10 05:18:42,762 - DEBUG - Request: <function get at 0x7f4ac762b550> https://habitica.com/api/v3/members/7c07d1f0-66ee-48a8-94e8-618049546263
+2025-06-10 05:18:44,879 - DEBUG - Request: <function get at 0x7f4ac762b550> https://habitica.com/api/v3/members/901b8556-e91a-4a9e-977d-d39a38c5ba19
+2025-06-10 05:18:47,023 - DEBUG - Request: <function get at 0x7f4ac762b550> https://habitica.com/api/v3/members/95e63aaa-dd9a-4876-bdee-f1e2a24e834c
+2025-06-10 05:18:49,181 - DEBUG - Request: <function get at 0x7f4ac762b550> https://habitica.com/api/v3/members/acf222d2-3c6a-4e90-a7d5-4b2be69169cc
+2025-06-10 05:18:51,303 - DEBUG - Request: <function get at 0x7f4ac762b550> https://habitica.com/api/v3/members/b1a75660-12e9-4c81-864a-80095959f621
+2025-06-10 05:18:53,520 - DEBUG - Request: <function get at 0x7f4ac762b550> https://habitica.com/api/v3/members/ba870cfd-5259-448b-8ea1-11a909a88e91
+2025-06-10 05:18:55,658 - DEBUG - Request: <function get at 0x7f4ac762b550> https://habitica.com/api/v3/members/c4410ab7-9a62-42f5-9c4c-ada23533eddc
+2025-06-10 05:18:57,792 - DEBUG - Request: <function get at 0x7f4ac762b550> https://habitica.com/api/v3/members/c520eaaf-f136-4eda-b20c-f2841e1ac27d
+2025-06-10 05:18:59,911 - DEBUG - Request: <function get at 0x7f4ac762b550> https://habitica.com/api/v3/members/da7a54eb-634f-4437-8399-78225c3bc810
+2025-06-10 05:19:02,030 - DEBUG - Request: <function get at 0x7f4ac762b550> https://habitica.com/api/v3/members/ddb7fd41-08fc-4deb-8c7a-16bd11c3758c
+2025-06-10 05:19:04,230 - DEBUG - Request: <function get at 0x7f4ac762b550> https://habitica.com/api/v3/members/e6b8bc21-826f-4704-9c1b-4b1124ce5528
+2025-06-10 05:19:06,417 - DEBUG - Request: <function get at 0x7f4ac762b550> https://habitica.com/api/v3/members/edeb0e4b-0b5e-41e5-ab39-d2fd052d4a8f
+2025-06-10 05:19:08,536 - DEBUG - Request: <function get at 0x7f4ac762b550> https://habitica.com/api/v3/members/f16eb5b5-584a-487a-8b57-84095a115c52
+2025-06-10 05:19:10,738 - DEBUG - Request: <function get at 0x7f4ac762b550> https://habitica.com/api/v3/looking-for-party
+2025-06-10 05:19:13,058 - DEBUG - Request: <function post at 0x7f4ac762b700> https://habitica.com/api/v3/groups/party/invite
+2025-06-10 05:19:13,058 - INFO - Invitations sent to ['Kid_oldman'].
+2025-06-10 05:19:13,058 - INFO - Habitica party management script completed successfully.
