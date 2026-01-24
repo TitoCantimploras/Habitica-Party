@@ -3386,3 +3386,23 @@ Text: {"success":false,"error":"BadRequest","message":"Missing x-client headers.
 Headers: {'X-DNS-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'OPTIONS,GET,POST,PUT,HEAD,DELETE', 'Access-Control-Allow-Headers': 'Authorization,Content-Type,Accept,Content-Encoding,X-Requested-With,x-api-user,x-api-key,x-client', 'Access-Control-Expose-Headers': 'X-RateLimit-Limit,X-RateLimit-Remaining,X-RateLimit-Reset,Retry-After', 'X-Powered-By': 'Express', 'X-RateLimit-Limit': '30', 'X-RateLimit-Remaining': '28', 'X-RateLimit-Reset': 'Sat Jan 24 2026 09:20:44 GMT+0000 (Coordinated Universal Time)', 'Cache-Control': 'no-store', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '76', 'Vary': 'Accept-Encoding', 'Date': 'Sat, 24 Jan 2026 09:19:46 GMT', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
 Text: {"success":false,"error":"BadRequest","message":"Missing x-client headers."}
 2026-01-24 09:19:46,447 - INFO - Habitica party management script completed successfully.
+2026-01-24 09:38:23,961 - INFO - # 14210
+2026-01-24 09:38:33,101 - DEBUG - Request: <function get at 0x7f6c4f0044c0> https://habitica.com/api/v3/groups/party/members
+2026-01-24 09:38:33,101 - ERROR - Fetching party members failed: Status code 502
+Headers: {'Content-Type': 'text/html; charset=UTF-8', 'Referrer-Policy': 'no-referrer', 'Content-Length': '332', 'Date': 'Sat, 24 Jan 2026 09:38:33 GMT', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+Text: 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>502 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+2026-01-24 09:38:35,485 - DEBUG - Request: <function get at 0x7f6c4f0044c0> https://habitica.com/api/v3/looking-for-party
+2026-01-24 09:38:35,485 - ERROR - Fetching users looking for party failed: Status code 400
+Headers: {'X-DNS-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'OPTIONS,GET,POST,PUT,HEAD,DELETE', 'Access-Control-Allow-Headers': 'Authorization,Content-Type,Accept,Content-Encoding,X-Requested-With,x-api-user,x-api-key,x-client', 'Access-Control-Expose-Headers': 'X-RateLimit-Limit,X-RateLimit-Remaining,X-RateLimit-Reset,Retry-After', 'X-Powered-By': 'Express', 'X-RateLimit-Limit': '30', 'X-RateLimit-Remaining': '29', 'X-RateLimit-Reset': 'Sat Jan 24 2026 09:39:35 GMT+0000 (Coordinated Universal Time)', 'Cache-Control': 'no-store', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '76', 'Vary': 'Accept-Encoding', 'Date': 'Sat, 24 Jan 2026 09:38:35 GMT', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+Text: {"success":false,"error":"BadRequest","message":"Missing x-client headers."}
+2026-01-24 09:38:35,485 - INFO - Habitica party management script completed successfully.
