@@ -826,3 +826,13 @@ Text: <!doctype html><meta charset="utf-8"><meta name=viewport content="width=de
 Headers: {'Content-Length': '134', 'Content-Type': 'text/html; charset=UTF-8', 'Date': 'Tue, 27 Jan 2026 16:29:13 GMT', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
 Text: <!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
 2026-01-27 16:29:13,254 - INFO - Habitica party management script completed successfully.
+2026-01-27 17:01:06,306 - INFO - # 14351
+2026-01-27 17:01:06,590 - DEBUG - Request: <function get at 0x7f61818e44c0> https://habitica.com/api/v3/groups/party/members
+2026-01-27 17:01:06,590 - ERROR - Fetching party members failed: Status code 403
+Headers: {'Content-Length': '134', 'Content-Type': 'text/html; charset=UTF-8', 'Date': 'Tue, 27 Jan 2026 17:01:06 GMT', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+Text: <!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+2026-01-27 17:01:08,814 - DEBUG - Request: <function get at 0x7f61818e44c0> https://habitica.com/api/v3/looking-for-party
+2026-01-27 17:01:08,814 - ERROR - Fetching users looking for party failed: Status code 403
+Headers: {'Content-Length': '134', 'Content-Type': 'text/html; charset=UTF-8', 'Date': 'Tue, 27 Jan 2026 17:01:08 GMT', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+Text: <!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+2026-01-27 17:01:08,814 - INFO - Habitica party management script completed successfully.
