@@ -1191,3 +1191,13 @@ Text: <!doctype html><meta charset="utf-8"><meta name=viewport content="width=de
 2026-01-27 15:46:07,037 - ERROR - Getting party data failed: Status code 403
 Headers: {'Content-Length': '134', 'Content-Type': 'text/html; charset=UTF-8', 'Date': 'Tue, 27 Jan 2026 15:46:07 GMT', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
 Text: <!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+2026-01-27 16:29:13,398 - INFO - # 14350
+2026-01-27 16:29:14,628 - DEBUG - Request: <function get at 0x7f0b1ea20430> https://sentence.iciba.com/?c=dailysentence&m=getTodaySentence
+2026-01-27 16:29:16,864 - DEBUG - Request: <function get at 0x7f0b1ea20430> https://habitica.com/api/v3/groups/party/members
+2026-01-27 16:29:16,864 - ERROR - Getting party data failed: Status code 403
+Headers: {'Content-Length': '134', 'Content-Type': 'text/html; charset=UTF-8', 'Date': 'Tue, 27 Jan 2026 16:29:16 GMT', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+Text: <!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+2026-01-27 16:29:19,106 - DEBUG - Request: <function put at 0x7f0b1ea20670> https://habitica.com/api/v3/groups/party
+2026-01-27 16:29:19,107 - ERROR - Getting party data failed: Status code 403
+Headers: {'Content-Length': '134', 'Content-Type': 'text/html; charset=UTF-8', 'Date': 'Tue, 27 Jan 2026 16:29:19 GMT', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+Text: <!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
