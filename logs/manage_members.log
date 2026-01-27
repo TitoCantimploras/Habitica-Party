@@ -806,3 +806,13 @@ Text: {"success":false,"error":"BadRequest","message":"Missing x-client headers.
 Headers: {'x-cloud-trace-context': '2f911c232a175391872fb99ec1dd42a5/8737509362245868271', 'X-DNS-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'OPTIONS,GET,POST,PUT,HEAD,DELETE', 'Access-Control-Allow-Headers': 'Authorization,Content-Type,Accept,Content-Encoding,X-Requested-With,x-api-user,x-api-key,x-client', 'Access-Control-Expose-Headers': 'X-RateLimit-Limit,X-RateLimit-Remaining,X-RateLimit-Reset,Retry-After', 'X-Powered-By': 'Express', 'X-RateLimit-Limit': '30', 'X-RateLimit-Remaining': '28', 'X-RateLimit-Reset': 'Tue Jan 27 2026 15:02:44 GMT+0000 (Coordinated Universal Time)', 'Cache-Control': 'no-store', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '76', 'Vary': 'Accept-Encoding', 'Date': 'Tue, 27 Jan 2026 15:01:47 GMT', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
 Text: {"success":false,"error":"BadRequest","message":"Missing x-client headers."}
 2026-01-27 15:01:47,087 - INFO - Habitica party management script completed successfully.
+2026-01-27 15:45:58,909 - INFO - # 14349
+2026-01-27 15:45:59,132 - DEBUG - Request: <function get at 0x7f1ce7b584c0> https://habitica.com/api/v3/groups/party/members
+2026-01-27 15:45:59,132 - ERROR - Fetching party members failed: Status code 403
+Headers: {'Content-Length': '134', 'Content-Type': 'text/html; charset=UTF-8', 'Date': 'Tue, 27 Jan 2026 15:45:59 GMT', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+Text: <!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+2026-01-27 15:46:01,329 - DEBUG - Request: <function get at 0x7f1ce7b584c0> https://habitica.com/api/v3/looking-for-party
+2026-01-27 15:46:01,329 - ERROR - Fetching users looking for party failed: Status code 403
+Headers: {'Content-Length': '134', 'Content-Type': 'text/html; charset=UTF-8', 'Date': 'Tue, 27 Jan 2026 15:46:01 GMT', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+Text: <!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+2026-01-27 15:46:01,329 - INFO - Habitica party management script completed successfully.

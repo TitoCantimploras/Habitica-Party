@@ -1181,3 +1181,13 @@ Text: {"success":false,"error":"BadRequest","message":"Missing x-client headers.
 2026-01-27 15:01:52,413 - ERROR - Getting party data failed: Status code 400
 Headers: {'x-cloud-trace-context': 'ade39b8136e9109c2891be1f031feb6f/8698122234086630492', 'X-DNS-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'OPTIONS,GET,POST,PUT,HEAD,DELETE', 'Access-Control-Allow-Headers': 'Authorization,Content-Type,Accept,Content-Encoding,X-Requested-With,x-api-user,x-api-key,x-client', 'Access-Control-Expose-Headers': 'X-RateLimit-Limit,X-RateLimit-Remaining,X-RateLimit-Reset,Retry-After', 'X-Powered-By': 'Express', 'X-RateLimit-Limit': '30', 'X-RateLimit-Remaining': '26', 'X-RateLimit-Reset': 'Tue Jan 27 2026 15:02:44 GMT+0000 (Coordinated Universal Time)', 'Cache-Control': 'no-store', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '76', 'Vary': 'Accept-Encoding', 'Date': 'Tue, 27 Jan 2026 15:01:52 GMT', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
 Text: {"success":false,"error":"BadRequest","message":"Missing x-client headers."}
+2026-01-27 15:46:01,471 - INFO - # 14349
+2026-01-27 15:46:02,553 - DEBUG - Request: <function get at 0x7fa8d9a8f430> https://sentence.iciba.com/?c=dailysentence&m=getTodaySentence
+2026-01-27 15:46:04,803 - DEBUG - Request: <function get at 0x7fa8d9a8f430> https://habitica.com/api/v3/groups/party/members
+2026-01-27 15:46:04,803 - ERROR - Getting party data failed: Status code 403
+Headers: {'Content-Length': '134', 'Content-Type': 'text/html; charset=UTF-8', 'Date': 'Tue, 27 Jan 2026 15:46:04 GMT', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+Text: <!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+2026-01-27 15:46:07,037 - DEBUG - Request: <function put at 0x7fa8d9a8f670> https://habitica.com/api/v3/groups/party
+2026-01-27 15:46:07,037 - ERROR - Getting party data failed: Status code 403
+Headers: {'Content-Length': '134', 'Content-Type': 'text/html; charset=UTF-8', 'Date': 'Tue, 27 Jan 2026 15:46:07 GMT', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+Text: <!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
