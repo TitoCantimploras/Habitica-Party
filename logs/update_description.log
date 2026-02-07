@@ -476,3 +476,23 @@ Text: {"success":false,"error":"BadRequest","message":"Missing x-client headers.
 2026-02-07 11:26:07,404 - ERROR - Getting party data failed: Status code 400
 Headers: {'X-DNS-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'OPTIONS,GET,POST,PUT,HEAD,DELETE', 'Access-Control-Allow-Headers': 'Authorization,Content-Type,Accept,Content-Encoding,X-Requested-With,x-api-user,x-api-key,x-client', 'Access-Control-Expose-Headers': 'X-RateLimit-Limit,X-RateLimit-Remaining,X-RateLimit-Reset,Retry-After', 'X-Powered-By': 'Express', 'X-RateLimit-Limit': '30', 'X-RateLimit-Remaining': '26', 'X-RateLimit-Reset': 'Sat Feb 07 2026 11:26:59 GMT+0000 (Coordinated Universal Time)', 'Cache-Control': 'no-store', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '76', 'Vary': 'Accept-Encoding', 'Date': 'Sat, 07 Feb 2026 11:26:07 GMT', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
 Text: {"success":false,"error":"BadRequest","message":"Missing x-client headers."}
+2026-02-07 11:51:19,659 - INFO - # 14672
+2026-02-07 11:51:20,622 - DEBUG - Request: <function get at 0x7fe20bbc3430> https://sentence.iciba.com/?c=dailysentence&m=getTodaySentence
+2026-02-07 11:51:31,877 - DEBUG - Request: <function get at 0x7fe20bbc3430> https://habitica.com/api/v3/groups/party/members
+2026-02-07 11:51:31,877 - ERROR - Getting party data failed: Status code 502
+Headers: {'Content-Type': 'text/html; charset=UTF-8', 'Referrer-Policy': 'no-referrer', 'Content-Length': '332', 'Date': 'Sat, 07 Feb 2026 11:51:31 GMT', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+Text: 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>502 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+2026-02-07 11:51:33,949 - DEBUG - Request: <function put at 0x7fe20bbc3670> https://habitica.com/api/v3/groups/party
+2026-02-07 11:51:33,950 - ERROR - Getting party data failed: Status code 400
+Headers: {'X-DNS-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'OPTIONS,GET,POST,PUT,HEAD,DELETE', 'Access-Control-Allow-Headers': 'Authorization,Content-Type,Accept,Content-Encoding,X-Requested-With,x-api-user,x-api-key,x-client', 'Access-Control-Expose-Headers': 'X-RateLimit-Limit,X-RateLimit-Remaining,X-RateLimit-Reset,Retry-After', 'X-Powered-By': 'Express', 'X-RateLimit-Limit': '30', 'X-RateLimit-Remaining': '27', 'X-RateLimit-Reset': 'Sat Feb 07 2026 11:52:17 GMT+0000 (Coordinated Universal Time)', 'Cache-Control': 'no-store', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '76', 'Vary': 'Accept-Encoding', 'Date': 'Sat, 07 Feb 2026 11:51:33 GMT', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+Text: {"success":false,"error":"BadRequest","message":"Missing x-client headers."}
