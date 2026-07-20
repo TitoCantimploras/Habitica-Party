@@ -2931,3 +2931,33 @@ Text: {"success":false,"error":"BadRequest","message":"Missing x-client headers.
 2026-07-20 02:50:22,801 - ERROR - Getting party data failed: Status code 400
 Headers: {'X-DNS-Prefetch-Control': 'off', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains', 'X-Download-Options': 'noopen', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '0', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'OPTIONS,GET,POST,PUT,HEAD,DELETE', 'Access-Control-Allow-Headers': 'Authorization,Content-Type,Accept,Content-Encoding,X-Requested-With,x-api-user,x-api-key,x-client', 'Access-Control-Expose-Headers': 'X-RateLimit-Limit,X-RateLimit-Remaining,X-RateLimit-Reset,Retry-After', 'Content-Security-Policy': "default-src 'self' habitica.com *.habitica.com *.amazon.com *.amazonaws.com *.amplitude.com *.loggly.com *.payments-amazon.com *.stripe.com *.stripe.network; base-uri 'self'; font-src 'self' https: data:; form-action 'self'; frame-ancestors 'self'; img-src * data:; object-src 'none'; script-src-attr 'none'; style-src 'self' https: 'unsafe-inline'", 'X-Powered-By': 'Express', 'X-RateLimit-Limit': '30', 'X-RateLimit-Remaining': '26', 'X-RateLimit-Reset': 'Mon Jul 20 2026 02:51:15 GMT+0000 (Coordinated Universal Time)', 'Cache-Control': 'no-store', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '76', 'Vary': 'Accept-Encoding', 'Date': 'Mon, 20 Jul 2026 02:50:22 GMT', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000'}
 Text: {"success":false,"error":"BadRequest","message":"Missing x-client headers."}
+2026-07-20 06:16:55,979 - INFO - # 17541
+2026-07-20 06:16:56,716 - DEBUG - Request: <function get at 0x7fb00ad27f70> https://sentence.iciba.com/?c=dailysentence&m=getTodaySentence
+2026-07-20 06:17:29,587 - DEBUG - Request: <function get at 0x7fb00ad27f70> https://habitica.com/api/v3/groups/party/members
+2026-07-20 06:17:29,587 - ERROR - Getting party data failed: Status code 502
+Headers: {'Content-Type': 'text/html; charset=UTF-8', 'Referrer-Policy': 'no-referrer', 'Content-Length': '332', 'Date': 'Mon, 20 Jul 2026 06:17:29 GMT', 'Alt-Svc': 'h3=":443"; ma=2592000'}
+Text: 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>502 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+2026-07-20 06:17:37,834 - DEBUG - Request: <function put at 0x7fb00ad281f0> https://habitica.com/api/v3/groups/party
+2026-07-20 06:17:37,834 - ERROR - Getting party data failed: Status code 502
+Headers: {'Content-Type': 'text/html; charset=UTF-8', 'Referrer-Policy': 'no-referrer', 'Content-Length': '332', 'Date': 'Mon, 20 Jul 2026 06:17:37 GMT', 'Alt-Svc': 'h3=":443"; ma=2592000'}
+Text: 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>502 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
